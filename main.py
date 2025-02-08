@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1920, 1080)
+        MainWindow.resize(1920, 1077)
         MainWindow.setMinimumSize(QtCore.QSize(1280, 720))
         MainWindow.setMaximumSize(QtCore.QSize(2560, 1440))
         self.main = QtWidgets.QWidget(MainWindow)
@@ -221,11 +221,59 @@ class Ui_MainWindow(object):
         self.icon_arrow_down_age_rating.setText("")
         self.icon_arrow_down_age_rating.setPixmap(QtGui.QPixmap("img/Arrow Down Black.png"))
         self.icon_arrow_down_age_rating.setObjectName("icon_arrow_down_age_rating")
-        self.widget = QtWidgets.QWidget(self.main)
-        self.widget.setGeometry(QtCore.QRect(430, 174, 460, 400))
-        self.widget.setStyleSheet("background-color: rgb(69, 76, 85);\n"
+        self.item_game = QtWidgets.QFrame(self.main)
+        self.item_game.setGeometry(QtCore.QRect(430, 174, 460, 400))
+        self.item_game.setStyleSheet("background-color: rgb(69, 76, 85);\n"
 "border-radius: 50px;")
-        self.widget.setObjectName("widget")
+        self.item_game.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.item_game.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.item_game.setObjectName("item_game")
+        self.image_game = QtWidgets.QLabel(self.item_game)
+        self.image_game.setGeometry(QtCore.QRect(0, 0, 460, 215))
+        self.image_game.setStyleSheet("border-top-left-radius: 50px;\n"
+"background-color: rgb(204, 1, 4);\n"
+"border-top-right-radius: 50px;\n"
+"border-bottom-left-radius: 0px;\n"
+"border-bottom-right-radius: 0px;\n"
+"")
+        self.image_game.setText("")
+        self.image_game.setScaledContents(True)
+        self.image_game.setObjectName("image_game")
+        self.name_game = QtWidgets.QLabel(self.item_game)
+        self.name_game.setGeometry(QtCore.QRect(0, 220, 369, 111))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(32)
+        self.name_game.setFont(font)
+        self.name_game.setStyleSheet("color: #fff;\n"
+"padding-left: 15px;\n"
+"padding-top: 5px;\n"
+"")
+        self.name_game.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.name_game.setObjectName("name_game")
+        self.rating_game = QtWidgets.QLabel(self.item_game)
+        self.rating_game.setGeometry(QtCore.QRect(0, 340, 281, 51))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(25)
+        self.rating_game.setFont(font)
+        self.rating_game.setStyleSheet("color: #fff;\n"
+"padding-left: 15px;\n"
+"border-top-left-radius: 0px;\n"
+"border-top-right-radius: 0px;\n"
+"border-bottom-left-radius: 50px;\n"
+"border-bottom-right-radius: 0px;")
+        self.rating_game.setObjectName("rating_game")
+        self.controller_game = QtWidgets.QLabel(self.item_game)
+        self.controller_game.setGeometry(QtCore.QRect(392, 240, 42, 27))
+        self.controller_game.setText("")
+        self.controller_game.setPixmap(QtGui.QPixmap("img/Controller_On.png"))
+        self.controller_game.setObjectName("controller_game")
+        self.favorites_game = QtWidgets.QLabel(self.item_game)
+        self.favorites_game.setGeometry(QtCore.QRect(395, 340, 40, 38))
+        self.favorites_game.setText("")
+        self.favorites_game.setPixmap(QtGui.QPixmap("img/Star_Fill.png"))
+        self.favorites_game.setObjectName("favorites_game")
         MainWindow.setCentralWidget(self.main)
 
         self.retranslateUi(MainWindow)
@@ -244,6 +292,8 @@ class Ui_MainWindow(object):
         self.btn_filter_platform.setText(_translate("MainWindow", "Platform"))
         self.btn_filter_release.setText(_translate("MainWindow", "Release"))
         self.btn_filter_age_rating.setText(_translate("MainWindow", "Age Rating"))
+        self.name_game.setText(_translate("MainWindow", "{name}"))
+        self.rating_game.setText(_translate("MainWindow", "Metecritic: {rating}"))
 
 
 if __name__ == "__main__":

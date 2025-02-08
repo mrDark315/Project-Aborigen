@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1920</width>
-    <height>1080</height>
+    <height>1077</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -584,7 +584,7 @@ padding-left: 20px;</string>
      <pixmap>img/Arrow Down Black.png</pixmap>
     </property>
    </widget>
-   <widget class="QWidget" name="widget" native="true">
+   <widget class="QFrame" name="item_game">
     <property name="geometry">
      <rect>
       <x>430</x>
@@ -597,6 +597,123 @@ padding-left: 20px;</string>
      <string notr="true">background-color: rgb(69, 76, 85);
 border-radius: 50px;</string>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="image_game">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>460</width>
+       <height>215</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-left-radius: 50px;
+background-color: rgb(204, 1, 4);
+border-top-right-radius: 50px;
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="name_game">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>220</y>
+       <width>369</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>32</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #fff;
+padding-left: 15px;
+padding-top: 5px;
+</string>
+     </property>
+     <property name="text">
+      <string>{name}</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="rating_game">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>340</y>
+       <width>281</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>25</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #fff;
+padding-left: 15px;
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-left-radius: 50px;
+border-bottom-right-radius: 0px;</string>
+     </property>
+     <property name="text">
+      <string>Metecritic: {rating}</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="controller_game">
+     <property name="geometry">
+      <rect>
+       <x>392</x>
+       <y>240</y>
+       <width>42</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>img/Controller_On.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="favorites_game">
+     <property name="geometry">
+      <rect>
+       <x>395</x>
+       <y>340</y>
+       <width>40</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>img/Star_Fill.png</pixmap>
+     </property>
+    </widget>
    </widget>
   </widget>
  </widget>
