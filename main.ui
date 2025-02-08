@@ -395,6 +395,9 @@ padding-left: 20px;</string>
       <height>50</height>
      </rect>
     </property>
+    <property name="cursor">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: #454C55;</string>
     </property>
@@ -413,6 +416,9 @@ padding-left: 20px;</string>
       <width>40</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: #454C55;</string>
@@ -433,6 +439,9 @@ padding-left: 20px;</string>
       <height>20</height>
      </rect>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: #454C55;</string>
     </property>
@@ -451,6 +460,9 @@ padding-left: 20px;</string>
       <width>40</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: #454C55;</string>
@@ -471,6 +483,9 @@ padding-left: 20px;</string>
       <height>20</height>
      </rect>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: #454C55;</string>
     </property>
@@ -489,6 +504,9 @@ padding-left: 20px;</string>
       <width>40</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: #454C55;</string>
@@ -509,6 +527,9 @@ padding-left: 20px;</string>
       <height>20</height>
      </rect>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: #454C55;</string>
     </property>
@@ -527,6 +548,9 @@ padding-left: 20px;</string>
       <width>40</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: #454C55;</string>
@@ -547,6 +571,9 @@ padding-left: 20px;</string>
       <height>20</height>
      </rect>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: #454C55;</string>
     </property>
@@ -555,6 +582,20 @@ padding-left: 20px;</string>
     </property>
     <property name="pixmap">
      <pixmap>img/Arrow Down Black.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>174</y>
+      <width>460</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(69, 76, 85);
+border-radius: 50px;</string>
     </property>
    </widget>
   </widget>
