@@ -148,16 +148,16 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.btn_search.setText(_translate("MainWindow", "Введіть незву гри..."))
-        self.btn_sort.setText(_translate("MainWindow", "Сортування ▼"))
+        self.btn_search.setText(_translate("MainWindow", "Enter the name of the game..."))
+        self.btn_sort.setText(_translate("MainWindow", "Sorting ▼"))
         self.label_2.setText(_translate("MainWindow", "Created by:"))
-        self.btn_filter_pub.setText(_translate("MainWindow", "Видавець ▼"))
-        self.btn_frlter_developer.setText(_translate("MainWindow", "Розробник ▼"))
-        self.btn_filter_rating.setText(_translate("MainWindow", "Рейтинг ▼"))
-        self.btn_filter_controller.setText(_translate("MainWindow", "Контроллер ▼"))
-        self.label_7.setText(_translate("MainWindow", "Платформа ▼"))
-        self.label_8.setText(_translate("MainWindow", "Дата релізу ▼"))
-        self.label_9.setText(_translate("MainWindow", "Вікове обм. ▼"))
+        self.btn_filter_pub.setText(_translate("MainWindow", "Publisher ▼"))
+        self.btn_frlter_developer.setText(_translate("MainWindow", "Developer ▼"))
+        self.btn_filter_rating.setText(_translate("MainWindow", "Rating ▼"))
+        self.btn_filter_controller.setText(_translate("MainWindow", "Controller ▼"))
+        self.label_7.setText(_translate("MainWindow", "Platform ▼"))
+        self.label_8.setText(_translate("MainWindow", "Release Date ▼"))
+        self.label_9.setText(_translate("MainWindow", "Age Rating ▼"))
 
 
 if __name__ == "__main__":
