@@ -60,8 +60,9 @@ class Ui_MainWindow(object):
         self.left_arrow.setFixedSize(50, 50)
         self.left_arrow = AnimatedButton("img/Arrow_Left.png")
         self.left_arrow.setIconSize(QtCore.QSize(40, 40))
+        self.left_arrow.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.left_arrow.setStyleSheet("""
-            QPushButton {background-color: transparent; border: none; transition: 0.2s;}
+            QPushButton {background-color: transparent; border: none;}
         """)
         self.left_arrow.clicked.connect(self.prev_page)
 
@@ -70,8 +71,9 @@ class Ui_MainWindow(object):
         self.right_arrow.setFixedSize(50, 50)
         self.right_arrow = AnimatedButton("img/Arrow_Right.png")
         self.right_arrow.setIconSize(QtCore.QSize(40, 40))
+        self.right_arrow.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.right_arrow.setStyleSheet("""
-            QPushButton {background-color: transparent; border: none; transition: 0.2s;}
+            QPushButton {background-color: transparent; border: none;}
         """)
         self.right_arrow.clicked.connect(self.next_page)
 
@@ -189,6 +191,7 @@ class Ui_MainWindow(object):
         """Creates a game card with an image, name, gamepad icon, and rating."""
         game_card = QtWidgets.QFrame()
         game_card.setFixedSize(460, 400)
+        game_card.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         game_card.setStyleSheet("""
             QFrame {
                 border-radius: 35px;
