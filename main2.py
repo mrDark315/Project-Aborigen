@@ -33,17 +33,8 @@ class Ui_MainWindow(object):
         font.setPointSize(32)
         self.search_bar.setFont(font)
         self.search_bar.setStyleSheet("""
-            QLineEdit {
-                background-color: #454C55;
-                color: #898989;
-                border-radius: 35px;
-                padding-left: 15px;
-                font-size: 32px;
-                border: 2px solid #555;
-            }
-            QLineEdit:focus {
-                border: 2px solid #898989;
-            }
+            QLineEdit {background-color: #454C55; color: #898989; border-radius: 35px; padding-left: 15px; font-size: 32px; border: 2px solid #555;}
+            QLineEdit:focus {border: 2px solid #898989;}
         """)
         self.search_bar.setPlaceholderText("⌕ Search for a game...")
 
@@ -54,11 +45,7 @@ class Ui_MainWindow(object):
         font.setPointSize(28)
         self.rating_filter.setFont(font)
         self.rating_filter.setStyleSheet("background-color: #454C55; color: #000; border-radius: 35px; padding-left: 15px")
-        self.rating_filter.addItem("All Ratings")
-        self.rating_filter.addItem("Above 70")
-        self.rating_filter.addItem("Above 80")
-        self.rating_filter.addItem("Above 90")
-        self.rating_filter.addItem("Above 95")
+        self.rating_filter.addItems(["All Ratings", "Above 70", "Above 80", "Above 90", "Above 95"])
 
         # ✅ Add Search Bar & Filter to Layout
         self.search_filter_layout.addWidget(self.search_bar)
@@ -204,67 +191,77 @@ class Ui_MainWindow(object):
             self.current_page -= 1
             self.display_game_icons()
 
+    from PyQt5 import QtWidgets, QtGui, QtCore
+
+    from PyQt5 import QtWidgets, QtGui, QtCore
+
     def create_game_card(self, game):
         """Create a game card with a hover effect, an image, name, and rating."""
         game_card = QtWidgets.QFrame()
-        game_card.setFixedSize(400, 250)
+        game_card.setFixedSize(460, 400)
         game_card.setStyleSheet("""
-            QFrame {
-                border-radius: 20px;
-                background-color: #222;
-                padding: 10px;
-                transition: 0.3s;
-            }
-            QFrame:hover {
-                background-color: #333;
-                transform: scale(1.05);
-            }
+            QFrame {border-radius: 35px; background-color: #454C55;}
         """)
 
-        layout = QtWidgets.QVBoxLayout()
+        main_layout = QtWidgets.QVBoxLayout(game_card)
+        main_layout.setContentsMargins(0, 0, 0, 0)
 
-        # 🖼️ Game Image (Downloaded from URL)
+        # 🖼️ Game Image
         game_img = QtWidgets.QLabel()
-        game_img.setFixedSize(380, 150)
-        game_pixmap = self.download_image(game["img"])
+        game_img.setFixedSize(460, 215)
+        game_img.setStyleSheet("""
+            border-top-left-radius: 35px;
+            border-top-right-radius: 35px;
+        """)
 
+        game_pixmap = self.download_image(game["img"])
         if game_pixmap:
             game_img.setPixmap(game_pixmap)
             game_img.setScaledContents(True)
 
-        # 🎮 Truncate Game Name
-        truncated_name = self.truncate_text(game["name"], 30)
+        main_layout.addWidget(game_img)
 
-        # 🎮 Game Name (Overlay)
-        game_name = QtWidgets.QLabel(truncated_name)
-        game_name.setStyleSheet("""
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-            background-color: rgba(0, 0, 0, 150);
-            padding: 5px;
-            border-radius: 10px;
-        """)
-        game_name.setAlignment(QtCore.Qt.AlignCenter)
+        # 🎮 Game Name & Platform Icons Layout
+        info_layout = QtWidgets.QHBoxLayout()
+        info_layout.setContentsMargins(20, 10, 20, 0)
+        game_name = QtWidgets.QLabel(game["name"])
+        game_name.setStyleSheet("font-size: 32px; color: #fff;")
+        info_layout.addWidget(game_name)
 
-        # ⭐ Game Rating
-        game_rating = QtWidgets.QLabel(f"⭐ {game['rating']}")
-        game_rating.setStyleSheet("""
-            color: #ffcc00;
-            font-size: 16px;
-            background-color: rgba(0, 0, 0, 150);
-            padding: 5px;
-            border-radius: 10px;
-        """)
-        game_rating.setAlignment(QtCore.Qt.AlignCenter)
+        # 🎮 Controller Icon
+        platform_layout = QtWidgets.QHBoxLayout()
+        platform_layout.setSpacing(5)
 
-        layout.addWidget(game_img)
-        layout.addWidget(game_name)
-        layout.addWidget(game_rating)
+        for platform in game["platforms"]:
+            icon_label = QtWidgets.QLabel()
+            icon_pixmap = QtGui.QPixmap("img/Controller_On.png")
+            icon_label.setPixmap(icon_pixmap.scaled(24, 24, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation))
+            platform_layout.addWidget(icon_label)
 
-        game_card.setLayout(layout)
+        platform_layout.addStretch()
+        info_layout.addLayout(platform_layout)
+
+        main_layout.addLayout(info_layout)
+
+        # ⭐ Rating Layout
+        rating_layout = QtWidgets.QHBoxLayout()
+        rating_layout.setContentsMargins(20, 10, 20, 20)
+
+        rating_label = QtWidgets.QLabel(f"Metacritic: {game['rating']}")
+        rating_label.setStyleSheet("font-size: 28px; color: #fff;")
+        rating_layout.addWidget(rating_label)
+
+        rating_layout.addStretch()
+
+        # ⭐ Star Icon
+        star_label = QtWidgets.QLabel()
+        star_pixmap = QtGui.QPixmap("img/Star_No_Fill.png")
+        star_label.setPixmap(star_pixmap.scaled(24, 24, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation))
+        rating_layout.addWidget(star_label)
+
+        main_layout.addLayout(rating_layout)
+
         return game_card
-
 
 
     def truncate_text(self, text, max_length):
