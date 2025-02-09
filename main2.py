@@ -11,11 +11,11 @@ class Ui_MainWindow(object):
         screen = QtWidgets.QApplication.primaryScreen().geometry()
         MainWindow.resize(int(screen.width() * 0.8), int(screen.height() * 0.8))
         MainWindow.setMinimumSize(QtCore.QSize(1280, 720))
-        MainWindow.setMaximumSize(QtCore.QSize(2560, 1440))
+        MainWindow.setMaximumSize(QtCore.QSize(1920, 1080))
 
         # ✅ Main Widget (Dark Background)
         self.main = QtWidgets.QWidget(MainWindow)
-        self.main.setStyleSheet("background-color: rgb(14, 22, 33);")
+        self.main.setStyleSheet("background-color: #0E1621;")
         self.main.setObjectName("main")
 
         # ✅ Main Layout (Vertical)
@@ -24,37 +24,41 @@ class Ui_MainWindow(object):
         # ✅ Search & Rating Filter Layout (Horizontal)
         self.search_filter_layout = QtWidgets.QHBoxLayout()
         self.search_filter_layout.setAlignment(QtCore.Qt.AlignCenter)
-        self.search_filter_layout.setSpacing(10)  # Space between elements
+        self.search_filter_layout.setSpacing(20)  # Space between elements
 
         # ✅ Search Bar
         self.search_bar = QtWidgets.QLineEdit()
-        self.search_bar.setFixedSize(400, 40)  
+        self.search_bar.setFixedSize(660, 100)
         font = QtGui.QFont()
-        font.setPointSize(16)
+        font.setPointSize(32)
         self.search_bar.setFont(font)
         self.search_bar.setStyleSheet("""
             QLineEdit {
-                background-color: #333;
-                color: white;
-                border-radius: 15px;
+                background-color: #454C55;
+                color: #898989;
+                border-radius: 35px;
                 padding-left: 15px;
-                font-size: 16px;
+                font-size: 32px;
                 border: 2px solid #555;
             }
             QLineEdit:focus {
-                border: 2px solid #00aaff;
-                background-color: #444;
+                border: 2px solid #898989;
             }
         """)
-        self.search_bar.setPlaceholderText("Search for a game...")
+        self.search_bar.setPlaceholderText("⌕ Search for a game...")
 
         # ✅ Rating Filter
         self.rating_filter = QtWidgets.QComboBox()
-        self.rating_filter.setFixedSize(150, 40)  
-        self.rating_filter.setStyleSheet("background-color: #444; color: white; border-radius: 10px;")
+        self.rating_filter.setFixedSize(320, 70)
+        font = QtGui.QFont()
+        font.setPointSize(28)
+        self.rating_filter.setFont(font)
+        self.rating_filter.setStyleSheet("background-color: #454C55; color: #000; border-radius: 35px; padding-left: 15px")
         self.rating_filter.addItem("All Ratings")
         self.rating_filter.addItem("Above 70")
         self.rating_filter.addItem("Above 80")
+        self.rating_filter.addItem("Above 90")
+        self.rating_filter.addItem("Above 95")
 
         # ✅ Add Search Bar & Filter to Layout
         self.search_filter_layout.addWidget(self.search_bar)
@@ -67,44 +71,27 @@ class Ui_MainWindow(object):
         # ⬅ Left Arrow Button (Using Image)
         self.left_arrow = QtWidgets.QPushButton()
         self.left_arrow.setFixedSize(50, 50)
-        self.left_arrow.setIcon(QtGui.QIcon("img/arrow_left.png"))  # Replace with actual path
+        self.left_arrow.setIcon(QtGui.QIcon("img/Arrow_Left.png"))
         self.left_arrow.setIconSize(QtCore.QSize(40, 40))
         self.left_arrow.setStyleSheet("""
-            QPushButton {
-                background-color: transparent;
-                border: none;
-                transition: 0.2s;
-            }
-            QPushButton:hover {
-                background-color: rgba(255, 255, 255, 0.1);
-            }
-            QPushButton:pressed {
-                transform: scale(0.9);
-            }
+            QPushButton {background-color: transparent; border: none; transition: 0.2s;}
+            QPushButton:hover {background-color: rgba(255, 255, 255, 0.1);}
+            QPushButton:pressed {transform: scale(0.9);}
         """)
         self.left_arrow.clicked.connect(self.prev_page)
 
         # ➡ Right Arrow Button (Using Image)
         self.right_arrow = QtWidgets.QPushButton()
         self.right_arrow.setFixedSize(50, 50)
-        self.right_arrow.setIcon(QtGui.QIcon("img/arrow_right.png"))  # Replace with actual path
-        self.right_arrow.setIconSize(QtCore.QSize(40, 40))
+        self.right_arrow.setIcon(QtGui.QIcon("img/Arrow_Right.png"))
         self.right_arrow.setStyleSheet("""
-            QPushButton {
-                background-color: transparent;
-                border: none;
-                transition: 0.2s;
-            }
-            QPushButton:hover {
-                background-color: rgba(255, 255, 255, 0.1);
-            }
-            QPushButton:pressed {
-                transform: scale(0.9);
-            }
+            QPushButton {background-color: transparent; border: none; transition: 0.2s;}
+            QPushButton:hover {background-color: rgba(255, 255, 255, 0.1);}
+            QPushButton:pressed {transform: scale(0.9);}
         """)
         self.right_arrow.clicked.connect(self.next_page)
 
-        
+
         # ✅ Grid Layout for Displaying Games
         self.grid_layout = QtWidgets.QGridLayout()
         self.grid_layout.setSpacing(20)
@@ -223,8 +210,8 @@ class Ui_MainWindow(object):
         game_card.setFixedSize(400, 250)
         game_card.setStyleSheet("""
             QFrame {
-                border-radius: 20px; 
-                background-color: #222; 
+                border-radius: 20px;
+                background-color: #222;
                 padding: 10px;
                 transition: 0.3s;
             }
@@ -240,7 +227,7 @@ class Ui_MainWindow(object):
         game_img = QtWidgets.QLabel()
         game_img.setFixedSize(380, 150)
         game_pixmap = self.download_image(game["img"])
-        
+
         if game_pixmap:
             game_img.setPixmap(game_pixmap)
             game_img.setScaledContents(True)
@@ -251,8 +238,8 @@ class Ui_MainWindow(object):
         # 🎮 Game Name (Overlay)
         game_name = QtWidgets.QLabel(truncated_name)
         game_name.setStyleSheet("""
-            color: white; 
-            font-size: 18px; 
+            color: white;
+            font-size: 18px;
             font-weight: bold;
             background-color: rgba(0, 0, 0, 150);
             padding: 5px;
@@ -263,7 +250,7 @@ class Ui_MainWindow(object):
         # ⭐ Game Rating
         game_rating = QtWidgets.QLabel(f"⭐ {game['rating']}")
         game_rating.setStyleSheet("""
-            color: #ffcc00; 
+            color: #ffcc00;
             font-size: 16px;
             background-color: rgba(0, 0, 0, 150);
             padding: 5px;
@@ -278,13 +265,13 @@ class Ui_MainWindow(object):
         game_card.setLayout(layout)
         return game_card
 
-    
+
 
     def truncate_text(self, text, max_length):
         """Truncate text if it exceeds the max length and add '...'."""
         return text if len(text) <= max_length else text[:max_length] + "..."
-    
-    
+
+
     def download_image(self, url):
         """Download an image from a URL and convert it to QPixmap."""
         try:
