@@ -71,11 +71,15 @@ class Ui_MainWindow(object):
         self.left_arrow.setIconSize(QtCore.QSize(40, 40))
         self.left_arrow.setStyleSheet("""
             QPushButton {
-                background-color: #333;
-                border-radius: 10px;
+                background-color: transparent;
+                border: none;
+                transition: 0.2s;
             }
-            QPushButton:disabled {
-                background-color: #222;
+            QPushButton:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+            QPushButton:pressed {
+                transform: scale(0.9);
             }
         """)
         self.left_arrow.clicked.connect(self.prev_page)
@@ -87,11 +91,15 @@ class Ui_MainWindow(object):
         self.right_arrow.setIconSize(QtCore.QSize(40, 40))
         self.right_arrow.setStyleSheet("""
             QPushButton {
-                background-color: #333;
-                border-radius: 10px;
+                background-color: transparent;
+                border: none;
+                transition: 0.2s;
             }
-            QPushButton:disabled {
-                background-color: #222;
+            QPushButton:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+            QPushButton:pressed {
+                transform: scale(0.9);
             }
         """)
         self.right_arrow.clicked.connect(self.next_page)
@@ -210,10 +218,21 @@ class Ui_MainWindow(object):
             self.display_game_icons()
 
     def create_game_card(self, game):
-        """Create a game card with a downloaded image as background."""
+        """Create a game card with a hover effect, an image, name, and rating."""
         game_card = QtWidgets.QFrame()
         game_card.setFixedSize(400, 250)
-        game_card.setStyleSheet("border-radius: 20px; background-color: #222; padding: 10px;")
+        game_card.setStyleSheet("""
+            QFrame {
+                border-radius: 20px; 
+                background-color: #222; 
+                padding: 10px;
+                transition: 0.3s;
+            }
+            QFrame:hover {
+                background-color: #333;
+                transform: scale(1.05);
+            }
+        """)
 
         layout = QtWidgets.QVBoxLayout()
 
@@ -221,12 +240,13 @@ class Ui_MainWindow(object):
         game_img = QtWidgets.QLabel()
         game_img.setFixedSize(380, 150)
         game_pixmap = self.download_image(game["img"])
+        
         if game_pixmap:
             game_img.setPixmap(game_pixmap)
             game_img.setScaledContents(True)
 
-        # 🎮 Truncate Game Name (If Too Long)
-        truncated_name = self.truncate_text(game["name"], 30)  # Limit name to 20 chars
+        # 🎮 Truncate Game Name
+        truncated_name = self.truncate_text(game["name"], 30)
 
         # 🎮 Game Name (Overlay)
         game_name = QtWidgets.QLabel(truncated_name)
@@ -240,8 +260,8 @@ class Ui_MainWindow(object):
         """)
         game_name.setAlignment(QtCore.Qt.AlignCenter)
 
-        # ⭐ Game Rating (Overlay)
-        game_rating = QtWidgets.QLabel(f"Rating: {game['rating']}")
+        # ⭐ Game Rating
+        game_rating = QtWidgets.QLabel(f"⭐ {game['rating']}")
         game_rating.setStyleSheet("""
             color: #ffcc00; 
             font-size: 16px;
@@ -257,6 +277,7 @@ class Ui_MainWindow(object):
 
         game_card.setLayout(layout)
         return game_card
+
     
 
     def truncate_text(self, text, max_length):
