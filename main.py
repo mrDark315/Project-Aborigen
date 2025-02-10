@@ -247,7 +247,7 @@ class Ui_MainWindow(object):
         rating_layout = QtWidgets.QHBoxLayout()
         rating_layout.setContentsMargins(20, 10, 20, 20)
 
-        rating_label = QtWidgets.QLabel(f"Metacritic: {game['rating']}")
+        rating_label = QtWidgets.QLabel(f"⭐: {game['rating']}")
         rating_label.setStyleSheet("font-size: 28px; color: #fff;")
         rating_layout.addWidget(rating_label)
 
