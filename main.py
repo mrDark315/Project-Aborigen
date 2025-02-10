@@ -10,7 +10,7 @@ class Ui_MainWindow(object):
         # ✅ Responsive Window Size
         screen = QtWidgets.QApplication.primaryScreen().geometry()
         MainWindow.resize(int(screen.width() * 0.8), int(screen.height() * 0.8))
-        MainWindow.setMinimumSize(QtCore.QSize(1280, 720))
+        MainWindow.setMinimumSize(QtCore.QSize(1365, 850))
         MainWindow.setMaximumSize(QtCore.QSize(1920, 1080))
 
         # ✅ Main Widget (Dark Background)
@@ -190,7 +190,7 @@ class Ui_MainWindow(object):
     def create_game_card(self, game):
         """Creates a game card with an image, name, gamepad icon, and rating."""
         game_card = QtWidgets.QFrame()
-        game_card.setFixedSize(460, 400)
+        game_card.setFixedSize(400, 350)
         game_card.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         game_card.setStyleSheet("""
             QFrame {
@@ -204,7 +204,7 @@ class Ui_MainWindow(object):
 
         # 🖼️ Game Image (Using QPixmap + mask)
         game_img = QtWidgets.QLabel()
-        game_img.setGeometry(QtCore.QRect(0, 0, 460, 215))  # Adjust position
+        game_img.setGeometry(QtCore.QRect(0, 0, 400, 215))  # Adjust position
 
         game_pixmap = self.download_image(game["img"])
         if game_pixmap:
