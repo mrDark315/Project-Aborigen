@@ -1,0 +1,1758 @@
+[
+    {
+        "appid": 1091500,
+        "name": "Cyberpunk 2077",
+        "url": "https://store.steampowered.com/app/1091500/Cyberpunk_2077/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg",
+        "description": "Cyberpunk 2077 is an open-world, action-adventure RPG set in the dark future of Night City — a dangerous megalopolis obsessed with power, glamor, and ceaseless body modification.",
+        "developer": "CD PROJEKT RED",
+        "publisher": "CD PROJEKT RED",
+        "release_date": "9 Dec, 2020",
+        "rating": 86,
+        "age_rating": "18",
+        "controller_support": "full",
+        "achievements": 57,
+        "platforms": {"windows": true, "mac": false, "linux": false},
+        "reviews_count": 728798
+    },
+    {
+        "appid": 292030,
+        "name": "The Witcher 3: Wild Hunt",
+        "url": "https://store.steampowered.com/app/292030/Vedmak_3_Dikaya_Oxota/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg",
+        "description": "You are Geralt of Rivia, mercenary monster slayer. Before you stands a war-torn, monster-infested continent you can explore at will. Your current contract? Tracking down Ciri — the Child of Prophecy, a living weapon that can alter the shape of the world.",
+        "developer": "CD PROJEKT RED",
+        "publisher": "CD PROJEKT RED",
+        "release_date": "18 May, 2015",
+        "rating": 93,
+        "age_rating": "18",
+        "controller_support": "Не указано",
+        "achievements": 78,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 758669
+    },
+    {
+        "appid": 1172380,
+        "name": "STAR WARS Jedi: Fallen Order",
+        "url": "https://store.steampowered.com/app/1172380/ZVYOZDNYE_VOJNY_Dzhedai_Pavshij_Orden/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/1172380/header.jpg",
+        "description": "A galaxy-spanning adventure awaits in Star Wars Jedi: Fallen Order, a 3rd person action-adventure title from Respawn. An abandoned Padawan must complete his training, develop new powerful Force abilities, and master the art of the lightsaber - all while staying one step ahead of the Empire.",
+        "developer": "Respawn Entertainment",
+        "publisher": "Electronic Arts",
+        "release_date": "14 Nov, 2019",
+        "rating": 81,
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 39,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 133417
+    },
+    {
+        "appid": 1774580,
+        "name": "STAR WARS Jedi: Survivor",
+        "url": "https://store.steampowered.com/app/1774580/STAR_WARS_Jedi_Survivor/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/1774580/header.jpg",
+        "description": "The story of Cal Kestis continues in STAR WARS Jedi: Survivor™, a galaxy-spanning, third-person, action-adventure game.",
+        "developer": "Respawn",
+        "publisher": "Electronic Arts",
+        "release_date": "27 Apr, 2023",
+        "rating": "Не указан",
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 53,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 56837
+    },
+    {
+        "appid": 239140,
+        "name": "Dying Light",
+        "url": "https://store.steampowered.com/app/239140/Dying_Light/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/239140/header.jpg",
+        "description": "First-person action survival game set in a post-apocalyptic open world overrun by flesh-hungry zombies. Roam a city devastated by a mysterious virus epidemic. Scavenge for supplies, craft weapons, and face hordes of the infected.",
+        "developer": "Techland",
+        "publisher": "Techland",
+        "release_date": "26 Jan, 2015",
+        "rating": 87,
+        "age_rating": "18",
+        "controller_support": "full",
+        "achievements": 78,
+        "platforms": {
+            "windows": true,
+            "mac": true,
+            "linux": true
+        },
+        "reviews_count": 334676
+    },
+    {
+        "appid": 534380,
+        "name": "Dying Light 2 Stay Human: Reloaded Edition",
+        "url": "https://store.steampowered.com/app/534380/Dying_Light_2_Stay_Human_Reloaded_Edition/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/534380/header.jpg",
+        "description": "Humanity is fighting a losing battle against the virus. Experience a post-apocalyptic open world overrun by hordes of zombies, where your parkour and combat skills are key to survival. Traverse the City freely during the day, but watch the monsters take over during the night.",
+        "developer": "Techland",
+        "publisher": "Techland",
+        "release_date": "3 Feb, 2022",
+        "rating": "Не указан",
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 65,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 140115
+    },
+    {
+        "appid": 424840,
+        "name": "Little Nightmares",
+        "url": "https://store.steampowered.com/app/424840/Little_Nightmares/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/424840/header.jpg",
+        "description": "Take on the role of Six, a lone child lost in a massive metal vessel known as the Maw, surrounded by dangerous, distorted versions of adults. You’ll need to do your best to escape in one piece or your fate will be worse than you ever dared dream.",
+        "developer": "Tarsier Studios",
+        "publisher": "BANDAI NAMCO Entertainment",
+        "release_date": "27 Apr, 2017",
+        "rating": 81,
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 22,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 46892
+    },
+    {
+        "appid": 860510,
+        "name": "Little Nightmares II",
+        "url": "https://store.steampowered.com/app/860510/Little_Nightmares_II/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/860510/header.jpg",
+        "description": "Little Nightmares II is the second game in a series that has thrilled and captivated millions of players worldwide since 2017. Now it’s your turn to try to survive this critically acclaimed entry in the most charming horror series ever made.",
+        "developer": "Tarsier Studios",
+        "publisher": "BANDAI NAMCO Entertainment",
+        "release_date": "10 Feb, 2021",
+        "rating": 83,
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 35,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 34373
+    },
+    {
+        "appid": 17410,
+        "name": "Mirror's Edge™",
+        "url": "https://store.steampowered.com/app/17410/Mirrors_Edge/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/17410/header.jpg",
+        "description": "In a city where information is heavily monitored, couriers called Runners transport sensitive data. In this seemingly utopian paradise, a crime has been committed, &amp; you are being hunted. You are a Runner called Faith and this innovative first-person action-adventure is your story.",
+        "developer": "DICE",
+        "publisher": "Electronic Arts",
+        "release_date": "14 Jan, 2009",
+        "rating": 81,
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 0,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 29156
+    },
+    {
+        "appid": 1233570,
+        "name": "Mirror's Edge™ Catalyst",
+        "url": "https://store.steampowered.com/app/1233570/Mirrors_Edge_Catalyst/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/1233570/header.jpg",
+        "description": "Mirror's Edge™ Catalyst raises the action-adventure bar through fluid, first person action and immerses players in Faith's story as she fights for freedom.",
+        "developer": "DICE",
+        "publisher": "Electronic Arts",
+        "release_date": "4 Jun, 2020",
+        "rating": 74,
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 49,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 12448
+    },
+    {
+        "appid": 15100,
+        "name": "Assassin's Creed™: Director's Cut Edition",
+        "url": "https://store.steampowered.com/app/15100/Assassins_Creed_Directors_Cut_Edition/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/15100/header.jpg",
+        "description": "Assassin's Creed™ is the next-gen game developed by Ubisoft Montreal that redefines the action genre. While other games claim to be next-gen with impressive graphics and physics, Assassin's Creed merges technology, game design, theme and emotions into a world where you instigate chaos and become a vulnerable, yet powerful, agent of...",
+        "developer": "Ubisoft Montreal",
+        "publisher": "Ubisoft",
+        "release_date": "9 Apr, 2008",
+        "rating": 79,
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 0,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 19475
+    },
+    {
+        "appid": 33230,
+        "name": "Assassin's Creed 2",
+        "url": "https://store.steampowered.com/app/33230/Assassins_Creed_2/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/33230/header.jpg",
+        "description": "An epic story of family, vengeance and conspiracy set in the pristine, yet brutal, backdrop of a Renaissance Italy. New low price!",
+        "developer": "Ubisoft Montreal",
+        "publisher": "Ubisoft",
+        "release_date": "4 Mar, 2010",
+        "rating": 86,
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 0,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 49147
+    },
+    {
+        "appid": 48190,
+        "name": "Assassin’s Creed® Brotherhood",
+        "url": "https://store.steampowered.com/app/48190/Assassins_Creed_Brotherhood/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/48190/header.jpg",
+        "description": "It’s time to join the Brotherhood.",
+        "developer": "Ubisoft Montreal",
+        "publisher": "Ubisoft",
+        "release_date": "17 Mar, 2011",
+        "rating": 88,
+        "age_rating": "18",
+        "controller_support": "Не указано",
+        "achievements": 0,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 20453
+    },
+    {
+        "appid": 201870,
+        "name": "Assassin's Creed® Revelations",
+        "url": "https://store.steampowered.com/app/201870/Assassins_Creed_Revelations/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/201870/header.jpg",
+        "description": "Ezio Auditore walks in the footsteps of the legendary mentor Altair, on a dangerous journey of discovery and revelation.",
+        "developer": "Ubisoft Montreal",
+        "publisher": "Ubisoft",
+        "release_date": "30 Nov, 2011",
+        "rating": 80,
+        "age_rating": "18",
+        "controller_support": "Не указано",
+        "achievements": 48,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 15851
+    },
+    {
+        "appid": 911400,
+        "name": "Assassin's Creed® III Remastered",
+        "url": "https://store.steampowered.com/app/911400/Assassins_Creed_III_Remastered/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/911400/header.jpg",
+        "description": "Relive the American Revolution or experience it for the first time in Assassin's Creed® III Remastered, with enhanced graphics and improved gameplay mechanics. Also includes Assassin's Creed Liberation remastered and all solo DLC content.",
+        "developer": "Ubisoft Entertainment",
+        "publisher": "Ubisoft Entertainment\t\t\t\t",
+        "release_date": "29 Mar, 2019",
+        "rating": "Не указан",
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 0,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 10603
+    },
+    {
+        "appid": 242050,
+        "name": "Assassin’s Creed® IV Black Flag™",
+        "url": "https://store.steampowered.com/app/242050/Assassins_Creed_IV_Black_Flag/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/242050/header.jpg",
+        "description": "The year is 1715. Pirates rule the Caribbean and have established their own lawless Republic where corruption, greediness and cruelty are commonplace.Among these outlaws is a brash young captain named Edward Kenway.",
+        "developer": "Ubisoft Montreal",
+        "publisher": "Ubisoft",
+        "release_date": "",
+        "rating": "Не указан",
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 60,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 62384
+    },
+    {
+        "appid": 311560,
+        "name": "Assassin’s Creed® Rogue",
+        "url": "https://store.steampowered.com/app/311560/Assassins_Creed_Rogue/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/311560/header.jpg",
+        "description": "Introducing Assassin’s Creed® Rogue, the darkest chapter in the Assassin’s Creed franchise yet. As Shay, you will experience the slow transformation from Assassin to Assassin Hunter. Follow your own creed and set off on an extraordinary journey through New York City, the wild river valley, and far away to the icy cold waters of the North...",
+        "developer": "Ubisoft Sofia",
+        "publisher": "Ubisoft",
+        "release_date": "9 Mar, 2015",
+        "rating": 74,
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 46,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 16435
+    },
+    {
+        "appid": 812140,
+        "name": "Assassins Creed Odyssey",
+        "url": "https://store.steampowered.com/app/812140/Assassins_Creed_Odyssey/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/812140/header.jpg",
+        "description": "Assassin's Creed Odyssey is an action-adventure game where you choose the hero you want to become. Embark on an epic journey from outcast to living legend to uncover the secrets of your past and change the fate of Ancient Greece. Fight in visceral battles on both land and sea to become a true hero",
+        "developer": "Ubisoft Quebec",
+        "publisher": "Ubisoft",
+        "release_date": "5 Oct, 2018",
+        "rating": "Не указан",
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 93,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 152167
+    },
+    {
+        "appid": 3035570,
+        "name": "Assassin's Creed Mirage",
+        "url": "https://store.steampowered.com/app/3035570/Assassins_Creed_Mirage/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/3035570/header.jpg",
+        "description": "Become a deadly Master Assassin in this action-adventure game. Explore the streets of ninth-century Baghdad through the eyes of Basim. Take down your targets while seeking justice as part of the Hidden Ones.",
+        "developer": "Ubisoft Bordeaux",
+        "publisher": "Ubisoft",
+        "release_date": "17 Oct, 2024",
+        "rating": "Не указан",
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 50,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 5350
+    },
+    {
+        "appid": 2208920,
+        "name": "Assassin's Creed Valhalla",
+        "url": "https://store.steampowered.com/app/2208920/Assassins_Creed_Valhalla/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/2208920/header.jpg",
+        "description": "Assassin’s Creed Valhalla is an action-adventure game in which you are a Viking warrior raised on tales of battle and glory. Explore a dynamic open world set in England’s Dark Ages. Raid your enemies and grow your settlement to earn your place among the gods in Valhalla.",
+        "developer": "Ubisoft Montreal",
+        "publisher": "Ubisoft",
+        "release_date": "6 Dec, 2022",
+        "rating": "Не указан",
+        "age_rating": "18",
+        "controller_support": "Не указано",
+        "achievements": 92,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 26259
+    },
+    {
+        "appid": 582160,
+        "name": "Assassin's Creed® Origins",
+        "url": "https://store.steampowered.com/app/582160/Assassins_Creed_Origins/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/582160/header.jpg",
+        "description": "ASSASSIN’S CREED® ORIGINS IS A NEW BEGINNING *The Discovery Tour by Assassin’s Creed®: Ancient Egypt is available now as a free update!* Ancient Egypt, a land of majesty and intrigue, is disappearing in a ruthless fight for power.",
+        "developer": "Ubisoft Montreal",
+        "publisher": "Ubisoft",
+        "release_date": "26 Oct, 2017",
+        "rating": "Не указан",
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 67,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 101380
+    },
+    {
+        "appid": 289650,
+        "name": "Assassin's Creed® Unity",
+        "url": "https://store.steampowered.com/app/289650/Assassins_Creed_Unity/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/289650/header.jpg",
+        "description": "Assassin’s Creed® Unity tells the story of Arno, a young man who embarks upon an extraordinary journey to expose the true powers behind the French Revolution. In the brand new co-op mode, you and your friends will also be thrown in the middle of a ruthless struggle for the fate of a nation.",
+        "developer": "Ubisoft",
+        "publisher": "Ubisoft",
+        "release_date": "12 Nov, 2014",
+        "rating": "Не указан",
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 57,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 65904
+    },
+    {
+        "appid": 368500,
+        "name": "Assassin's Creed® Syndicate",
+        "url": "https://store.steampowered.com/app/368500/Assassins_Creed_Syndicate/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/368500/header.jpg",
+        "description": "London, 1868. In the heart of the Industrial Revolution, lead your underworld organization and grow your influence to fight those who exploit the less privileged in the name of progress",
+        "developer": "Ubisoft Quebec, in collaboration with Ubisoft Annecy, Bucharest, Kiev, Montreal, Montpellier, Shanghai, Singapore, Sofia, Toronto studios",
+        "publisher": "Ubisoft",
+        "release_date": "18 Nov, 2015",
+        "rating": 74,
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 56,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 26995
+    },
+    {
+        "appid": 19900,
+        "name": "Far Cry® 2",
+        "url": "https://store.steampowered.com/app/19900/Far_Cry_2/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/19900/header.jpg",
+        "description": "You are a gun for hire, trapped in a war-torn African state, stricken with malaria and forced to make deals with corrupt warlords on both sides of the conflict in order to make this country your home. You must identify and exploit your enemies' weaknesses, neutralizing their superior numbers and firepower with surprise, subversion,...",
+        "developer": "Ubisoft Montreal",
+        "publisher": "Ubisoft",
+        "release_date": "22 Oct, 2008",
+        "rating": 85,
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 0,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 14979
+    },
+    {
+        "appid": 220240,
+        "name": "Far Cry 3",
+        "url": "https://store.steampowered.com/app/220240/Far_Cry_3/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/220240/header.jpg",
+        "description": "Discover the dark secrets of a lawless island ruled by violence and take the fight to the enemy as you try to escape. You’ll need more than luck to escape alive!",
+        "developer": "Ubisoft Montreal, Massive Entertainment, and Ubisoft Shanghai",
+        "publisher": "Ubisoft",
+        "release_date": "28 Nov, 2012",
+        "rating": 88,
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 44,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 98877
+    },
+    {
+        "appid": 298110,
+        "name": "Far Cry® 4",
+        "url": "https://store.steampowered.com/app/298110/Far_Cry_4/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/298110/header.jpg",
+        "description": "Hidden in the towering Himalayas lies Kyrat, a country steeped in tradition and violence. You are Ajay Ghale. Traveling to Kyrat to fulfill your mother’s dying wish, you find yourself caught up in a civil war to overthrow the oppressive regime of dictator Pagan Min.",
+        "developer": "Ubisoft Montreal, Red Storm, Shanghai, Toronto, Kiev",
+        "publisher": "Ubisoft",
+        "release_date": "17 Nov, 2014",
+        "rating": 80,
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 57,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 54020
+    },
+    {
+        "appid": 552520,
+        "name": "Far Cry® 5",
+        "url": "https://store.steampowered.com/app/552520/Far_Cry_5/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/552520/header.jpg",
+        "description": "Discover the open world of Hope County, Montana, besieged by a fanatical doomsday cult. Dive into the action solo or two-player co-op in the story campaign, use a vast arsenal of weapons and allies, and free Hope County from Joseph Seed and his cult.",
+        "developer": "Ubisoft Montreal",
+        "publisher": "Ubisoft",
+        "release_date": "26 Mar, 2018",
+        "rating": "Не указан",
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 72,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 152338
+    },
+    {
+        "appid": 939960,
+        "name": "Far Cry® New Dawn",
+        "url": "https://store.steampowered.com/app/939960/Far_Cry_New_Dawn/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/939960/header.jpg",
+        "description": "Dive into a transformed vibrant post-apocalyptic Hope County, Montana, 17 years after a global nuclear catastrophe. Lead the fight against the Highwaymen, as they seek to take over the last remaining resources.",
+        "developer": "Ubisoft Montreal",
+        "publisher": "Ubisoft",
+        "release_date": "15 Feb, 2019",
+        "rating": "Не указан",
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 0,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 27863
+    },
+    {
+        "appid": 2369390,
+        "name": "Far Cry® 6",
+        "url": "https://store.steampowered.com/app/2369390/Far_Cry_6/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/2369390/header.jpg",
+        "description": "Enter the adrenaline-filled world of a modern-day guerrilla revolution. With stunning vistas, visceral gunplay, and a huge variety of gameplay experiences, there's never been a better time to join the fight.",
+        "developer": "Ubisoft Toronto",
+        "publisher": "Ubisoft",
+        "release_date": "11 May, 2023",
+        "rating": "Не указан",
+        "age_rating": "18",
+        "controller_support": "Не указано",
+        "achievements": 99,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 23355
+    },
+    {
+        "appid": 200260,
+        "name": "Batman: Arkham City - Game of the Year Edition",
+        "url": "https://store.steampowered.com/app/200260/Batman_Arkham_City__Game_of_the_Year_Edition/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/200260/header.jpg",
+        "description": "Get Batman: Arkham City and all DLC for one low price with the release of the GOTY Edition!",
+        "developer": "Rocksteady Studios",
+        "publisher": "WB Games",
+        "release_date": "7 Sep, 2012",
+        "rating": 91,
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 64,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 47365
+    },
+    {
+        "appid": 35140,
+        "name": "Batman: Arkham Asylum Game of the Year Edition",
+        "url": "https://store.steampowered.com/app/35140/Batman_Arkham_Asylum_Game_of_the_Year_Edition/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/35140/header.jpg",
+        "description": "Experience what it’s like to be Batman and face off against Gotham's greatest villians. Explore every inch of Arkham Asylum and roam freely on the infamous island.",
+        "developer": "Rocksteady Studios",
+        "publisher": "WB Games",
+        "release_date": "26 Mar, 2010",
+        "rating": 91,
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 47,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 49809
+    },
+    {
+        "appid": 209000,
+        "name": "Batman™: Arkham Origins",
+        "url": "https://store.steampowered.com/app/209000/Batman_Arkham_Origins/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/209000/header.jpg",
+        "description": "As of December 4, 2016, the online services portion of Batman: Arkham Origins will be retired. We thank those that have joined us to battle over the last 3 years. The Single player campaign may still be played and enjoyed offline. For any questions relating to Batman: Arkham Origins, please contact WB Games customer service .",
+        "developer": "WB Games Montreal",
+        "publisher": "Warner Bros. Interactive Entertainment",
+        "release_date": "24 Oct, 2013",
+        "rating": 74,
+        "age_rating": "16",
+        "controller_support": "full",
+        "achievements": 60,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 37708
+    },
+    {
+        "appid": 208650,
+        "name": "atman™: Arkham Knight",
+        "url": "https://store.steampowered.com/app/208650/Batman_Arkham_Knight/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/208650/header.jpg",
+        "description": "Batman™: Arkham Knight brings the award-winning Arkham trilogy from Rocksteady Studios to its epic conclusion. Developed exclusively for New-Gen platforms, Batman: Arkham Knight introduces Rocksteady's uniquely designed version of the Batmobile.",
+        "developer": "Rocksteady Studios",
+        "publisher": "WB Games",
+        "release_date": "23 Jun, 2015",
+        "rating": "Не указан",
+        "age_rating": "17",
+        "controller_support": "full",
+        "achievements": 113,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 92011
+    },
+    {
+        "appid": 397540,
+        "name": "Borderlands 3",
+        "url": "https://store.steampowered.com/app/397540/Borderlands_3/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/397540/header.jpg",
+        "description": "The original shooter-looter returns, packing bazillions of guns and a mayhem-fueled adventure! Blast through new worlds and enemies as one of four new Vault Hunters.",
+        "developer": "Gearbox Software",
+        "publisher": "2K",
+        "release_date": "13 Mar, 2020",
+        "rating": 81,
+        "age_rating": "18",
+        "controller_support": "full",
+        "achievements": 81,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 111887
+    },
+    {
+        "appid": 49520,
+        "name": "Borderlands 2",
+        "url": "https://store.steampowered.com/app/49520/Borderlands_2/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/49520/header.jpg",
+        "description": "The Ultimate Vault Hunter’s Upgrade lets you get the most out of the Borderlands 2 experience.",
+        "developer": "Gearbox Software",
+        "publisher": "2K",
+        "release_date": "20 Sep, 2012",
+        "rating": 89,
+        "age_rating": "17",
+        "controller_support": "full",
+        "achievements": 75,
+        "platforms": {
+            "windows": true,
+            "mac": true,
+            "linux": true
+        },
+        "reviews_count": 198959
+    },
+    {
+        "appid": 261640,
+        "name": "Borderlands: The Pre-Sequel",
+        "url": "https://store.steampowered.com/app/261640/Borderlands_The_PreSequel/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/261640/header.jpg",
+        "description": "Launch into the Borderlands universe and shoot ‘n’ loot your way through a brand new adventure that rockets you onto Pandora’s moon in Borderlands: The Pre-Sequel!",
+        "developer": "2K Australia",
+        "publisher": "2K",
+        "release_date": "16 Oct, 2014",
+        "rating": 75,
+        "age_rating": "18",
+        "controller_support": "full",
+        "achievements": 63,
+        "platforms": {
+            "windows": true,
+            "mac": true,
+            "linux": true
+        },
+        "reviews_count": 29794
+    },
+    {
+        "appid": 729040,
+        "name": "Borderlands Game of the Year Enhanced",
+        "url": "https://store.steampowered.com/app/729040/Borderlands_Game_of_the_Year_Enhanced/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/729040/header.jpg",
+        "description": "Discover the original co-op shooter-looter, crammed with new enhancements! As one of 4 trigger-happy mercenaries with RPG progression, equip bazillions of guns to take on the desert planet Pandora.",
+        "developer": "Gearbox Software",
+        "publisher": "2K",
+        "release_date": "31 Aug, 2023",
+        "rating": "Не указан",
+        "age_rating": "18",
+        "controller_support": "Не указано",
+        "achievements": 80,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 14322
+    },
+    {
+        "appid": 337000,
+        "name": "Deus Ex: Mankind Divided",
+        "url": "https://store.steampowered.com/app/337000/Deus_Ex_Mankind_Divided/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/337000/header.jpg",
+        "description": "Now an experienced covert operative, Adam Jensen is forced to operate in a world that has grown to despise his kind. Armed with a new arsenal of state-of-the-art weapons and augmentations, he must choose the right approach, along with who to trust, in order to unravel a vast worldwide conspiracy.",
+        "developer": "Eidos Montreal",
+        "publisher": "Eidos Interactive Corp.",
+        "release_date": "23 Aug, 2016",
+        "rating": 83,
+        "age_rating": "18",
+        "controller_support": "full",
+        "achievements": 81,
+        "platforms": {
+            "windows": true,
+            "mac": true,
+            "linux": true
+        },
+        "reviews_count": 29198
+    },
+    {
+        "appid": 614570,
+        "name": "Dishonored®: Death of the Outsider™",
+        "url": "https://store.steampowered.com/app/614570/Dishonored_Death_of_the_Outsider/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/614570/header.jpg",
+        "description": "From the award-winning developers at Arkane® Studios comes Dishonored®: Death of the Outsider, the next standalone adventure in the critically-acclaimed Dishonored® series.",
+        "developer": "Arkane Studios",
+        "publisher": "Bethesda Softworks",
+        "release_date": "14 Sep, 2017",
+        "rating": 81,
+        "age_rating": "18",
+        "controller_support": "Не указано",
+        "achievements": 30,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 8771
+    },
+    {
+        "appid": 403640,
+        "name": "Dishonored 2",
+        "url": "https://store.steampowered.com/app/403640/Dishonored_2/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/403640/header.jpg",
+        "description": "Reprise your role as a supernatural assassin in Dishonored 2. Declared a “masterpiece” by Eurogamer and hailed “a must-play revenge tale” by Game Informer, Dishonored 2 is the follow up to Arkane’s 1st-person action blockbuster &amp; winner of 100+ 'Game of the Year' awards, Dishonored.",
+        "developer": "Arkane Studios",
+        "publisher": "Bethesda Softworks",
+        "release_date": "11 Nov, 2016",
+        "rating": 86,
+        "age_rating": "18",
+        "controller_support": "Не указано",
+        "achievements": 50,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 39230
+    },
+    {
+        "appid": 217980,
+        "name": "Dishonored",
+        "url": "https://store.steampowered.com/app/217980/Dishonored/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/217980/header.jpg",
+        "description": "Dishonored is an immersive first-person action game that casts you as a supernatural assassin driven by revenge. With Dishonored’s flexible combat system, creatively eliminate your targets as you combine the supernatural abilities, weapons and unusual gadgets at your disposal.",
+        "developer": "Arkane Studios",
+        "publisher": "Bethesda Softworks",
+        "release_date": "11 Oct, 2012",
+        "rating": "Не указан",
+        "age_rating": "18",
+        "controller_support": "full",
+        "achievements": 80,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 11178
+    },
+    {
+        "appid": 12120,
+        "name": "Grand Theft Auto: San Andreas",
+        "url": "https://store.steampowered.com/app/12120/Grand_Theft_Auto_San_Andreas/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/12120/header.jpg",
+        "description": "Five years ago Carl Johnson escaped from the pressures of life in Los Santos, San Andreas... a city tearing itself apart with gang trouble, drugs and corruption. Where filmstars and millionaires do their best to avoid the dealers and gangbangers. Now, it's the early 90s. Carl's got to go home.",
+        "developer": "Rockstar Games",
+        "publisher": "Rockstar Games",
+        "release_date": "4 Jan, 2008",
+        "rating": 93,
+        "age_rating": "18",
+        "controller_support": "Не указано",
+        "achievements": 0,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 69691
+    },
+    {
+        "appid": 271590,
+        "name": "Grand Theft Auto V",
+        "url": "https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg",
+        "description": "Grand Theft Auto V for PC offers players the option to explore the award-winning world of Los Santos and Blaine County in resolutions of up to 4k and beyond, as well as the chance to experience the game running at 60 frames per second.",
+        "developer": "Rockstar North",
+        "publisher": "Rockstar Games",
+        "release_date": "13 Apr, 2015",
+        "rating": 96,
+        "age_rating": "17",
+        "controller_support": "full",
+        "achievements": 77,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 1789128
+    },
+    {
+        "appid": 12210,
+        "name": "Grand Theft Auto IV: The Complete Edition",
+        "url": "https://store.steampowered.com/app/12210/Grand_Theft_Auto_IV_The_Complete_Edition/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/12210/header.jpg",
+        "description": "Niko Bellic, Johnny Klebitz and Luis Lopez all have one thing in common - they live in the worst city in America. Liberty City worships money and status, and is heaven for those who have them and a living nightmare for those who don't.",
+        "developer": "Rockstar North",
+        "publisher": "Rockstar Games",
+        "release_date": "24 Mar, 2020",
+        "rating": 90,
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 55,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 147904
+    },
+    {
+        "appid": 70,
+        "name": "Half-Life",
+        "url": "https://store.steampowered.com/app/70/HalfLife/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/70/header.jpg",
+        "description": "Named Game of the Year by over 50 publications, Valve's debut title blends action and adventure with award-winning technology to create a frighteningly realistic world where players must think to survive. Also includes an exciting multiplayer mode that allows you to play against friends and enemies around the world.",
+        "developer": "Valve",
+        "publisher": "Valve",
+        "release_date": "19 Nov, 1998",
+        "rating": 96,
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 0,
+        "platforms": {
+            "windows": true,
+            "mac": true,
+            "linux": true
+        },
+        "reviews_count": 102519
+    },
+    {
+        "appid": 220,
+        "name": "Half-Life 2",
+        "url": "https://store.steampowered.com/app/220/HalfLife_2/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+        "description": "Reawakened from stasis in the occupied metropolis of City 17, Gordon Freeman is joined by Alyx Vance as he leads a desperate human resistance. Experience the landmark first-person shooter packed with immersive world-building, boundary-pushing physics, and exhilarating combat.",
+        "developer": "Valve",
+        "publisher": "Valve",
+        "release_date": "16 Nov, 2004",
+        "rating": 96,
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 69,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": true
+        },
+        "reviews_count": 175897
+    },
+    {
+        "appid": 380,
+        "name": "Half-Life 2: Episode One",
+        "url": "https://store.steampowered.com/app/380/HalfLife_2_Episode_One/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/380/header.jpg",
+        "description": "Half-Life 2 has sold over 4 million copies worldwide, and earned over 35 Game of the Year Awards. Episode One is the first in a series of games that reveal the aftermath of Half-Life 2 and launch a journey beyond City 17. Also features two multiplayer games. Half-Life 2 not required.",
+        "developer": "Valve",
+        "publisher": "Valve",
+        "release_date": "1 Jun, 2006",
+        "rating": 87,
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 13,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": true
+        },
+        "reviews_count": 26413
+    },
+    {
+        "appid": 420,
+        "name": "Half-Life 2: Episode Two",
+        "url": "https://store.steampowered.com/app/420/HalfLife_2_Episode_Two/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/420/header.jpg",
+        "description": "Half-Life® 2: Episode Two is the second in a trilogy of new games created by Valve that extends the award-winning and best-selling Half-Life® adventure. As Dr. Gordon Freeman, you were last seen exiting City 17 with Alyx Vance as the Citadel erupted amidst a storm of unknown proportions.",
+        "developer": "Valve",
+        "publisher": "Valve",
+        "release_date": "10 Oct, 2007",
+        "rating": 90,
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 23,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": true
+        },
+        "reviews_count": 34428
+    },
+    {
+        "appid": 286690,
+        "name": "Metro 2033 Redux",
+        "url": "https://store.steampowered.com/app/286690/Metro_2033_Redux/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/286690/header.jpg",
+        "description": "In 2013 the world was devastated by an apocalyptic event, annihilating almost all mankind and turning the Earth's surface into a poisonous wasteland. A handful of survivors took refuge in the depths of the Moscow underground, and human civilization entered a new Dark Age. The year is 2033.",
+        "developer": "4A Games",
+        "publisher": "Deep Silver",
+        "release_date": "27 Aug, 2014",
+        "rating": "Не указан",
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 49,
+        "platforms": {
+            "windows": true,
+            "mac": true,
+            "linux": true
+        },
+        "reviews_count": 80450
+    },
+    {
+        "appid": 287390,
+        "name": "Metro: Last Light Redux",
+        "url": "https://store.steampowered.com/app/287390/Metro_Last_Light_Redux/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/287390/header.jpg",
+        "description": "It is the year 2034. Beneath the ruins of post-apocalyptic Moscow, in the tunnels of the Metro, the remnants of mankind are besieged by deadly threats from outside – and within. Mutants stalk the catacombs beneath the desolate surface, and hunt amidst the poisoned skies above.",
+        "developer": "4A Games",
+        "publisher": "Deep Silver",
+        "release_date": "27 Aug, 2014",
+        "rating": 76,
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 49,
+        "platforms": {
+            "windows": true,
+            "mac": true,
+            "linux": true
+        },
+        "reviews_count": 59262
+    },
+    {
+        "appid": 412020,
+        "name": "Metro Exodus",
+        "url": "https://store.steampowered.com/app/412020/Metro_Exodus/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/412020/header.jpg",
+        "description": "Flee the shattered ruins of the Moscow Metro and embark on an epic, continent-spanning journey across the post-apocalyptic Russian wilderness. Explore vast, non-linear levels, lose yourself in an immersive, sandbox survival experience, and follow a thrilling story-line that spans an entire year in the greatest Metro adventure yet.",
+        "developer": "4A Games",
+        "publisher": "Deep Silver",
+        "release_date": "14 Feb, 2020",
+        "rating": 85,
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 68,
+        "platforms": {
+            "windows": true,
+            "mac": true,
+            "linux": true
+        },
+        "reviews_count": 102056
+    },
+    {
+        "appid": 1174180,
+        "name": "Red Dead Redemption 2",
+        "url": "https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg",
+        "description": "Winner of over 175 Game of the Year Awards and recipient of over 250 perfect scores, RDR2 is the epic tale of outlaw Arthur Morgan and the infamous Van der Linde gang, on the run across America at the dawn of the modern age. Also includes access to the shared living world of Red Dead Online.",
+        "developer": "Rockstar Games",
+        "publisher": "Rockstar Games",
+        "release_date": "5 Dec, 2019",
+        "rating": 93,
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 51,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 626152
+    },
+    {
+        "appid": 2050650,
+        "name": "Resident Evil 4",
+        "url": "https://store.steampowered.com/app/2050650/Resident_Evil_4/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/2050650/header.jpg",
+        "description": "Survival is just the beginning. Six years have passed since the biological disaster in Raccoon City. Leon S. Kennedy, one of the survivors, tracks the president's kidnapped daughter to a secluded European village, where there is something terribly wrong with the locals.",
+        "developer": "CAPCOM Co., Ltd.",
+        "publisher": "CAPCOM Co., Ltd.",
+        "release_date": "23 Mar, 2023",
+        "rating": 91,
+        "age_rating": "18",
+        "controller_support": "full",
+        "achievements": 46,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 107746
+    },
+    {
+        "appid": 418370,
+        "name": "Resident Evil 7 Biohazard",
+        "url": "https://store.steampowered.com/app/418370/Resident_Evil_7_Biohazard/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/418370/header.jpg",
+        "description": "Fear and isolation seep through the walls of an abandoned southern farmhouse. &quot;7&quot; marks a new beginning for survival horror with the “Isolated View” of the visceral new first-person perspective.",
+        "developer": "CAPCOM Co., Ltd.",
+        "publisher": "CAPCOM Co., Ltd.",
+        "release_date": "23 Jan, 2017",
+        "rating": 83,
+        "age_rating": "18",
+        "controller_support": "full",
+        "achievements": 58,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 63416
+    },
+    {
+        "appid": 1196590,
+        "name": "Resident Evil Village",
+        "url": "https://store.steampowered.com/app/1196590/Resident_Evil_Village/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/1196590/header.jpg",
+        "description": "Experience survival horror like never before in the 8th major installment in the Resident Evil franchise - Resident Evil Village. With detailed graphics, intense first-person action and masterful storytelling, the terror has never felt more realistic.",
+        "developer": "CAPCOM Co., Ltd.",
+        "publisher": "CAPCOM Co., Ltd.",
+        "release_date": "6 May, 2021",
+        "rating": 83,
+        "age_rating": "18",
+        "controller_support": "full",
+        "achievements": 56,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 78399
+    },
+    {
+        "appid": 41700,
+        "name": "S.T.A.L.K.E.R.: Call of Pripyat",
+        "url": "https://store.steampowered.com/app/41700/STALKER_Call_of_Pripyat/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/41700/header.jpg",
+        "description": "S.T.A.L.K.E.R.: Call of Pripyat is the direct sequel of the S.T.A.L.K.E.R.: Shadow of Chernobyl. As a Major Alexander Degtyarev you should investigate the crash of the governmental helicopters around the Zone and find out, what happened there.",
+        "developer": "GSC Game World",
+        "publisher": "GSC Game World",
+        "release_date": "11 Feb, 2010",
+        "rating": 80,
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 0,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 24011
+    },
+    {
+        "appid": 203160,
+        "name": "Tomb Raider",
+        "url": "https://store.steampowered.com/app/203160/Tomb_Raider/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/203160/header.jpg",
+        "description": "Tomb Raider explores the intense origin story of Lara Croft and her ascent from a young woman to a hardened survivor.",
+        "developer": "Crystal Dynamics",
+        "publisher": "Crystal Dynamics",
+        "release_date": "4 Mar, 2013",
+        "rating": 86,
+        "age_rating": "18",
+        "controller_support": "full",
+        "achievements": 50,
+        "platforms": {
+            "windows": true,
+            "mac": true,
+            "linux": false
+        },
+        "reviews_count": 152563
+    },
+    {
+        "appid": 20900,
+        "name": "The Witcher: Enhanced Edition Director's Cut",
+        "url": "https://store.steampowered.com/app/20900/The_Witcher_Enhanced_Edition_Directors_Cut/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/20900/header.jpg",
+        "description": "Become The Witcher, Geralt of Rivia, a legendary monster slayer caught in a web of intrigue woven by forces vying for control of the world. Make difficult decisions and live with the consequences in a game that will immerse you in an extraordinary tale like no other.",
+        "developer": "CD PROJEKT RED",
+        "publisher": "CD PROJEKT RED",
+        "release_date": "19 Sep, 2008",
+        "rating": 86,
+        "age_rating": "18",
+        "controller_support": "Не указано",
+        "achievements": 0,
+        "platforms": {
+            "windows": true,
+            "mac": true,
+            "linux": false
+        },
+        "reviews_count": 75619
+    },
+    {
+        "appid": 20920,
+        "name": "The Witcher 2: Assassins of Kings Enhanced Edition",
+        "url": "https://store.steampowered.com/app/20920/The_Witcher_2_Assassins_of_Kings_Enhanced_Edition/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/20920/header.jpg",
+        "description": "A time of untold chaos has come. Mighty forces clash behind the scenes in a struggle for power and influence. The Northern Kingdoms mobilize for war. But armies on the march are not enough to stop a bloody conspiracy...",
+        "developer": "CD PROJEKT RED",
+        "publisher": "CD PROJEKT RED",
+        "release_date": "16 Apr, 2012",
+        "rating": 88,
+        "age_rating": "18",
+        "controller_support": "Не указано",
+        "achievements": 52,
+        "platforms": {
+            "windows": true,
+            "mac": true,
+            "linux": true
+        },
+        "reviews_count": 76510
+    },
+    {
+        "appid": 1172470,
+        "name": "Apex Legends™",
+        "url": "https://store.steampowered.com/app/1172470/Apex_Legends/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/header.jpg",
+        "description": "Apex Legends is the award-winning, free-to-play Hero Shooter from Respawn Entertainment. Master an ever-growing roster of legendary characters with powerful abilities, and experience strategic squad play and innovative gameplay in the next evolution of Hero Shooter and Battle Royale.",
+        "developer": "Respawn",
+        "publisher": "Electronic Arts",
+        "release_date": "4 Nov, 2020",
+        "rating": 88,
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 12,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 1539
+    },
+    {
+        "appid": 2835570,
+        "name": "Buckshot Roulette",
+        "url": "https://store.steampowered.com/app/2835570/Buckshot_Roulette/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/2835570/header.jpg",
+        "description": "Play Russian roulette with a 12-gauge shotgun. Four enter. One leaves. Roll the dice with your life. Good luck!",
+        "developer": "Mike Klubnika",
+        "publisher": "CRITICAL REFLEX",
+        "release_date": "4 Apr, 2024",
+        "rating": "Не указан",
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 16,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": true
+        },
+        "reviews_count": 75520
+    },
+    {
+        "appid": 544730,
+        "name": "Catan Universe",
+        "url": "https://store.steampowered.com/app/544730/Catan_Universe/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/544730/header.jpg",
+        "description": "Trade – build – settle: Become Lord of Catan! Get to know Catan and play the starter scenario in multiplayer mode. Purchase the complete base game, expansions, card game and much more to discover the entire Universe of Catan.",
+        "developer": "Client/Frontend: Endava  / Backend: SuperNimbus",
+        "publisher": "USM",
+        "release_date": "25 Apr, 2017",
+        "rating": "Не указан",
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 21,
+        "platforms": {
+            "windows": true,
+            "mac": true,
+            "linux": false
+        },
+        "reviews_count": 0
+    },
+    {
+        "appid": 2567870,
+        "name": "Chained Together",
+        "url": "https://store.steampowered.com/app/2567870/Chained_Together/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/2567870/header.jpg",
+        "description": "From the depths of hell, climb chained to your friends through diverse worlds. Solo or co-op, try to reach the summit and discover what awaits you there...",
+        "developer": "Anegar Games",
+        "publisher": "Anegar Games",
+        "release_date": "19 Jun, 2024",
+        "rating": "Не указан",
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 16,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 42331
+    },
+    {
+        "appid": 20920,
+        "name": "Counter-Strike 2",
+        "url": "https://store.steampowered.com/app/730/CounterStrike_2/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg",
+        "description": "A time of untold chaos has come. Mighty forces clash behind the scenes in a struggle for power and influence. The Northern Kingdoms mobilize for war. But armies on the march are not enough to stop a bloody conspiracy...",
+        "developer": "CD PROJEKT RED",
+        "publisher": "CD PROJEKT RED",
+        "release_date": "16 Apr, 2012",
+        "rating": 88,
+        "age_rating": "18",
+        "controller_support": "Не указано",
+        "achievements": 52,
+        "platforms": {
+            "windows": true,
+            "mac": true,
+            "linux": true
+        },
+        "reviews_count": 76510
+    },
+    {
+        "appid": 381210,
+        "name": "Dead by Daylight",
+        "url": "https://store.steampowered.com/app/381210/Dead_by_Daylight/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/381210/header.jpg",
+        "description": "Trapped forever in a realm of eldritch evil where even death is not an escape, four determined Survivors face a bloodthirsty Killer in a vicious game of nerve and wits. Pick a side and step into a world of tension and terror with horror gaming's best asymmetrical multiplayer.",
+        "developer": "Behaviour Interactive Inc.",
+        "publisher": "Behaviour Interactive Inc.",
+        "release_date": "14 Jun, 2016",
+        "rating": "Не указан",
+        "age_rating": "18",
+        "controller_support": "full",
+        "achievements": 270,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 566106
+    },
+    {
+        "appid": 341800,
+        "name": "Keep Talking and Nobody Explodes",
+        "url": "https://store.steampowered.com/app/341800/Keep_Talking_and_Nobody_Explodes/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/341800/header.jpg",
+        "description": "Find yourself trapped alone in a room with a ticking time bomb. Your friends have the manual to defuse it, but they can't see the bomb, so you're going to have to talk it out – fast!",
+        "developer": "Steel Crate Games",
+        "publisher": "Steel Crate Games",
+        "release_date": "8 Oct, 2015",
+        "rating": 71,
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 10,
+        "platforms": {
+            "windows": true,
+            "mac": true,
+            "linux": true
+        },
+        "reviews_count": 12747
+    },
+    {
+        "appid": 1966720,
+        "name": "Lethal Company",
+        "url": "https://store.steampowered.com/app/1966720/Lethal_Company/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/1966720/header.jpg",
+        "description": "A co-op horror about scavenging at abandoned moons to sell scrap to the Company.",
+        "developer": "Zeekerss",
+        "publisher": "Zeekerss",
+        "release_date": "23 Oct, 2023",
+        "rating": "Не указан",
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 0,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 381775
+    },
+    {
+        "appid": 2767030,
+        "name": "Marvel Rivals",
+        "url": "https://store.steampowered.com/app/2767030/Marvel_Rivals/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/2767030/header.jpg",
+        "description": "Marvel Rivals is a Super Hero Team-Based PVP Shooter! Assemble an all-star Marvel squad, devise countless strategies by combining powers to form unique Team-Up skills and fight in destructible, ever-changing battlefields across the continually evolving Marvel universe!",
+        "developer": "NetEase Games",
+        "publisher": "NetEase Games",
+        "release_date": "5 Dec, 2024",
+        "rating": "Не указан",
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 40,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 0
+    },
+    {
+        "appid": 739630,
+        "name": "Phasmophobia",
+        "url": "https://store.steampowered.com/app/739630/Phasmophobia/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/739630/header.jpg",
+        "description": "Phasmophobia is a 4 player online co-op psychological horror. Paranormal activity is on the rise and it’s up to you and your team to use all the ghost-hunting equipment at your disposal in order to gather as much evidence as you can.",
+        "developer": "Kinetic Games",
+        "publisher": "Kinetic Games",
+        "release_date": "18 Sep, 2020",
+        "rating": "Не указан",
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 54,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 609093
+    },
+    {
+        "appid": 1238840,
+        "name": "Battlefield™ 1",
+        "url": "https://store.steampowered.com/app/1238840/Battlefield_1/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/1238840/header.jpg",
+        "description": "Battlefield™ 1 takes you back to The Great War, WW1, where new technology and worldwide conflict changed the face of warfare forever.",
+        "developer": "DICE",
+        "publisher": "Electronic Arts",
+        "release_date": "11 Jun, 2020",
+        "rating": "Не указан",
+        "age_rating": "18",
+        "controller_support": "full",
+        "achievements": 50,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 152465
+    },
+    {
+        "appid": 1238820,
+        "name": "Battlefield 3™",
+        "url": "https://store.steampowered.com/app/1238820/Battlefield_3/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/1238820/header.jpg",
+        "description": "Enjoy total freedom to fight the way you want. Explore 29 massive multiplayer maps and use loads of vehicles, weapons, and gadgets to help you turn up the heat. Every second of battle gets you closer to unlocking tons of extras and moving up in the Ranks. So get in the action.",
+        "developer": "DICE",
+        "publisher": "Electronic Arts",
+        "release_date": "11 Jun, 2020",
+        "rating": 89,
+        "age_rating": "16",
+        "controller_support": "full",
+        "achievements": 34,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 11292
+    },
+    {
+        "appid": 1238860,
+        "name": "Battlefield 4™",
+        "url": "https://store.steampowered.com/app/1238860/Battlefield_4/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/1238860/header.jpg",
+        "description": "Embrace unrivaled destruction in Battlefield 4™. Revel in the glorious chaos of all-out war packed with rewarding, tactical challenges in an interactive environment.",
+        "developer": "DICE",
+        "publisher": "Electronic Arts",
+        "release_date": "11 Jun, 2020",
+        "rating": "Не указан",
+        "age_rating": "18",
+        "controller_support": "full",
+        "achievements": 67,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 55666
+    },
+    {
+        "appid": 1222140,
+        "name": "Detroit: Become Human",
+        "url": "https://store.steampowered.com/app/1222140/Detroit_Become_Human/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/1222140/header.jpg",
+        "description": "Detroit: Become Human puts the destiny of both mankind and androids in your hands, taking you to a near future where machines have become more intelligent than humans. Every choice you make affects the outcome of the game, with one of the most intricately branching narratives ever created.",
+        "developer": "Quantic Dream",
+        "publisher": "Quantic Dream",
+        "release_date": "18 Jun, 2020",
+        "rating": 80,
+        "age_rating": "18",
+        "controller_support": "full",
+        "achievements": 48,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 132172
+    },
+    {
+        "appid": 377160,
+        "name": "Fallout 4",
+        "url": "https://store.steampowered.com/app/377160/Fallout_4/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/377160/header.jpg",
+        "description": "Bethesda Game Studios, the award-winning creators of Fallout 3 and The Elder Scrolls V: Skyrim, welcome you to the world of Fallout 4 – their most ambitious game ever, and the next generation of open-world gaming.",
+        "developer": "Bethesda Game Studios",
+        "publisher": "Bethesda Softworks",
+        "release_date": "9 Nov, 2015",
+        "rating": 84,
+        "age_rating": "17",
+        "controller_support": "full",
+        "achievements": 84,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 256980
+    },
+    {
+        "appid": 1504740,
+        "name": "Find Yourself",
+        "url": "https://store.steampowered.com/app/1504740/Find_Yourself/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/1504740/header.jpg",
+        "description": "Explore the truly frightening subway cars and find out what fears the main character will have to face.",
+        "developer": "EMIKA_GAMES",
+        "publisher": "EMIKA_GAMES",
+        "release_date": "21 Feb, 2021",
+        "rating": "Не указан",
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 22,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 1044
+    },
+    {
+        "appid": 883710,
+        "name": "Resident Evil 2",
+        "url": "https://store.steampowered.com/app/883710/Resident_Evil_2/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/883710/header.jpg",
+        "description": "A deadly virus engulfs the residents of Raccoon City in September of 1998, plunging the city into chaos as flesh eating zombies roam the streets for survivors. An unparalleled adrenaline rush, gripping storyline, and unimaginable horrors await you. Witness the return of Resident Evil 2.",
+        "developer": "CAPCOM Co., Ltd.",
+        "publisher": "CAPCOM Co., Ltd.",
+        "release_date": "24 Jan, 2019",
+        "rating": 89,
+        "age_rating": "18",
+        "controller_support": "full",
+        "achievements": 44,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 114116
+    },
+    {
+        "appid": 20510,
+        "name": "S.T.A.L.K.E.R.: Clear Sky",
+        "url": "https://store.steampowered.com/app/20510/STALKER_Clear_Sky/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/20510/header.jpg",
+        "description": "S.T.A.L.K.E.R.: Clear Sky – standalone prequel for the acclaimed S.T.A.L.K.E.R.: Shadow of Chernobyl, which tells you story about the Clear Sky group, that want to research the Zone and understand it better.",
+        "developer": "GSC Game World",
+        "publisher": "GSC World Publishing",
+        "release_date": "15 Sep, 2008",
+        "rating": 75,
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 0,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 16960
+    },
+    {
+        "appid": 4500,
+        "name": "S.T.A.L.K.E.R.: Shadow of Chernobyl",
+        "url": "https://store.steampowered.com/app/4500/STALKER_Shadow_of_Chernobyl/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/4500/header.jpg",
+        "description": "S.T.A.L.K.E.R.: Shadow of Chernobyl tells a story about survival in the Zone – a very dangerous place, where you fear not only the radiation, anomalies and deadly creatures, but other S.T.A.L.K.E.R.s, who have their own goals and wishes.",
+        "developer": "GSC Game World",
+        "publisher": "GSC Game World",
+        "release_date": "20 Mar, 2007",
+        "rating": 82,
+        "age_rating": 0,
+        "controller_support": "Не указано",
+        "achievements": 0,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 36506
+    },
+    {
+        "appid": 1237970,
+        "name": "Titanfall® 2",
+        "url": "https://store.steampowered.com/app/1237970/Titanfall_2/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/1237970/header.jpg",
+        "description": "Respawn Entertainment gives you the most advanced titan technology in its new, single player campaign &amp; multiplayer experience. Combine &amp; conquer with new titans &amp; pilots, deadlier weapons, &amp; customization and progression systems that help you and your titan flow as one unstoppable killing force.",
+        "developer": "Respawn Entertainment",
+        "publisher": "Electronic Arts",
+        "release_date": "18 Jun, 2020",
+        "rating": 86,
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 50,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 218521
+    },
+    {
+        "appid": 1888930,
+        "name": "Одни из нас™: Часть I",
+        "url": "https://store.steampowered.com/app/1888930/Odni_iz_nas_CHast_I/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/1888930/header.jpg",
+        "description": "Discover the award-winning game that inspired the critically acclaimed television show. Guide Joel and Ellie through a post-apocalyptic America, and encounter unforgettable allies and enemies in The Last of Us™.",
+        "developer": "Naughty Dog LLC",
+        "publisher": "PlayStation Publishing LLC",
+        "release_date": "28 Mar, 2023",
+        "rating": "Не указан",
+        "age_rating": "17",
+        "controller_support": "full",
+        "achievements": 29,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 40226
+    },
+    {
+        "appid": 612880,
+        "name": "Wolfenstein II: The New Colossus",
+        "url": "https://store.steampowered.com/app/612880/Wolfenstein_II_The_New_Colossus/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/612880/header.jpg",
+        "description": "America, 1961. The assassination of Nazi General Deathshead was a short-lived victory. The Nazis maintain their stranglehold on the world. You are BJ Blazkowicz, aka “Terror-Billy,” member of the Resistance, scourge of the Nazi empire, and humanity’s last hope for liberty.",
+        "developer": "Machine Games",
+        "publisher": "Bethesda Softworks",
+        "release_date": "26 Oct, 2017",
+        "rating": 86,
+        "age_rating": "18",
+        "controller_support": "full",
+        "achievements": 80,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 30116
+    },
+    {
+        "appid": 2096600,
+        "name": "Crysis 2 Remastered",
+        "url": "https://store.steampowered.com/app/2096600/Crysis_2_Remastered/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/2096600/header.jpg",
+        "description": "Relive the legendary single-player campaign from the classic first-person shooter, Crysis 2, optimized for today's hardware in Crysis 2 Remastered.",
+        "developer": "Crytek",
+        "publisher": "Crytek",
+        "release_date": "17 Nov, 2022",
+        "rating": "Не указан",
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 35,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 5740
+    },
+    {
+        "appid": 2096610,
+        "name": "Crysis 3 Remastered",
+        "url": "https://store.steampowered.com/app/2096610/Crysis_3_Remastered/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/2096610/header.jpg",
+        "description": "Experience the single-player experience from the iconic first-person shooter, Crysis 3, optimized to take advantage of today's hardware in Crysis 3 Remastered.",
+        "developer": "Crytek",
+        "publisher": "Crytek",
+        "release_date": "17 Nov, 2022",
+        "rating": "Не указан",
+        "age_rating": 0,
+        "controller_support": "full",
+        "achievements": 37,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 4820
+    },
+    {
+        "appid": 1593500,
+        "name": "God of War",
+        "url": "https://store.steampowered.com/app/1593500/God_of_War/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/header.jpg",
+        "description": "His vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same.",
+        "developer": "Santa Monica Studio",
+        "publisher": "PlayStation Publishing LLC",
+        "release_date": "14 Jan, 2022",
+        "rating": 93,
+        "age_rating": "18",
+        "controller_support": "full",
+        "achievements": 37,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 107105
+    },
+    {
+        "appid": 1328670,
+        "name": "Mass Effect™ издание Legendary",
+        "url": "https://store.steampowered.com/app/1328670/Mass_Effect_izdanie_Legendary/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/1328670/header.jpg",
+        "description": "The Mass Effect™ Legendary Edition includes single-player base content and over 40 DLC from the highly acclaimed Mass Effect, Mass Effect 2, and Mass Effect 3 games, including promo weapons, armors, and packs — remastered and optimized for 4K Ultra HD.",
+        "developer": "BioWare",
+        "publisher": "Electronic Arts",
+        "release_date": "14 May, 2021",
+        "rating": 86,
+        "age_rating": "18+",
+        "controller_support": "full",
+        "achievements": 127,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 49292
+    },
+    {
+        "appid": 17460,
+        "name": "Mass Effect (2007)",
+        "url": "https://store.steampowered.com/app/17460/Mass_Effect_2007/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/17460/header.jpg",
+        "description": "As Commander Shepard, you lead an elite squad on a heroic, action-packed adventure throughout the galaxy.",
+        "developer": "BioWare",
+        "publisher": "Electronic Arts",
+        "release_date": "19 Dec, 2008",
+        "rating": 89,
+        "age_rating": "17",
+        "controller_support": "Не указано",
+        "achievements": 0,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 14698
+    },
+    {
+        "appid": 2362420,
+        "name": "Mass Effect 2 (2010) Edition",
+        "url": "https://store.steampowered.com/app/2362420/Mass_Effect_2_2010_Edition/",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/2362420/header.jpg",
+        "description": "Are you prepared to lose everything to save the galaxy? You'll need to be, Commander Shepard. It's time to bring together your greatest allies and recruit the galaxy's fighting elite to continue the resistance against the invading Reapers.",
+        "developer": "BioWare",
+        "publisher": "Electronic Arts",
+        "release_date": "15 May, 2023",
+        "rating": 94,
+        "age_rating": "18",
+        "controller_support": "Не указано",
+        "achievements": 0,
+        "platforms": {
+            "windows": true,
+            "mac": false,
+            "linux": false
+        },
+        "reviews_count": 186
+    },
+    {
+        "appid": 20920,
+        "name": "Mass Effect 3 (2012 Edition)",
+        "url": "",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/20920/header.jpg",
+        "description": "A time of untold chaos has come. Mighty forces clash behind the scenes in a struggle for power and influence. The Northern Kingdoms mobilize for war. But armies on the march are not enough to stop a bloody conspiracy...",
+        "developer": "CD PROJEKT RED",
+        "publisher": "CD PROJEKT RED",
+        "release_date": "16 Apr, 2012",
+        "rating": 88,
+        "age_rating": "18",
+        "controller_support": "Не указано",
+        "achievements": 52,
+        "platforms": {
+            "windows": true,
+            "mac": true,
+            "linux": true
+        },
+        "reviews_count": 76510
+    }
+]
