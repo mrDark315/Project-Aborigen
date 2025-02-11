@@ -163,7 +163,7 @@ class Ui_MainWindow(object):
 
         row, col = 0, 0
         for game in games_to_display:
-            print(f"🎮 Adding game: {game['name']}")  # Debugging
+            print(f"🎮 Adding game: {game['name']}")
             game_widget = self.create_game_card(game)
             self.grid_layout.addWidget(game_widget, row, col)
             col += 1
@@ -188,7 +188,6 @@ class Ui_MainWindow(object):
             self.display_game_icons()
 
     def create_game_card(self, game):
-        """Creates a game card with an image, name, gamepad icon, and rating."""
         game_card = QtWidgets.QFrame()
         game_card.setFixedSize(460, 400)
         game_card.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -247,7 +246,13 @@ class Ui_MainWindow(object):
         rating_layout = QtWidgets.QHBoxLayout()
         rating_layout.setContentsMargins(20, 10, 20, 20)
 
-        rating_label = QtWidgets.QLabel(f"Metacritic: {game['rating']}")
+        try:
+            metacritic_data = eval(game.get("metacritic", "{}"))  # Преобразуем строку в словарь
+            rating = metacritic_data.get("score", "N/A")  # Берем рейтинг, если он есть
+        except Exception:
+            rating = "N/A"
+
+        rating_label = QtWidgets.QLabel(f"Metacritic: {rating}")
         rating_label.setStyleSheet("font-size: 28px; color: #fff;")
         rating_layout.addWidget(rating_label)
 
