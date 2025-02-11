@@ -10,10 +10,10 @@ class Ui_MainWindow(object):
         # ✅ Responsive Window Size
         screen = QtWidgets.QApplication.primaryScreen().geometry()
         MainWindow.resize(int(screen.width() * 0.8), int(screen.height() * 0.8))
-        MainWindow.setMinimumSize(QtCore.QSize(1280, 720))
+        MainWindow.setMinimumSize(QtCore.QSize(1550, 820))
         MainWindow.setMaximumSize(QtCore.QSize(1920, 1080))
 
-        # ✅ Main Widget (Dark Background)
+        # ✅ Main Widget
         self.main = QtWidgets.QWidget(MainWindow)
         self.main.setStyleSheet("background-color: #0E1621;")
         self.main.setObjectName("main")
@@ -24,18 +24,15 @@ class Ui_MainWindow(object):
         # ✅ Search & Rating Filter Layout (Horizontal)
         self.search_filter_layout = QtWidgets.QHBoxLayout()
         self.search_filter_layout.setAlignment(QtCore.Qt.AlignCenter)
-        self.search_filter_layout.setSpacing(20)  # Space between elements
+        self.search_filter_layout.setSpacing(20)
 
         # ✅ Search Bar
         self.search_bar = QtWidgets.QLineEdit()
-        self.search_bar.setFixedSize(660, 100)
+        self.search_bar.setFixedSize(660, 75)
         font = QtGui.QFont()
         font.setPointSize(32)
         self.search_bar.setFont(font)
-        self.search_bar.setStyleSheet("""
-            QLineEdit {background-color: #454C55; color: #898989; border-radius: 35px; padding-left: 15px; font-size: 32px; border: 2px solid #555;}
-            QLineEdit:focus {border: 2px solid #898989;}
-        """)
+        self.search_bar.setStyleSheet("""QLineEdit{background-color: #454C55; color: #898989; border-radius: 35px; padding-left: 15px; font-size: 32px; border: 2px solid #555;} QLineEdit:focus {border: 2px solid #898989;}""")
         self.search_bar.setPlaceholderText("Search for a game...")
 
         # ✅ Rating Filter
@@ -61,9 +58,7 @@ class Ui_MainWindow(object):
         self.left_arrow = AnimatedButton("img/Arrow_Left.png")
         self.left_arrow.setIconSize(QtCore.QSize(40, 40))
         self.left_arrow.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.left_arrow.setStyleSheet("""
-            QPushButton {background-color: transparent; border: none;}
-        """)
+        self.left_arrow.setStyleSheet("""QPushButton {background-color: transparent; border: none;}""")
         self.left_arrow.clicked.connect(self.prev_page)
 
         # ➡ Right Arrow Button (Using Image)
@@ -72,9 +67,7 @@ class Ui_MainWindow(object):
         self.right_arrow = AnimatedButton("img/Arrow_Right.png")
         self.right_arrow.setIconSize(QtCore.QSize(40, 40))
         self.right_arrow.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.right_arrow.setStyleSheet("""
-            QPushButton {background-color: transparent; border: none;}
-        """)
+        self.right_arrow.setStyleSheet("""QPushButton {background-color: transparent; border: none;}""")
         self.right_arrow.clicked.connect(self.next_page)
 
         # ✅ Grid Layout for Displaying Games
@@ -97,7 +90,7 @@ class Ui_MainWindow(object):
 
         # ✅ Load Game Data
         self.games_data = self.load_game_data("data.json")
-        self.current_page = 0  # ✅ Track the current page
+        self.current_page = 0
 
         # ✅ Connect search bar & filter event
         self.search_bar.textChanged.connect(self.update_results)
@@ -107,7 +100,6 @@ class Ui_MainWindow(object):
         self.update_results()
 
     def load_game_data(self, file_path):
-        """Load game data from JSON file."""
         try:
             with open(file_path, "r", encoding="utf-8") as file:
                 return json.load(file)
@@ -116,7 +108,6 @@ class Ui_MainWindow(object):
             return []
 
     def update_results(self):
-        """Update game results dynamically when searching & sorting."""
         search_query = self.search_bar.text().strip().lower()
         selected_rating = self.rating_filter.currentText()
 
@@ -127,7 +118,6 @@ class Ui_MainWindow(object):
 
         # ✅ Sort games by rating (Highest to Lowest)
         def get_valid_rating(game):
-            """Extract valid integer rating or return 0 if invalid."""
             rating = str(game.get("rating", "0"))
             return int(rating) if rating.isdigit() else 0
 
@@ -147,7 +137,6 @@ class Ui_MainWindow(object):
 
 
     def display_game_icons(self):
-        """Display a specific page of games in the grid layout."""
         while self.grid_layout.count():
             widget = self.grid_layout.takeAt(0).widget()
             if widget:
@@ -176,41 +165,34 @@ class Ui_MainWindow(object):
         self.right_arrow.setEnabled((self.current_page + 1) * 6 < len(self.filtered_games))
 
     def next_page(self):
-        """Go to the next page if available."""
         if (self.current_page + 1) * 6 < len(self.filtered_games):
             self.current_page += 1
             self.display_game_icons()
 
     def prev_page(self):
-        """Go to the previous page if available."""
         if self.current_page > 0:
             self.current_page -= 1
             self.display_game_icons()
 
     def create_game_card(self, game):
         game_card = QtWidgets.QFrame()
-        game_card.setFixedSize(460, 400)
+        game_card.setFixedSize(460, 350)
         game_card.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        game_card.setStyleSheet("""
-            QFrame {
-                border-radius: 35px;
-                background-color: #454C55;
-            }
-        """)
+        game_card.setStyleSheet("""QFrame{border-radius: 35px; background-color: #454C55;}""")
 
         main_layout = QtWidgets.QVBoxLayout(game_card)
         main_layout.setContentsMargins(0, 0, 0, 0)
 
         # 🖼️ Game Image (Using QPixmap + mask)
         game_img = QtWidgets.QLabel()
-        game_img.setGeometry(QtCore.QRect(0, 0, 460, 215))  # Adjust position
+        game_img.setGeometry(QtCore.QRect(0, 0, 460, 215))
 
         game_pixmap = self.download_image(game["img"])
         if game_pixmap:
             game_img.setPixmap(game_pixmap)
             game_img.setScaledContents(True)
 
-            # --- Apply mask to round the top corners ---
+            # Apply mask to round the top corners
             mask = QtGui.QRegion(game_img.rect())
             radius = 35
 
@@ -236,41 +218,51 @@ class Ui_MainWindow(object):
         info_layout.setContentsMargins(20, 10, 20, 0)
 
         game_name = QtWidgets.QLabel(game["name"])
-        game_name.setStyleSheet("font-size: 30px; color: #fff;")
+        game_name.setStyleSheet("font-size: 32px; color: #fff;")
         info_layout.addWidget(game_name)
 
         info_layout.addStretch()
         main_layout.addLayout(info_layout)
 
-        # ⭐ Rating & Controller Layout
+        # Rating & Controller Layout
         rating_layout = QtWidgets.QHBoxLayout()
         rating_layout.setContentsMargins(20, 10, 20, 20)
 
         try:
-            metacritic_data = eval(game.get("metacritic", "{}"))  # Преобразуем строку в словарь
-            rating = metacritic_data.get("score", "N/A")  # Берем рейтинг, если он есть
+            metacritic_data = eval(game.get("metacritic", "{}"))
+            rating = metacritic_data.get("score", "N/A")
         except Exception:
             rating = "N/A"
 
-        rating_label = QtWidgets.QLabel(f"Metacritic: {rating}")
-        rating_label.setStyleSheet("font-size: 28px; color: #fff;")
-        rating_layout.addWidget(rating_label)
+        # Create QLabel for logo
+        metacritic_icon = QtWidgets.QLabel()
+        metacritic_pixmap = QtGui.QPixmap("img/Metacritic_Logo.png")
+        metacritic_pixmap = metacritic_pixmap.scaled(40, 40, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation)
+        metacritic_icon.setPixmap(metacritic_pixmap)
 
+        # Create QLabel for rating
+        rating_label = QtWidgets.QLabel(f"{rating}")
+        rating_label.setStyleSheet("font-size: 28px; color: #fff;")
+
+        # Add icon&rating in `rating_layout`
+        rating_layout.addWidget(metacritic_icon)
+        rating_layout.addWidget(rating_label)
+        rating_layout.addWidget(rating_label)
         rating_layout.addStretch()
 
-        # 🎮 Controller Icon (Выбираем изображение в зависимости от controller_support)
+        # 🎮 Controller Icon
         controller_icon = QtWidgets.QLabel()
         controller_img = "img/Controller_On.png" if game.get("controller_support") == "full" else "img/Controller_Off.png"
         controller_pixmap = QtGui.QPixmap(controller_img)
-        controller_icon.setPixmap(controller_pixmap.scaled(40, 26, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation))
+        controller_icon.setPixmap(controller_pixmap.scaled(40, 33, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation))
         rating_layout.addWidget(controller_icon)
         rating_layout.addSpacing(20)
 
-        # ⭐ Star Icon
-        star_label = QtWidgets.QLabel()
-        star_pixmap = QtGui.QPixmap("img/Star_No_Fill.png")
-        star_label.setPixmap(star_pixmap.scaled(40, 38, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation))
-        rating_layout.addWidget(star_label)
+        # Bookmark Icon
+        bookmark_label = QtWidgets.QLabel()
+        star_pixmap = QtGui.QPixmap("img/Bookmark_No_Fill.png")
+        bookmark_label.setPixmap(star_pixmap.scaled(40, 40, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation))
+        rating_layout.addWidget(bookmark_label)
 
         main_layout.addLayout(rating_layout)
 
@@ -278,12 +270,10 @@ class Ui_MainWindow(object):
 
 
     def truncate_text(self, text, max_length):
-        """Truncate text if it exceeds the max length and add '...'."""
         return text if len(text) <= max_length else text[:max_length] + "..."
 
 
     def download_image(self, url):
-        """Download an image from a URL and convert it to QPixmap."""
         try:
             response = requests.get(url)
             response.raise_for_status()
@@ -302,11 +292,11 @@ class AnimatedButton(QtWidgets.QPushButton):
         self.setIcon(QtGui.QIcon(icon_path))
         self.setIconSize(QtCore.QSize(40, 40))
 
-        # Эффект прозрачности для неактивного состояния
+        # Transparency effect for inactive state
         self.opacity_effect = QtWidgets.QGraphicsOpacityEffect(self)
         self.setGraphicsEffect(self.opacity_effect)
 
-        # Анимация изменения размера
+        # Resize Animation
         self.animation = QtCore.QPropertyAnimation(self, b"iconSize")
         self.animation.setDuration(200)
         self.animation.setEasingCurve(QtCore.QEasingCurve.OutQuad)
