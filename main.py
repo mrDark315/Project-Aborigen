@@ -32,13 +32,12 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         self.search_bar.setFont(font)
         self.search_bar.setStyleSheet("""QLineEdit{background-color: #454C55; color: #898989; border-radius: 35px; padding-left: 15px; font-size: 32px; border: 2px solid #626262;}
-        QLineEdit:focus {border: 2px solid #898989;}""")
+        QLineEdit:hover {border: 2px solid #898989;}""")
         self.search_bar.setPlaceholderText("Search for a game...")
 
         # Profile button
-        self.profile_btn = QtWidgets.QPushButton()
-        self.profile_btn.setFixedSize(75, 75)
-        self.profile_btn.setIcon(QtGui.QIcon("img/Profile.png"))
+        self.profile_btn = AnimatedProfileButton("img/Profile.png")
+        self.profile_btn.setFixedSize(100, 100)
         self.profile_btn.setIconSize(QtCore.QSize(75, 75))
         self.profile_btn.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.profile_btn.setStyleSheet("""background-color: transparent; border: none;}""")
@@ -62,7 +61,7 @@ class Ui_MainWindow(object):
         # ⬅ Left Arrow Button (Using Image)
         self.left_arrow = QtWidgets.QPushButton()
         self.left_arrow.setFixedSize(50, 50)
-        self.left_arrow = Animated_Arrow_Button("img/Arrow_Left.png")
+        self.left_arrow = AnimatedArrowButton("img/Arrow_Left.png")
         self.left_arrow.setIconSize(QtCore.QSize(40, 40))
         self.left_arrow.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.left_arrow.setStyleSheet("""QPushButton {background-color: transparent; border: none;}""")
@@ -71,7 +70,7 @@ class Ui_MainWindow(object):
         # ➡ Right Arrow Button (Using Image)
         self.right_arrow = QtWidgets.QPushButton()
         self.right_arrow.setFixedSize(50, 50)
-        self.right_arrow = Animated_Arrow_Button("img/Arrow_Right.png")
+        self.right_arrow = AnimatedArrowButton("img/Arrow_Right.png")
         self.right_arrow.setIconSize(QtCore.QSize(40, 40))
         self.right_arrow.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.right_arrow.setStyleSheet("""QPushButton {background-color: transparent; border: none;}""")
@@ -314,7 +313,7 @@ class Ui_MainWindow(object):
             return None
 
 
-class Animated_Arrow_Button(QtWidgets.QPushButton):
+class AnimatedArrowButton(QtWidgets.QPushButton):
     def __init__(self, icon_path, parent=None):
         super().__init__(parent)
         self.setFixedSize(50, 50)
@@ -360,6 +359,33 @@ class Animated_Arrow_Button(QtWidgets.QPushButton):
             self.animation.setEndValue(self.original_size)
             self.animation.start()
 
+class AnimatedProfileButton(QtWidgets.QPushButton):
+    def __init__(self, icon_path, parent=None):
+        super().__init__(parent)
+        self.setIcon(QtGui.QIcon(icon_path))
+
+        # Анимация изменения размера
+        self.animation = QtCore.QPropertyAnimation(self, b"iconSize")
+        self.animation.setDuration(200)
+        self.animation.setEasingCurve(QtCore.QEasingCurve.OutQuad)
+
+        self.original_size = QtCore.QSize(75, 75)
+        self.hover_size = QtCore.QSize(85, 85)
+        self.is_hover_enabled = True
+
+    def enterEvent(self, event):
+        if self.is_hover_enabled:
+            self.animation.stop()
+            self.animation.setStartValue(self.original_size)
+            self.animation.setEndValue(self.hover_size)
+            self.animation.start()
+
+    def leaveEvent(self, event):
+        if self.is_hover_enabled:
+            self.animation.stop()
+            self.animation.setStartValue(self.hover_size)
+            self.animation.setEndValue(self.original_size)
+            self.animation.start()
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
