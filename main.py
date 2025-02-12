@@ -89,32 +89,35 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.main)
 
         # ✅ Load Game Data
-        self.games_data = self.load_game_data("data.json")
+        self.games_data, self.games_data_dict = self.load_game_data("data.json")
         self.current_page = 0
 
         # ✅ Connect search bar & filter event
-        self.search_bar.textChanged.connect(self.update_results)
-        self.rating_filter.currentIndexChanged.connect(self.update_results)
+        self.search_timer = QtCore.QTimer()
+        self.search_timer.setSingleShot(True)
+        self.search_timer.timeout.connect(self.perform_search)
+        self.search_bar.textChanged.connect(self.delayed_search)
+        # self.rating_filter.currentIndexChanged.connect(self.update_results)
 
         # ✅ Show all games initially
-        self.update_results()
+        self.perform_search()
 
     def load_game_data(self, file_path):
         try:
             with open(file_path, "r", encoding="utf-8") as file:
-                return json.load(file)
+                games_list = json.load(file)
+
+            # Создаем словарь для быстрого доступа по названию
+            games_dict = {game["name"].lower(): game for game in games_list}
+
+            return games_list, games_dict
+
         except Exception as e:
             print(f"Error loading data.json: {e}")
-            return []
+            return [], {}
 
-    def update_results(self):
-        search_query = self.search_bar.text().strip().lower()
-        selected_rating = self.rating_filter.currentText()
-
-        # 🔹 If search bar is empty, show all games
-        self.filtered_games = self.games_data if search_query == "" else [
-            game for game in self.games_data if search_query in game["name"].lower()
-        ]
+    def delayed_search(self):
+        self.search_timer.start(500)
 
         # ✅ Sort games by rating (Highest to Lowest)
         def get_valid_rating(game):
@@ -133,6 +136,30 @@ class Ui_MainWindow(object):
         self.grid_widget.setVisible(len(self.filtered_games) > 0)
 
         # ✅ Display games
+        self.display_game_icons()
+
+    def perform_search(self):
+        search_query = self.search_bar.text().strip().lower()
+        selected_rating = self.rating_filter.currentText()
+
+        # Фильтрация без создания нового списка (используем filter)
+        self.filtered_games = list(filter(lambda game: search_query in game["name"].lower(), self.games_data))
+
+        # Преобразование строки рейтинга в число для сравнения
+        def get_valid_rating(game):
+            rating = str(game.get("rating", "0"))
+            return int(rating) if rating.isdigit() else 0
+
+        # Проверяем, была ли сортировка уже выполнена
+        if not hasattr(self, "_is_sorted") or not self._is_sorted:
+            self.filtered_games.sort(key=get_valid_rating, reverse=True)
+            self._is_sorted = True  # Отмечаем, что сортировка уже была
+
+        print(f"🔍 Найдено {len(self.filtered_games)} игр после фильтрации.")
+
+        self.current_page = 0  # Сбрасываем страницу
+
+        self.grid_widget.setVisible(len(self.filtered_games) > 0)
         self.display_game_icons()
 
 
