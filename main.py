@@ -57,7 +57,7 @@ class Ui_MainWindow(object):
         self.grid_navigation_layout = QtWidgets.QHBoxLayout()
         self.grid_navigation_layout.setAlignment(QtCore.Qt.AlignCenter)
 
-        # Left Arrow Button (Using Image)
+        # Left Arrow Button
         self.left_arrow = QtWidgets.QPushButton()
         self.left_arrow.setFixedSize(50, 50)
         self.left_arrow = AnimatedArrowButton("img/Arrow_Left.png")
@@ -66,7 +66,7 @@ class Ui_MainWindow(object):
         self.left_arrow.setStyleSheet("""QPushButton {background-color: transparent; border: none;}""")
         self.left_arrow.clicked.connect(self.prev_page)
 
-        # Right Arrow Button (Using Image)
+        # Right Arrow Button
         self.right_arrow = QtWidgets.QPushButton()
         self.right_arrow.setFixedSize(50, 50)
         self.right_arrow = AnimatedArrowButton("img/Arrow_Right.png")
@@ -75,28 +75,94 @@ class Ui_MainWindow(object):
         self.right_arrow.setStyleSheet("""QPushButton {background-color: transparent; border: none;}""")
         self.right_arrow.clicked.connect(self.next_page)
 
-
-
-
-
-
-        # Horizontal layout for Side Filter and Grid Game
-        self.main_layout = QtWidgets.QHBoxLayout(self.main)
-
         # Side Filter Layout
-        self.side_filter_layout = QVBoxLayout()
+        self.main_layout = QtWidgets.QHBoxLayout(self.main)
+        self.side_filter_layout = QtWidgets.QVBoxLayout()
         self.side_filter_widget = QtWidgets.QWidget()
         self.side_filter_widget.setLayout(self.side_filter_layout)
         self.side_filter_widget.setFixedSize(320, 820)
         self.side_filter_widget.setStyleSheet("background-color: transparent; margin-left: 25; margin-right: 25;")
 
-        dropdown_titles = ["Publisher", "Developer", "Rating", "Price", "Platform", "Release Date", "Age Rating", "Controller", "Language"]
+        # Upload JSON file
+        file_path = "data.json"
+        with open(file_path, "r", encoding="utf-8") as file:
+            data = json.load(file)
 
-        for i in range(9):
+        # Get developers and publishers
+        publishers = set()
+        developers = set()
+
+        for game in data:
+            pub_list = game.get("publisher", [])
+            dev_list = game.get("developer", [])
+
+            if isinstance(pub_list, str):
+                pub_list = eval(pub_list) if pub_list.startswith("[") else [pub_list]
+            if isinstance(dev_list, str):
+                dev_list = eval(dev_list) if dev_list.startswith("[") else [dev_list]
+
+            publishers.update(pub_list)
+            developers.update(dev_list)
+
+        publishers = sorted(publishers)
+        developers = sorted(developers)
+
+        # Header and item names for each list
+        dropdown_titles = ["Publisher", "Developer", "Rating", "Price", "Platform", "Release Date", "Controller", "Age Rating", "Language"]
+
+        predefined_options = {
+            "Rating": ["From 60 to 69", "From 70 to 79", "From 80 to 89", "From 90 to 94", "From 95 to 100"],
+            "Price": ["Free", "Under $10", "$10-$30", "$30-$60", "Above $60"],
+            "Platform": ["Windows", "Mac", "Linux"],
+            "Release Date": ["2024", "2023", "2022", "2010-2021", "Before 2010"],
+            "Controller": ["Full Support", "No Support"],
+            "Age Rating": ["0+", "8+", "12+", "13+", "14+", "15+", "16+", "17+"],
+            "Language": ["English", "French", "German", "Italian", "Spanish - Spain", "Simplified Chinese", "Traditional Chinese", "Korean", "Russian", "Japanese", "Dutch", "Danish", "Finnish", "Norwegian", "Polish", "Portuguese - Portugal", "Swedish", "Thai", "Turkish"]
+        }
+
+        # Dropdown lists
+        # Создание выпадающих списков
+        for i, title in enumerate(dropdown_titles):
             dropdown = QtWidgets.QComboBox()
-            dropdown.addItem(f"Option {i+1}")
-            dropdown.setStyleSheet("""background-color: #454C55; border: none; height: 50px; border-radius: 25px; padding-left: 20px; font-size: 28px""")
+            dropdown.addItem(title)
+
+            if title == "Publisher":
+                publishers = [pub for pub in publishers if pub.strip()]
+                dropdown.addItems(publishers)
+            elif title == "Developer":
+                developers = [dev for dev in developers if dev.strip()]
+                dropdown.addItems(developers)
+            else:
+                dropdown.addItems(predefined_options.get(title, []))
+
+            # Применяем стиль для прокручиваемого выпадающего списка
+            dropdown.setStyleSheet("""
+                QComboBox {
+                    background-color: #454C55;
+                    border: none;
+                    height: 50px;
+                    border-radius: 25px;
+                    padding-left: 30px;
+                    font-size: 28px;
+                    color: #000;
+                }
+                QComboBox::drop-down {
+                    background-color: transparent;
+                }
+                QComboBox QAbstractItemView {
+                    font-size: 20px;
+                    background-color: #454C55;
+                    color: #000;
+                    selection-background-color: #454C55;
+                    selection-color: #898989;
+                    border-radius: 10px;
+                    outline: none;
+                }
+            """)
+
+            # Добавляем выпадающий список на макет
             self.side_filter_layout.addWidget(dropdown)
+
 
         # Grid Layout for Displaying Games
         self.grid_layout = QtWidgets.QGridLayout()
