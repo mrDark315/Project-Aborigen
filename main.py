@@ -6,8 +6,6 @@ import requests
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
-
         # Responsive Window Size
         screen = QtWidgets.QApplication.primaryScreen().geometry()
         MainWindow.resize(int(screen.width() * 0.8), int(screen.height() * 0.8))
@@ -41,145 +39,7 @@ class Ui_MainWindow(object):
         self.profile_btn.setFixedSize(100, 100)
         self.profile_btn.setIconSize(QtCore.QSize(75, 75))
         self.profile_btn.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.profile_btn.setStyleSheet("""background-color: transparent; border: none;}""")
-
-        # Created by button
-        self.created_by_btn = QtWidgets.QPushButton("Created by:")
-        self.created_by_btn.setFixedSize(300, 75)
-        self.profile_btn.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.created_by_btn.setStyleSheet("""QPushButton{background-color: #898989; color: #454C55; border: 2px solid #454C55; border-radius: 35px; font-size: 32px;}
-        QPushButton:hover {border: 4px solid #454C55;}""")
-
-        # Add Search Bar to Layout
-        self.search_filter_layout.addWidget(self.created_by_btn)
-        self.search_filter_layout.addWidget(self.search_bar)
-        self.search_filter_layout.addWidget(self.profile_btn)
-
-        # Horizontal layout for Side Filter and Grid Game
-        self.main_layout = QtWidgets.QHBoxLayout(self.main)
-
-        # Side Filter Layout
-        self.side_filter_layout = QVBoxLayout()
-        self.side_filter_widget = QtWidgets.QWidget()
-        self.side_filter_widget.setLayout(self.side_filter_layout)
-        self.side_filter_widget.setFixedSize(320, 820)
-        self.side_filter_widget.setStyleSheet("background-color: #fff; margin-left: 25; margin-right: 25;")
-
-        dropdown_titles = ["Publisher", "Developer", "Rating", "Price", "Platform", "Release Date", "Age Rating", "Controller", "Language"]
-
-        # Add dropdowns with checkboxes
-        for title in dropdown_titles:
-            # Create label for each filter
-            label = QtWidgets.QLabel(title, self.side_filter_widget)
-            label.setStyleSheet("font-size: 16px; font-weight: bold; color: #333;")
-            self.side_filter_layout.addWidget(label)
-
-            # Create ComboBox with checkboxes
-            dropdown = QComboBox(self.side_filter_widget)
-            # Create a widget for the list with checkboxes
-            list_widget = QListWidget(dropdown)
-            list_widget.setSelectionMode(QListWidget.MultiSelection)
-
-            # Add checkboxes to the list
-            for i in range(1, 6):  # 5 options for each dropdown
-                item = QListWidgetItem(f"Option {i}", list_widget)
-                checkbox = QCheckBox(f"Option {i}")
-                list_widget.setItemWidget(item, checkbox)
-
-            dropdown.setModel(list_widget.model())
-
-            # Add the dropdown to the layout
-            self.side_filter_layout.addWidget(dropdown)
-
-        # Grid Layout for Displaying Games
-        self.grid_layout = QtWidgets.QGridLayout()
-        self.grid_layout.setSpacing(20)
-        self.grid_widget = QtWidgets.QWidget()
-        self.grid_widget.setLayout(self.grid_layout)
-        self.grid_widget.setVisible(False)
-
-        # Add to Grid Navigation Layout
-        self.grid_navigation_layout = QtWidgets.QHBoxLayout()
-        self.grid_navigation_layout.setAlignment(QtCore.Qt.AlignCenter)
-
-        self.left_arrow = QtWidgets.QPushButton()
-        self.left_arrow.setFixedSize(50, 50)
-        self.left_arrow = AnimatedArrowButton("img/Arrow_Left.png")
-        self.left_arrow.setIconSize(QtCore.QSize(40, 40))
-        self.left_arrow.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.left_arrow.setStyleSheet("""QPushButton {background-color: transparent; border: none;}""")
-        self.left_arrow.clicked.connect(self.prev_page)
-
-        self.right_arrow = QtWidgets.QPushButton()
-        self.right_arrow.setFixedSize(50, 50)
-        self.right_arrow = AnimatedArrowButton("img/Arrow_Right.png")
-        self.right_arrow.setIconSize(QtCore.QSize(40, 40))
-        self.right_arrow.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.right_arrow.setStyleSheet("""QPushButton {background-color: transparent; border: none;}""")
-        self.right_arrow.clicked.connect(self.next_page)
-
-        # Add to main layout
-        self.grid_navigation_layout.addWidget(self.side_filter_widget)
-        self.grid_navigation_layout.addWidget(self.grid_widget)
-        self.grid_navigation_layout.addWidget(self.left_arrow)
-        self.grid_navigation_layout.addWidget(self.right_arrow)
-
-        # Add all layouts to main window layout
-        self.layout.addLayout(self.search_filter_layout)
-        self.layout.addLayout(self.grid_navigation_layout)
-
-        MainWindow.setCentralWidget(self.main)
-
-        # Load Game Data
-        self.games_data, self.games_data_dict = self.load_game_data("data.json")
-        self.current_page = 0
-
-        # Connect search bar & filter event
-        self.search_timer = QtCore.QTimer()
-        self.search_timer.setSingleShot(True)
-        self.search_timer.timeout.connect(self.perform_search)
-        self.search_bar.textChanged.connect(self.delayed_search)
-
-        # Show all games initially
-        self.perform_search()
-
-    def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
-
-        # Responsive Window Size
-        screen = QtWidgets.QApplication.primaryScreen().geometry()
-        MainWindow.resize(int(screen.width() * 0.8), int(screen.height() * 0.8))
-        MainWindow.setMinimumSize(QtCore.QSize(1550, 820))
-        MainWindow.setMaximumSize(QtCore.QSize(1920, 1080))
-
-        # Main Widget
-        self.main = QtWidgets.QWidget(MainWindow)
-        self.main.setStyleSheet("background-color: #0E1621;")
-        self.main.setObjectName("main")
-
-        # Main Layout (Vertical)
-        self.layout = QtWidgets.QVBoxLayout(self.main)
-
-        # Search Layout (Horizontal)
-        self.search_filter_layout = QtWidgets.QHBoxLayout()
-        self.search_filter_layout.setAlignment(QtCore.Qt.AlignCenter)
-        self.search_filter_layout.setSpacing(50)
-
-        # Search Bar
-        self.search_bar = QtWidgets.QLineEdit()
-        self.search_bar.setFixedSize(660, 75)
-        font = QtGui.QFont()
-        self.search_bar.setFont(font)
-        self.search_bar.setStyleSheet("""QLineEdit{background-color: #454C55; color: #898989; border-radius: 35px; padding-left: 15px; font-size: 32px; border: 2px solid #626262;}
-        QLineEdit:hover {border: 2px solid #898989;}""")
-        self.search_bar.setPlaceholderText("Search for a game...")
-
-        # Profile button
-        self.profile_btn = AnimatedProfileButton("img/Profile.png")
-        self.profile_btn.setFixedSize(100, 100)
-        self.profile_btn.setIconSize(QtCore.QSize(75, 75))
-        self.profile_btn.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.profile_btn.setStyleSheet("""background-color: transparent; border: none;}""")
+        self.profile_btn.setStyleSheet("""border: none;""")
 
         # Created by button
         self.created_by_btn = QtWidgets.QPushButton("Created by:")
@@ -215,6 +75,11 @@ class Ui_MainWindow(object):
         self.right_arrow.setStyleSheet("""QPushButton {background-color: transparent; border: none;}""")
         self.right_arrow.clicked.connect(self.next_page)
 
+
+
+
+
+
         # Horizontal layout for Side Filter and Grid Game
         self.main_layout = QtWidgets.QHBoxLayout(self.main)
 
@@ -223,19 +88,14 @@ class Ui_MainWindow(object):
         self.side_filter_widget = QtWidgets.QWidget()
         self.side_filter_widget.setLayout(self.side_filter_layout)
         self.side_filter_widget.setFixedSize(320, 820)
-        self.side_filter_widget.setStyleSheet("background-color: #fff; margin-left: 25; margin-right: 25;")
+        self.side_filter_widget.setStyleSheet("background-color: transparent; margin-left: 25; margin-right: 25;")
 
         dropdown_titles = ["Publisher", "Developer", "Rating", "Price", "Platform", "Release Date", "Age Rating", "Controller", "Language"]
 
-        for title in dropdown_titles:
-            label = QtWidgets.QLabel(title, self.side_filter_widget)
-            label.setStyleSheet("font-size: 16px; font-weight: bold; color: #333;")
-            self.side_filter_layout.addWidget(label)
-
-            # Создаем выпадающий список
-            dropdown = QtWidgets.QComboBox(self.side_filter_widget)
-            dropdown.addItems([f"Option {i}" for i in range(1, 6)])  # Добавляем 5 опций в каждый список
-            dropdown.setStyleSheet("""QComboBox {background-color: #fff;}""")
+        for i in range(9):
+            dropdown = QtWidgets.QComboBox()
+            dropdown.addItem(f"Option {i+1}")
+            dropdown.setStyleSheet("""background-color: #454C55; border: none; height: 50px; border-radius: 25px; padding-left: 20px; font-size: 28px""")
             self.side_filter_layout.addWidget(dropdown)
 
         # Grid Layout for Displaying Games
