@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import QComboBox, QListWidget, QListWidgetItem, QCheckBox, 
 import sys
 import json
 import requests
+import os
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -40,6 +41,7 @@ class Ui_MainWindow(object):
         self.profile_btn.setIconSize(QtCore.QSize(75, 75))
         self.profile_btn.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.profile_btn.setStyleSheet("""border: none;""")
+        self.profile_btn.clicked.connect(self.open_profile)
 
         # Created by button
         self.created_by_btn = QtWidgets.QPushButton("Created by:")
@@ -280,90 +282,171 @@ class Ui_MainWindow(object):
         main_layout = QtWidgets.QVBoxLayout(game_card)
         main_layout.setContentsMargins(0, 0, 0, 0)
 
-        # 🖼️ Game Image (Using QPixmap + mask)
+        # 🖼️ Game Image (Using QPixmap)
         game_img = QtWidgets.QLabel()
-        game_img.setGeometry(QtCore.QRect(0, 0, 460, 215))
+        game_img.setFixedSize(350, 180)
 
         game_pixmap = self.download_image(game["img"])
         if game_pixmap:
             game_img.setPixmap(game_pixmap)
             game_img.setScaledContents(True)
 
-            # Apply mask to round the top corners
-            mask = QtGui.QRegion(game_img.rect())
-            radius = 35
-
-            left_circle_region = QtGui.QRegion(0, 0, radius*2, radius*2, QtGui.QRegion.Ellipse)
-            right_circle_region = QtGui.QRegion(game_img.width() - radius*2, 0, radius*2, radius*2, QtGui.QRegion.Ellipse)
-
-            final_mask = mask.intersected(left_circle_region.united(right_circle_region).boundingRect())
-
-            mask = QtGui.QRegion(game_img.rect())
-            mask -= QtGui.QRegion(0, 0, radius, radius)
-            mask -= QtGui.QRegion(game_img.width() - radius, 0, radius, radius)
-
-            left_circle_region = QtGui.QRegion(0, 0, radius*2, radius*2, QtGui.QRegion.Ellipse)
-            right_circle_region = QtGui.QRegion(game_img.width() - radius*2, 0, radius*2, radius*2, QtGui.QRegion.Ellipse)
-            final_mask = mask.united(left_circle_region).united(right_circle_region)
-
-            game_img.setMask(final_mask)
-
         main_layout.addWidget(game_img)
 
-        # Game Name & Platform Layout
+        # Game Name Layout
         info_layout = QtWidgets.QHBoxLayout()
-        info_layout.setContentsMargins(20, 10, 20, 0)
-        truncated_name = self.truncate_text(game["name"], 29)
+        info_layout.setContentsMargins(15, 5, 15, 0)
+        truncated_name = self.truncate_text(game["name"], 25)
         game_name = QtWidgets.QLabel(truncated_name)
-        game_name.setStyleSheet("font-size: 30px; color: #fff;")
+        game_name.setStyleSheet("font-size: 22px; color: #fff;")
         info_layout.addWidget(game_name)
-
         info_layout.addStretch()
+
         main_layout.addLayout(info_layout)
 
-        # Rating & Controller Layout
+        # ⭐ Rating & Controller Layout
         rating_layout = QtWidgets.QHBoxLayout()
-        rating_layout.setContentsMargins(20, 10, 20, 20)
+        rating_layout.setContentsMargins(15, 5, 15, 10)
 
-        try:
-            metacritic_data = eval(game.get("metacritic", "{}"))
-            rating = metacritic_data.get("score", "N/A")
-        except Exception:
-            rating = "N/A"
-
-        # Create QLabel for logo
+        rating = game.get("rating", "N/A")
         metacritic_icon = QtWidgets.QLabel()
-        metacritic_pixmap = QtGui.QPixmap("img/Metacritic_Logo.png")
-        metacritic_pixmap = metacritic_pixmap.scaled(40, 40, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation)
+        metacritic_pixmap = QtGui.QPixmap("img/Metacritic_Logo.png").scaled(30, 30, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation)
         metacritic_icon.setPixmap(metacritic_pixmap)
 
-        # Create QLabel for rating
         rating_label = QtWidgets.QLabel(f"{rating}")
-        rating_label.setStyleSheet("font-size: 28px; color: #fff;")
+        rating_label.setStyleSheet("font-size: 20px; color: #fff;")
 
-        # Add icon&rating in `rating_layout`
         rating_layout.addWidget(metacritic_icon)
-        rating_layout.addWidget(rating_label)
         rating_layout.addWidget(rating_label)
         rating_layout.addStretch()
 
         # 🎮 Controller Icon
         controller_icon = QtWidgets.QLabel()
         controller_img = "img/Controller_On.png" if game.get("controller_support") == "full" else "img/Controller_Off.png"
-        controller_pixmap = QtGui.QPixmap(controller_img)
-        controller_icon.setPixmap(controller_pixmap.scaled(40, 33, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation))
+        controller_pixmap = QtGui.QPixmap(controller_img).scaled(30, 30, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation)
+        controller_icon.setPixmap(controller_pixmap)
         rating_layout.addWidget(controller_icon)
-        rating_layout.addSpacing(20)
+        rating_layout.addSpacing(10)
 
-        # Bookmark Icon
-        bookmark_label = QtWidgets.QLabel()
-        star_pixmap = QtGui.QPixmap("img/Bookmark_No_Fill.png")
-        bookmark_label.setPixmap(star_pixmap.scaled(40, 40, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation))
-        rating_layout.addWidget(bookmark_label)
+        # ⭐ Bookmark Button (Add to Favorites)
+        bookmark_button = QtWidgets.QPushButton()
+        bookmark_button.setFixedSize(40, 40)
+        bookmark_button.setStyleSheet("background: transparent; border: none;")
+
+        # Set default bookmark state
+        favorites = self.load_favorites()
+        if game["appid"] in favorites:
+            bookmark_button.setIcon(QtGui.QIcon("img/Bookmark_Fill.png"))
+        else:
+            bookmark_button.setIcon(QtGui.QIcon("img/Bookmark_No_Fill.png"))
+
+        bookmark_button.clicked.connect(lambda: self.toggle_favorite(game, bookmark_button))
+
+        rating_layout.addWidget(bookmark_button)
 
         main_layout.addLayout(rating_layout)
 
         return game_card
+
+
+    def toggle_favorite(self, game, button):
+        """Toggle a game in the favorites list (add/remove)."""
+        favorites = self.load_favorites()
+        game_id = str(game["appid"])  # Ensure game IDs are strings
+
+        if game_id in favorites:
+            del favorites[game_id]  # Remove game
+            button.setIcon(QtGui.QIcon("img/Bookmark_No_Fill.png"))  # Change to unfilled icon
+            print(f"❌ Removed {game['name']} from favorites.")
+        else:
+            favorites[game_id] = game  # Add game
+            button.setIcon(QtGui.QIcon("img/Bookmark_Fill.png"))  # Change to filled icon
+            print(f"⭐ Added {game['name']} to favorites.")
+
+        self.save_favorites(favorites)
+
+
+
+    def load_favorites(self):
+        """Load favorite games from a JSON file (returns a dictionary)."""
+        if os.path.exists("favorites.json"):
+            try:
+                with open("favorites.json", "r", encoding="utf-8") as file:
+                    return json.load(file)
+            except json.JSONDecodeError:
+                return {}  # Return empty if file is corrupted
+        return {}
+
+    def save_favorites(self, favorites):
+        """Save favorite games to JSON file."""
+        with open("favorites.json", "w", encoding="utf-8") as file:
+            json.dump(favorites, file, indent=4, ensure_ascii=False)
+
+
+    def open_profile(self):
+        """Open the User Profile Window."""
+        self.profile_window = QtWidgets.QWidget()
+        self.profile_window.setWindowTitle("User Profile - Favorites")
+        self.profile_window.resize(800, 600)
+        self.profile_window.setStyleSheet("background-color: #1E1E1E; padding: 10px;")
+
+        layout = QtWidgets.QVBoxLayout(self.profile_window)
+
+        favorites = self.load_favorites()
+
+        if not favorites:
+            label = QtWidgets.QLabel("No favorite games yet.")
+            label.setStyleSheet("color: white; font-size: 20px; padding: 20px;")
+            label.setAlignment(QtCore.Qt.AlignCenter)
+            layout.addWidget(label)
+        else:
+            for game in favorites.values():
+                game_frame = QtWidgets.QFrame()
+                game_frame.setStyleSheet("border: 1px solid #444; border-radius: 10px; background-color: #333;")
+                game_layout = QtWidgets.QHBoxLayout(game_frame)
+
+                # 🎮 Game Image
+                game_img = QtWidgets.QLabel()
+                game_img.setFixedSize(100, 60)
+                game_pixmap = self.download_image(game["img"])
+                if game_pixmap:
+                    game_img.setPixmap(game_pixmap)
+                    game_img.setScaledContents(True)
+
+                # 🎮 Game Name
+                game_name = QtWidgets.QLabel(game["name"])
+                game_name.setStyleSheet("color: white; font-size: 16px; padding: 5px;")
+                
+                # ❌ Remove Button
+                remove_button = QtWidgets.QPushButton("❌ Remove")
+                remove_button.setFixedSize(80, 30)
+                remove_button.setStyleSheet("background-color: red; color: white; border-radius: 10px;")
+                remove_button.clicked.connect(lambda _, g=game: self.remove_from_favorites(g))
+
+                # Add Widgets to Layout
+                game_layout.addWidget(game_img)
+                game_layout.addWidget(game_name)
+                game_layout.addStretch()
+                game_layout.addWidget(remove_button)
+
+                layout.addWidget(game_frame)
+
+        self.profile_window.setLayout(layout)
+        self.profile_window.show()
+
+    def remove_from_favorites(self, game):
+        """Remove a game from favorites and refresh the profile window."""
+        favorites = self.load_favorites()
+        
+        game_id = str(game["appid"])
+        
+        if game_id in favorites:
+            del favorites[game_id]
+            self.save_favorites(favorites)
+            print(f"❌ Removed {game['name']} from favorites.")
+        
+        self.open_profile()  # Refresh profile window
+
 
     def truncate_text(self, text, max_length):
         return text if len(text) <= max_length else text[:max_length] + "..."
