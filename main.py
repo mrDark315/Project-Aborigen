@@ -179,7 +179,6 @@ class Ui_MainWindow(object):
             with open(file_path, "r", encoding="utf-8") as file:
                 games_list = json.load(file)
 
-            # Создаем словарь для быстрого доступа по названию
             games_dict = {game["name"].lower(): game for game in games_list}
 
             return games_list, games_dict
