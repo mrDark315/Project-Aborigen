@@ -80,7 +80,8 @@ class Ui_MainWindow(object):
         self.side_filter_layout = QtWidgets.QVBoxLayout()
         self.side_filter_widget = QtWidgets.QWidget()
         self.side_filter_widget.setLayout(self.side_filter_layout)
-        self.side_filter_widget.setFixedSize(320, 820)
+        self.side_filter_widget.setMaximumSize(320, 820)
+        self.side_filter_widget.setMinimumSize(320, 700)
         self.side_filter_widget.setStyleSheet("background-color: transparent; margin-left: 25; margin-right: 25;")
 
         # Upload JSON file
@@ -121,7 +122,6 @@ class Ui_MainWindow(object):
         }
 
         # Dropdown lists
-        # Создание выпадающих списков
         for i, title in enumerate(dropdown_titles):
             dropdown = QtWidgets.QComboBox()
             dropdown.addItem(title)
@@ -134,33 +134,11 @@ class Ui_MainWindow(object):
                 dropdown.addItems(developers)
             else:
                 dropdown.addItems(predefined_options.get(title, []))
-
-            # Применяем стиль для прокручиваемого выпадающего списка
             dropdown.setStyleSheet("""
-                QComboBox {
-                    background-color: #454C55;
-                    border: none;
-                    height: 50px;
-                    border-radius: 25px;
-                    padding-left: 30px;
-                    font-size: 28px;
-                    color: #000;
-                }
-                QComboBox::drop-down {
-                    background-color: transparent;
-                }
-                QComboBox QAbstractItemView {
-                    font-size: 20px;
-                    background-color: #454C55;
-                    color: #000;
-                    selection-background-color: #454C55;
-                    selection-color: #898989;
-                    border-radius: 10px;
-                    outline: none;
-                }
+                QComboBox {background-color: #454C55; border: none; height: 50px; border-radius: 25px; padding-left: 30px; font-size: 28px; color: #000; }
+                QComboBox::drop-down {background-color: transparent; }
+                QComboBox QAbstractItemView {font-size: 20px; background-color: #454C55; color: #000; selection-background-color: #454C55; selection-color: #898989; border-radius: 10px; outline: none;}
             """)
-
-            # Добавляем выпадающий список на макет
             self.side_filter_layout.addWidget(dropdown)
 
 
@@ -295,7 +273,7 @@ class Ui_MainWindow(object):
 
     def create_game_card(self, game):
         game_card = QtWidgets.QFrame()
-        game_card.setFixedSize(460, 350)
+        game_card.setFixedSize(350, 300)
         game_card.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         game_card.setStyleSheet("""QFrame{border-radius: 35px; background-color: #454C55;}""")
 
