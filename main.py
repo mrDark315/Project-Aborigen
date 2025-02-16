@@ -1,4 +1,5 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtCore import QSize, Qt
 from PyQt5.QtWidgets import QComboBox, QListWidget, QListWidgetItem, QCheckBox, QVBoxLayout, QWidget, QHBoxLayout, QLabel
 import sys
 import json
@@ -9,8 +10,8 @@ class Ui_MainWindow(object):
         # Responsive Window Size
         screen = QtWidgets.QApplication.primaryScreen().geometry()
         MainWindow.resize(int(screen.width() * 0.8), int(screen.height() * 0.8))
-        MainWindow.setMinimumSize(QtCore.QSize(1550, 820))
-        MainWindow.setMaximumSize(QtCore.QSize(1920, 1080))
+        MainWindow.setMinimumSize(QSize(1600, 970))
+        MainWindow.setMaximumSize(QSize(1920, 1080))
 
         # Main Widget
         self.main = QtWidgets.QWidget(MainWindow)
@@ -22,7 +23,7 @@ class Ui_MainWindow(object):
 
         # Search Layout (Horizontal)
         self.search_filter_layout = QtWidgets.QHBoxLayout()
-        self.search_filter_layout.setAlignment(QtCore.Qt.AlignCenter)
+        self.search_filter_layout.setAlignment(Qt.AlignCenter)
         self.search_filter_layout.setSpacing(50)
 
         # Search Bar
@@ -37,14 +38,14 @@ class Ui_MainWindow(object):
         # Profile button
         self.profile_btn = AnimatedProfileButton("img/Profile.png")
         self.profile_btn.setFixedSize(100, 100)
-        self.profile_btn.setIconSize(QtCore.QSize(75, 75))
-        self.profile_btn.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.profile_btn.setIconSize(QSize(75, 75))
+        self.profile_btn.setCursor(QtGui.QCursor(Qt.PointingHandCursor))
         self.profile_btn.setStyleSheet("""border: none;""")
 
         # Created by button
         self.created_by_btn = QtWidgets.QPushButton("Created by:")
         self.created_by_btn.setFixedSize(300, 75)
-        self.profile_btn.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.profile_btn.setCursor(QtGui.QCursor(Qt.PointingHandCursor))
         self.created_by_btn.setStyleSheet("""QPushButton{background-color: #898989; color: #454C55; border: 2px solid #454C55; border-radius: 35px; font-size: 32px;}
         QPushButton:hover {border: 4px solid #454C55;}""")
 
@@ -55,14 +56,14 @@ class Ui_MainWindow(object):
 
         # Grid Navigation Layout (Arrows + Game Grid)
         self.grid_navigation_layout = QtWidgets.QHBoxLayout()
-        self.grid_navigation_layout.setAlignment(QtCore.Qt.AlignCenter)
+        self.grid_navigation_layout.setAlignment(Qt.AlignCenter)
 
         # Left Arrow Button
         self.left_arrow = QtWidgets.QPushButton()
         self.left_arrow.setFixedSize(50, 50)
         self.left_arrow = AnimatedArrowButton("img/Arrow_Left.png")
-        self.left_arrow.setIconSize(QtCore.QSize(40, 40))
-        self.left_arrow.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.left_arrow.setIconSize(QSize(40, 40))
+        self.left_arrow.setCursor(QtGui.QCursor(Qt.PointingHandCursor))
         self.left_arrow.setStyleSheet("""QPushButton {background-color: transparent; border: none;}""")
         self.left_arrow.clicked.connect(self.prev_page)
 
@@ -70,8 +71,8 @@ class Ui_MainWindow(object):
         self.right_arrow = QtWidgets.QPushButton()
         self.right_arrow.setFixedSize(50, 50)
         self.right_arrow = AnimatedArrowButton("img/Arrow_Right.png")
-        self.right_arrow.setIconSize(QtCore.QSize(40, 40))
-        self.right_arrow.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.right_arrow.setIconSize(QSize(40, 40))
+        self.right_arrow.setCursor(QtGui.QCursor(Qt.PointingHandCursor))
         self.right_arrow.setStyleSheet("""QPushButton {background-color: transparent; border: none;}""")
         self.right_arrow.clicked.connect(self.next_page)
 
@@ -82,7 +83,7 @@ class Ui_MainWindow(object):
         self.side_filter_widget.setLayout(self.side_filter_layout)
         self.side_filter_widget.setMaximumSize(320, 820)
         self.side_filter_widget.setMinimumSize(320, 700)
-        self.side_filter_widget.setStyleSheet("background-color: transparent; margin-left: 25; margin-right: 25;")
+        self.side_filter_widget.setStyleSheet("background-color: transparent; margin-left: 25;")
 
         # Upload JSON file
         file_path = "data.json"
@@ -108,17 +109,16 @@ class Ui_MainWindow(object):
         publishers = sorted(publishers)
         developers = sorted(developers)
 
-        # Header and item names for each list
-        dropdown_titles = ["Publisher", "Developer", "Rating", "Price", "Platform", "Release Date", "Controller", "Age Rating", "Language"]
+        dropdown_titles = ["Publisher", "Developer", "Rating", "Price", "Release Date" , "Age Rating", "Language","Platform", "Controller"]
 
         predefined_options = {
             "Rating": ["From 60 to 69", "From 70 to 79", "From 80 to 89", "From 90 to 94", "From 95 to 100"],
             "Price": ["Free", "Under $10", "$10-$30", "$30-$60", "Above $60"],
             "Platform": ["Windows", "Mac", "Linux"],
-            "Release Date": ["2024", "2023", "2022", "2010-2021", "Before 2010"],
-            "Controller": ["Full Support", "No Support"],
             "Age Rating": ["0+", "8+", "12+", "13+", "14+", "15+", "16+", "17+"],
-            "Language": ["English", "French", "German", "Italian", "Spanish - Spain", "Simplified Chinese", "Traditional Chinese", "Korean", "Russian", "Japanese", "Dutch", "Danish", "Finnish", "Norwegian", "Polish", "Portuguese - Portugal", "Swedish", "Thai", "Turkish"]
+            "Language": ["English", "French", "German", "Italian", "Spanish - Spain", "Simplified Chinese", "Traditional Chinese", "Korean", "Russian", "Japanese", "Dutch", "Danish", "Finnish", "Norwegian", "Polish", "Portuguese - Portugal", "Swedish", "Thai", "Turkish"],
+            "Release Date": ["2024", "2023", "2022", "2010-2021", "Before 2010"],
+            "Controller": ["Full Support", "No Support"]
         }
 
         # Dropdown lists
@@ -140,7 +140,6 @@ class Ui_MainWindow(object):
                 QComboBox QAbstractItemView {font-size: 20px; background-color: #454C55; color: #000; selection-background-color: #454C55; selection-color: #898989; border-radius: 10px; outline: none;}
             """)
             self.side_filter_layout.addWidget(dropdown)
-
 
         # Grid Layout for Displaying Games
         self.grid_layout = QtWidgets.QGridLayout()
@@ -273,14 +272,15 @@ class Ui_MainWindow(object):
 
     def create_game_card(self, game):
         game_card = QtWidgets.QFrame()
-        game_card.setFixedSize(350, 300)
+        game_card.setMaximumSize(460, 400)
+        game_card.setMinimumSize(360, 300)
         game_card.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         game_card.setStyleSheet("""QFrame{border-radius: 35px; background-color: #454C55;}""")
 
         main_layout = QtWidgets.QVBoxLayout(game_card)
         main_layout.setContentsMargins(0, 0, 0, 0)
 
-        # 🖼️ Game Image (Using QPixmap + mask)
+        # Game Image
         game_img = QtWidgets.QLabel()
         game_img.setGeometry(QtCore.QRect(0, 0, 460, 215))
 
