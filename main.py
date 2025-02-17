@@ -151,7 +151,7 @@ class Ui_MainWindow(object):
         # Dropdown lists
         for i, title in enumerate(dropdown_titles):
             dropdown = QtWidgets.QComboBox()
-            dropdown.addItem(title)
+            dropdown.addItem(f"All {title}")  # Add "All" option
 
             if title == "Publisher":
                 publishers = [pub for pub in publishers if pub.strip()]
@@ -161,12 +161,22 @@ class Ui_MainWindow(object):
                 dropdown.addItems(developers)
             else:
                 dropdown.addItems(predefined_options.get(title, []))
-            dropdown.setStyleSheet("""
-                QComboBox {background-color: #454C55; border: none; height: 50px; border-radius: 25px; padding-left: 30px; font-size: 28px; color: #000; }
-                QComboBox::drop-down {background-color: transparent; }
-                QComboBox QAbstractItemView {font-size: 20px; background-color: #454C55; color: #000; selection-background-color: #454C55; selection-color: #898989; border-radius: 10px; outline: none;}
-            """)
+
+            dropdown.setStyleSheet(""" QComboBox {background-color: #454C55; border: none; height: 50px; 
+                                    border-radius: 25px; padding-left: 30px; font-size: 28px; color: #000; }
+                                    QComboBox::drop-down {background-color: transparent; }
+                                    QComboBox QAbstractItemView {font-size: 20px; background-color: #454C55; 
+                                    color: #000; selection-background-color: #454C55; selection-color: #898989; 
+                                    border-radius: 10px; outline: none;}""")
+            
+            # **Connect each filter to perform_search**
+            dropdown.currentIndexChanged.connect(self.perform_search)
+
+            # Store filters in a list for easy access
+            setattr(self, f"{title.lower().replace(' ', '_')}_filter", dropdown)
+
             self.side_filter_layout.addWidget(dropdown)
+
 
 
         # Grid Layout for Displaying Games
