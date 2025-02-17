@@ -42,6 +42,31 @@ class Ui_MainWindow(object):
         self.profile_btn.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.profile_btn.setStyleSheet("""border: none;""")
         self.profile_btn.clicked.connect(self.open_profile)
+        # Create Home Button
+        self.home_btn = QtWidgets.QPushButton("Home")
+        self.home_btn.setFixedSize(100, 50)
+        self.home_btn.setFont(QtGui.QFont("Arial", 16))
+        self.home_btn.setStyleSheet("""
+            QPushButton {
+                background-color: #454C55;
+                color: white;
+                border-radius: 20px;
+                font-size: 16px;
+                border: 2px solid #626262;
+            }
+            QPushButton:hover {
+                background-color: #898989;
+            }
+        """)
+        self.home_btn.clicked.connect(self.go_home)
+
+        # Add Home Button to Layout (Top Left)
+        self.search_filter_layout.addWidget(self.home_btn)
+        
+        
+
+        # Add Home Button to Layout (Top Left)
+        self.search_filter_layout.addWidget(self.home_btn)
 
         # Created by button
         self.created_by_btn = QtWidgets.QPushButton("Created by:")
@@ -176,19 +201,40 @@ class Ui_MainWindow(object):
         # Show all games initially
         self.perform_search()
 
+    def go_home(self):
+                """Switch the source back to data.json and update the UI."""
+                print("🏠 Home button clicked: Showing all games.")
+                
+                # Switch back to all games (load from data.json)
+                self.perform_search("data.json")
+
+
     def load_game_data(self, file_path):
-        try:
-            with open(file_path, "r", encoding="utf-8") as file:
-                games_list = json.load(file)
+        """Load game data from the specified JSON file."""
+        if os.path.exists(file_path):
+            try:
+                with open(file_path, "r", encoding="utf-8") as file:
+                    games = json.load(file)
 
-            # Создаем словарь для быстрого доступа по названию
-            games_dict = {game["name"].lower(): game for game in games_list}
+                # ✅ Handle `favorites.json` (stored as a dictionary)
+                if isinstance(games, dict):
+                    games_list = list(games.values())  # Convert dictionary to list
+                else:
+                    games_list = games  # Already a list
 
-            return games_list, games_dict
+                # Convert list to dictionary for quick lookup
+                games_dict = {str(game["appid"]): game for game in games_list}
 
-        except Exception as e:
-            print(f"Error loading data.json: {e}")
+                return games_list, games_dict
+
+            except json.JSONDecodeError:
+                print(f"⚠️ Error: {file_path} is corrupted. Returning empty list.")
+                return [], {}
+
+        else:
+            print(f"⚠️ Warning: {file_path} not found. Returning empty list.")
             return [], {}
+
 
     def delayed_search(self):
         self.search_timer.start(500)
@@ -212,28 +258,36 @@ class Ui_MainWindow(object):
         # ✅ Display games
         self.display_game_icons()
 
-    def perform_search(self):
+    def perform_search(self, data_source="data.json"):
+        """Update game results dynamically from the specified data source."""
+        
+        # ✅ If switching back to all games, reset `is_profile_mode`
+        if data_source == "data.json":
+            self.is_profile_mode = False
+
+        # Load data from the given source file
+        self.games_data, self.games_data_dict = self.load_game_data(data_source)
+
         search_query = self.search_bar.text().strip().lower()
 
-        # Фильтрация без создания нового списка (используем filter)
+        # Filter games normally
         self.filtered_games = list(filter(lambda game: search_query in game["name"].lower(), self.games_data))
 
-        # Преобразование строки рейтинга в число для сравнения
+        # ✅ Sort games by rating (Highest to Lowest)
         def get_valid_rating(game):
             rating = str(game.get("rating", "0"))
             return int(rating) if rating.isdigit() else 0
 
-        # Проверяем, была ли сортировка уже выполнена
-        if not hasattr(self, "_is_sorted") or not self._is_sorted:
-            self.filtered_games.sort(key=get_valid_rating, reverse=True)
-            self._is_sorted = True  # Отмечаем, что сортировка уже была
+        self.filtered_games.sort(key=get_valid_rating, reverse=True)
 
-        print(f"🔍 Найдено {len(self.filtered_games)} игр после фильтрации.")
+        print(f"🔍 Found {len(self.filtered_games)} games from {data_source}.")
 
-        self.current_page = 0  # Сбрасываем страницу
+        self.current_page = 0  # Reset page index
 
         self.grid_widget.setVisible(len(self.filtered_games) > 0)
         self.display_game_icons()
+
+
 
     def display_game_icons(self):
         while self.grid_layout.count():
@@ -383,69 +437,49 @@ class Ui_MainWindow(object):
             json.dump(favorites, file, indent=4, ensure_ascii=False)
 
 
+    def hide_widgets_in_layout(self, layout):
+        """Hide all widgets in the given layout."""
+        for i in range(layout.count()):
+            widget = layout.itemAt(i).widget()
+            if widget:
+                widget.setVisible(False)
+
+    def show_widgets_in_layout(self, layout):
+        """Show all widgets in the given layout."""
+        for i in range(layout.count()):
+            widget = layout.itemAt(i).widget()
+            if widget:
+                widget.setVisible(True)
+
     def open_profile(self):
-        """Open the User Profile Window."""
-        self.profile_window = QtWidgets.QWidget()
-        self.profile_window.setWindowTitle("User Profile - Favorites")
-        self.profile_window.resize(800, 600)
-        self.profile_window.setStyleSheet("background-color: #1E1E1E; padding: 10px;")
+        """Update the game display to show only favorite games without hiding filters/search bar."""
+        
+        # ✅ Change data source to `favorites.json`
+        self.perform_search("favorites.json")
 
-        layout = QtWidgets.QVBoxLayout(self.profile_window)
+        # ✅ Keep all UI elements visible (DO NOT hide filters, search bar, or arrows)
+        self.show_widgets_in_layout(self.search_filter_layout)
+        self.show_widgets_in_layout(self.grid_navigation_layout)
 
-        favorites = self.load_favorites()
+        print("🔹 Switched to profile mode. Showing only favorite games.")
 
-        if not favorites:
-            label = QtWidgets.QLabel("No favorite games yet.")
-            label.setStyleSheet("color: white; font-size: 20px; padding: 20px;")
-            label.setAlignment(QtCore.Qt.AlignCenter)
-            layout.addWidget(label)
-        else:
-            for game in favorites.values():
-                game_frame = QtWidgets.QFrame()
-                game_frame.setStyleSheet("border: 1px solid #444; border-radius: 10px; background-color: #333;")
-                game_layout = QtWidgets.QHBoxLayout(game_frame)
 
-                # 🎮 Game Image
-                game_img = QtWidgets.QLabel()
-                game_img.setFixedSize(100, 60)
-                game_pixmap = self.download_image(game["img"])
-                if game_pixmap:
-                    game_img.setPixmap(game_pixmap)
-                    game_img.setScaledContents(True)
 
-                # 🎮 Game Name
-                game_name = QtWidgets.QLabel(game["name"])
-                game_name.setStyleSheet("color: white; font-size: 16px; padding: 5px;")
-                
-                # ❌ Remove Button
-                remove_button = QtWidgets.QPushButton("❌ Remove")
-                remove_button.setFixedSize(80, 30)
-                remove_button.setStyleSheet("background-color: red; color: white; border-radius: 10px;")
-                remove_button.clicked.connect(lambda _, g=game: self.remove_from_favorites(g))
 
-                # Add Widgets to Layout
-                game_layout.addWidget(game_img)
-                game_layout.addWidget(game_name)
-                game_layout.addStretch()
-                game_layout.addWidget(remove_button)
-
-                layout.addWidget(game_frame)
-
-        self.profile_window.setLayout(layout)
-        self.profile_window.show()
 
     def remove_from_favorites(self, game):
-        """Remove a game from favorites and refresh the profile window."""
+        """Remove a game from favorites and refresh the UI to show updated favorites."""
         favorites = self.load_favorites()
-        
+
         game_id = str(game["appid"])
-        
+
         if game_id in favorites:
             del favorites[game_id]
             self.save_favorites(favorites)
             print(f"❌ Removed {game['name']} from favorites.")
         
-        self.open_profile()  # Refresh profile window
+        self.open_profile()  # Refresh the profile section in the same window
+
 
 
     def truncate_text(self, text, max_length):
