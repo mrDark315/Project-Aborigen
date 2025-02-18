@@ -8,6 +8,7 @@ from components.ProfileButton import ProfileButton
 from components.CreatedByButton import CreatedByButton
 from components.NavArrows import AnimatedArrowButton
 from components.SideFilter import SideFilter
+from components.GameCardHome import GameCardHome
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -92,16 +93,15 @@ class Ui_MainWindow(object):
         self.current_page = 0
         handle_search(self)
 
-
         # Connect search bar & filter event
         self.search_timer = QtCore.QTimer()
         self.search_timer.setSingleShot(True)
         self.search_timer.timeout.connect(lambda: handle_search(self))
         self.search_bar.textChanged.connect(lambda: delay_search(self))
 
-    def go_home(self):
-                print("🏠 Home button clicked: Showing all games.")
-                handle_search(self)
+    # def go_home(self):
+    #             print("🏠 Home button clicked: Showing all games.")
+    #             handle_search(self)
 
     def display_game_icons(self):
         while self.grid_layout.count():
@@ -114,98 +114,22 @@ class Ui_MainWindow(object):
         end_index = min(start_index + 6, total_games)
         games_to_display = self.filtered_games[start_index:end_index]
 
-        # ✅ Print which games are being displayed (Debugging)
+        # Print which games are being displayed (Debugging)
         print(f"📄 Showing games {start_index + 1} to {end_index} out of {total_games}")
 
         row, col = 0, 0
         for game in games_to_display:
             print(f"🎮 Adding game: {game['name']}")
-            game_widget = self.create_game_card(game)
+            game_widget = GameCardHome(game, self)
             self.grid_layout.addWidget(game_widget, row, col)
             col += 1
             if col > 2:
                 col = 0
                 row += 1
 
-        # ✅ Enable/Disable Arrows based on pages
+        # Enable/Disable Arrows based on pages
         self.left_arrow.setEnabled(self.current_page > 0)
         self.right_arrow.setEnabled((self.current_page + 1) * 6 < total_games)
-
-    def create_game_card(self, game):
-        game_card = QtWidgets.QFrame()
-        game_card.setMaximumSize(460, 400)
-        game_card.setMinimumSize(360, 300)
-        game_card.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        game_card.setStyleSheet("""QFrame{border-radius: 35px; background-color: #454C55;}""")
-
-        main_layout = QtWidgets.QVBoxLayout(game_card)
-        main_layout.setContentsMargins(0, 0, 0, 0)
-
-        # 🖼️ Game Image (Using QPixmap)
-        game_img = QtWidgets.QLabel()
-        game_img.setFixedSize(350, 180)
-
-        game_pixmap = self.download_image(game["img"])
-        if game_pixmap:
-            game_img.setPixmap(game_pixmap)
-            game_img.setScaledContents(True)
-
-        main_layout.addWidget(game_img)
-
-        # Game Name Layout
-        info_layout = QtWidgets.QHBoxLayout()
-        info_layout.setContentsMargins(15, 5, 15, 0)
-        truncated_name = self.truncate_text(game["name"], 25)
-        game_name = QtWidgets.QLabel(truncated_name)
-        game_name.setStyleSheet("font-size: 22px; color: #fff;")
-        info_layout.addWidget(game_name)
-        info_layout.addStretch()
-
-        main_layout.addLayout(info_layout)
-
-        # ⭐ Rating & Controller Layout
-        rating_layout = QtWidgets.QHBoxLayout()
-        rating_layout.setContentsMargins(15, 5, 15, 10)
-
-        rating = game.get("rating", "N/A")
-        metacritic_icon = QtWidgets.QLabel()
-        metacritic_pixmap = QtGui.QPixmap("img/Metacritic_Logo.png").scaled(30, 30, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation)
-        metacritic_icon.setPixmap(metacritic_pixmap)
-
-        rating_label = QtWidgets.QLabel(f"{rating}")
-        rating_label.setStyleSheet("font-size: 20px; color: #fff;")
-
-        rating_layout.addWidget(metacritic_icon)
-        rating_layout.addWidget(rating_label)
-        rating_layout.addStretch()
-
-        # 🎮 Controller Icon
-        controller_icon = QtWidgets.QLabel()
-        controller_img = "img/Controller_On.png" if game.get("controller_support") == "full" else "img/Controller_Off.png"
-        controller_pixmap = QtGui.QPixmap(controller_img).scaled(30, 30, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation)
-        controller_icon.setPixmap(controller_pixmap)
-        rating_layout.addWidget(controller_icon)
-        rating_layout.addSpacing(10)
-
-        # ⭐ Bookmark Button (Add to Favorites)
-        bookmark_button = QtWidgets.QPushButton()
-        bookmark_button.setFixedSize(40, 40)
-        bookmark_button.setStyleSheet("background: transparent; border: none;")
-
-        # Set default bookmark state
-        favorites = self.load_favorites()
-        if game["appid"] in favorites:
-            bookmark_button.setIcon(QtGui.QIcon("img/Bookmark_Fill.png"))
-        else:
-            bookmark_button.setIcon(QtGui.QIcon("img/Bookmark_No_Fill.png"))
-
-        bookmark_button.clicked.connect(lambda: self.toggle_favorite(game, bookmark_button))
-
-        rating_layout.addWidget(bookmark_button)
-
-        main_layout.addLayout(rating_layout)
-
-        return game_card
 
     def toggle_favorite(self, game, button):
         favorites = self.load_favorites()
@@ -223,7 +147,6 @@ class Ui_MainWindow(object):
         self.save_favorites(favorites)
 
     def load_favorites(self):
-        """Load favorite games from a JSON file (returns a dictionary)."""
         if os.path.exists("store/favorites.json"):
             try:
                 with open("store/favorites.json", "r", encoding="utf-8") as file:
@@ -233,38 +156,32 @@ class Ui_MainWindow(object):
         return {}
 
     def save_favorites(self, favorites):
-        """Save favorite games to JSON file."""
         with open("store/favorites.json", "w", encoding="utf-8") as file:
             json.dump(favorites, file, indent=4, ensure_ascii=False)
 
     def hide_widgets_in_layout(self, layout):
-        """Hide all widgets in the given layout."""
         for i in range(layout.count()):
             widget = layout.itemAt(i).widget()
             if widget:
                 widget.setVisible(False)
 
     def show_widgets_in_layout(self, layout):
-        """Show all widgets in the given layout."""
         for i in range(layout.count()):
             widget = layout.itemAt(i).widget()
             if widget:
                 widget.setVisible(True)
 
     def open_profile(self):
-        """Update the game display to show only favorite games without hiding filters/search bar."""
-
-        # ✅ Change data source to `favorites.json`
+        # Change data source to `favorites.json`
         self.perform_search("store/favorites.json")
 
-        # ✅ Keep all UI elements visible (DO NOT hide filters, search bar, or arrows)
+        # Keep all UI elements visible (DO NOT hide filters, search bar, or arrows)
         self.show_widgets_in_layout(self.search_filter_layout)
         self.show_widgets_in_layout(self.grid_navigation_layout)
 
         print("🔹 Switched to profile mode. Showing only favorite games.")
 
     def remove_from_favorites(self, game):
-        """Remove a game from favorites and refresh the UI to show updated favorites."""
         favorites = self.load_favorites()
 
         game_id = str(game["appid"])
@@ -275,20 +192,6 @@ class Ui_MainWindow(object):
             print(f"❌ Removed {game['name']} from favorites.")
 
         self.open_profile()  # Refresh the profile section in the same window
-
-    def truncate_text(self, text, max_length):
-        return text if len(text) <= max_length else text[:max_length] + "..."
-
-    def download_image(self, url):
-        try:
-            response = requests.get(url)
-            response.raise_for_status()
-            image = QtGui.QImage()
-            image.loadFromData(response.content)
-            return QtGui.QPixmap(image)
-        except Exception as e:
-            print(f"Failed to load image: {url} - {e}")
-            return None
 
 
 if __name__ == "__main__":
