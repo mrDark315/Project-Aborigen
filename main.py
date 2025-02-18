@@ -1,6 +1,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import QSize, Qt
-from PyQt5.QtWidgets import QComboBox, QListWidget, QListWidgetItem, QCheckBox, QVBoxLayout, QWidget, QHBoxLayout, QLabel
+from func.search_func import handle_search, delay_search
+from func.download_data import cached_games_data
 import sys
 import json
 import requests
@@ -47,24 +48,9 @@ class Ui_MainWindow(object):
         self.home_btn = QtWidgets.QPushButton("Home")
         self.home_btn.setFixedSize(100, 50)
         self.home_btn.setFont(QtGui.QFont("Arial", 16))
-        self.home_btn.setStyleSheet("""
-            QPushButton {
-                background-color: #454C55;
-                color: white;
-                border-radius: 20px;
-                font-size: 16px;
-                border: 2px solid #626262;
-            }
-            QPushButton:hover {
-                background-color: #898989;
-            }
-        """)
+        self.home_btn.setStyleSheet("""QPushButton {background-color: #454C55; color: white; border-radius: 20px; font-size: 16px; border: 2px solid #626262;}
+            QPushButton:hover {background-color: #898989;}""")
         self.home_btn.clicked.connect(self.go_home)
-
-        # Add Home Button to Layout (Top Left)
-        self.search_filter_layout.addWidget(self.home_btn)
-
-
 
         # Add Home Button to Layout (Top Left)
         self.search_filter_layout.addWidget(self.home_btn)
@@ -162,22 +148,16 @@ class Ui_MainWindow(object):
             else:
                 dropdown.addItems(predefined_options.get(title, []))
 
-            dropdown.setStyleSheet(""" QComboBox {background-color: #454C55; border: none; height: 50px;
-                                    border-radius: 25px; padding-left: 30px; font-size: 28px; color: #000; }
-                                    QComboBox::drop-down {background-color: transparent; }
-                                    QComboBox QAbstractItemView {font-size: 20px; background-color: #454C55;
-                                    color: #000; selection-background-color: #454C55; selection-color: #898989;
-                                    border-radius: 10px; outline: none;}""")
+            dropdown.setStyleSheet(""" QComboBox {background-color: #454C55; border: none; height: 50px; border-radius: 25px; padding-left: 30px; font-size: 28px; color: #000;} QComboBox::drop-down {background-color: transparent;}
+            QComboBox QAbstractItemView {font-size: 20px; background-color: #454C55; color: #000; selection-background-color: #454C55; selection-color: #898989; border-radius: 10px; outline: none;}""")
 
-            # **Connect each filter to perform_search**
-            dropdown.currentIndexChanged.connect(self.perform_search)
+            # Connect each filter to perform_search
+            dropdown.currentIndexChanged.connect(lambda: handle_search(self))
 
             # Store filters in a list for easy access
             setattr(self, f"{title.lower().replace(' ', '_')}_filter", dropdown)
 
             self.side_filter_layout.addWidget(dropdown)
-
-
 
         # Grid Layout for Displaying Games
         self.grid_layout = QtWidgets.QGridLayout()
@@ -199,105 +179,23 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.main)
 
         # Load Game Data
-        self.games_data, self.games_data_dict = self.load_game_data("data.json")
+        self.filtered_games = cached_games_data
+        handle_search(self)
         self.current_page = 0
 
         # Connect search bar & filter event
         self.search_timer = QtCore.QTimer()
         self.search_timer.setSingleShot(True)
-        self.search_timer.timeout.connect(self.perform_search)
-        self.search_bar.textChanged.connect(self.delayed_search)
+        self.search_timer.timeout.connect(lambda: handle_search(self))
+        self.search_bar.textChanged.connect(lambda: delay_search(self))
 
-        # Show all games initially
-        self.perform_search()
+        # Connect handle_search
+        self.filtered_games = []
+        self.search_bar.textChanged.connect(lambda: handle_search(self))
 
     def go_home(self):
-                """Switch the source back to data.json and update the UI."""
                 print("🏠 Home button clicked: Showing all games.")
-
-                # Switch back to all games (load from data.json)
-                self.perform_search("data.json")
-
-
-    def load_game_data(self, file_path):
-        """Load game data from the specified JSON file."""
-        if os.path.exists(file_path):
-            try:
-                with open(file_path, "r", encoding="utf-8") as file:
-                    games = json.load(file)
-
-                # ✅ Handle `favorites.json` (stored as a dictionary)
-                if isinstance(games, dict):
-                    games_list = list(games.values())  # Convert dictionary to list
-                else:
-                    games_list = games  # Already a list
-
-                # Convert list to dictionary for quick lookup
-                games_dict = {str(game["appid"]): game for game in games_list}
-
-                return games_list, games_dict
-
-            except json.JSONDecodeError:
-                print(f"⚠️ Error: {file_path} is corrupted. Returning empty list.")
-                return [], {}
-
-        else:
-            print(f"⚠️ Warning: {file_path} not found. Returning empty list.")
-            return [], {}
-
-
-    def delayed_search(self):
-        self.search_timer.start(500)
-
-        # ✅ Sort games by rating (Highest to Lowest)
-        def get_valid_rating(game):
-            rating = str(game.get("rating", "0"))
-            return int(rating) if rating.isdigit() else 0
-
-        self.filtered_games.sort(key=get_valid_rating, reverse=True)
-
-        # ✅ Print how many games were found (Debugging)
-        print(f"🔍 Found {len(self.filtered_games)} games after filtering.")
-
-        # ✅ Reset to first page whenever search updates
-        self.current_page = 0
-
-        # ✅ Show/hide grid based on results
-        self.grid_widget.setVisible(len(self.filtered_games) > 0)
-
-        # ✅ Display games
-        self.display_game_icons()
-
-    def perform_search(self, data_source="data.json"):
-        """Update game results dynamically from the specified data source."""
-
-        # ✅ If switching back to all games, reset `is_profile_mode`
-        if data_source == "data.json":
-            self.is_profile_mode = False
-
-        # Load data from the given source file
-        self.games_data, self.games_data_dict = self.load_game_data(data_source)
-
-        search_query = self.search_bar.text().strip().lower()
-
-        # Filter games normally
-        self.filtered_games = list(filter(lambda game: search_query in game["name"].lower(), self.games_data))
-
-        # ✅ Sort games by rating (Highest to Lowest)
-        def get_valid_rating(game):
-            rating = str(game.get("rating", "0"))
-            return int(rating) if rating.isdigit() else 0
-
-        self.filtered_games.sort(key=get_valid_rating, reverse=True)
-
-        print(f"🔍 Found {len(self.filtered_games)} games from {data_source}.")
-
-        self.current_page = 0  # Reset page index
-
-        self.grid_widget.setVisible(len(self.filtered_games) > 0)
-        self.display_game_icons()
-
-
+                handle_search(self)
 
     def display_game_icons(self):
         while self.grid_layout.count():
@@ -413,7 +311,6 @@ class Ui_MainWindow(object):
 
         return game_card
 
-
     def toggle_favorite(self, game, button):
         """Toggle a game in the favorites list (add/remove)."""
         favorites = self.load_favorites()
@@ -430,8 +327,6 @@ class Ui_MainWindow(object):
 
         self.save_favorites(favorites)
 
-
-
     def load_favorites(self):
         """Load favorite games from a JSON file (returns a dictionary)."""
         if os.path.exists("favorites.json"):
@@ -446,7 +341,6 @@ class Ui_MainWindow(object):
         """Save favorite games to JSON file."""
         with open("favorites.json", "w", encoding="utf-8") as file:
             json.dump(favorites, file, indent=4, ensure_ascii=False)
-
 
     def hide_widgets_in_layout(self, layout):
         """Hide all widgets in the given layout."""
@@ -474,10 +368,6 @@ class Ui_MainWindow(object):
 
         print("🔹 Switched to profile mode. Showing only favorite games.")
 
-
-
-
-
     def remove_from_favorites(self, game):
         """Remove a game from favorites and refresh the UI to show updated favorites."""
         favorites = self.load_favorites()
@@ -490,8 +380,6 @@ class Ui_MainWindow(object):
             print(f"❌ Removed {game['name']} from favorites.")
 
         self.open_profile()  # Refresh the profile section in the same window
-
-
 
     def truncate_text(self, text, max_length):
         return text if len(text) <= max_length else text[:max_length] + "..."
