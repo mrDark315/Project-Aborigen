@@ -5,6 +5,8 @@ from func.download_data import cached_games_data
 from func.nav_pages import next_page, prev_page
 from func.search_func import handle_search, delay_search
 from components.NavArrows import AnimatedArrowButton
+from components.SearchBar import SearchBar
+from components.ProfileButton import ProfileButton
 
 
 class Ui_MainWindow(object):
@@ -29,32 +31,21 @@ class Ui_MainWindow(object):
         self.search_filter_layout.setSpacing(50)
 
         # Search Bar
-        self.search_bar = QtWidgets.QLineEdit()
-        self.search_bar.setFixedSize(660, 75)
-        font = QtGui.QFont()
-        self.search_bar.setFont(font)
-        self.search_bar.setStyleSheet("""QLineEdit{background-color: #454C55; color: #898989; border-radius: 35px; padding-left: 15px; font-size: 32px; border: 2px solid #626262;}
-        QLineEdit:hover {border: 2px solid #898989;}""")
-        self.search_bar.setPlaceholderText("Search for a game...")
+        self.search_bar = SearchBar(self)
 
         # Profile button
-        self.profile_btn = AnimatedProfileButton("img/Profile.png")
-        self.profile_btn.setFixedSize(100, 100)
-        self.profile_btn.setIconSize(QSize(75, 75))
-        self.profile_btn.setCursor(QtGui.QCursor(Qt.PointingHandCursor))
-        self.profile_btn.setStyleSheet("""border: none;""")
-        self.profile_btn.clicked.connect(self.open_profile)
+        self.profile_btn = ProfileButton(self)
 
         # Create Home Button
-        self.home_btn = QtWidgets.QPushButton("Home")
-        self.home_btn.setFixedSize(100, 50)
-        self.home_btn.setFont(QtGui.QFont("Arial", 16))
-        self.home_btn.setStyleSheet("""QPushButton {background-color: #454C55; color: white; border-radius: 20px; font-size: 16px; border: 2px solid #626262;}
-            QPushButton:hover {background-color: #898989;}""")
-        self.home_btn.clicked.connect(self.go_home)
+        # self.home_btn = QtWidgets.QPushButton("Home")
+        # self.home_btn.setFixedSize(100, 50)
+        # self.home_btn.setFont(QtGui.QFont("Arial", 16))
+        # self.home_btn.setStyleSheet("""QPushButton {background-color: #454C55; color: white; border-radius: 20px; font-size: 16px; border: 2px solid #626262;}
+        #     QPushButton:hover {background-color: #898989;}""")
+        # self.home_btn.clicked.connect(self.go_home)
 
         # Add Home Button to Layout (Top Left)
-        self.search_filter_layout.addWidget(self.home_btn)
+        # self.search_filter_layout.addWidget(self.home_btn)
 
         # Created by button
         self.created_by_btn = QtWidgets.QPushButton("Created by:")
@@ -372,34 +363,6 @@ class Ui_MainWindow(object):
             print(f"Failed to load image: {url} - {e}")
             return None
 
-
-class AnimatedProfileButton(QtWidgets.QPushButton):
-    def __init__(self, icon_path, parent=None):
-        super().__init__(parent)
-        self.setIcon(QtGui.QIcon(icon_path))
-
-        # Анимация изменения размера
-        self.animation = QtCore.QPropertyAnimation(self, b"iconSize")
-        self.animation.setDuration(200)
-        self.animation.setEasingCurve(QtCore.QEasingCurve.OutQuad)
-
-        self.original_size = QtCore.QSize(75, 75)
-        self.hover_size = QtCore.QSize(85, 85)
-        self.is_hover_enabled = True
-
-    def enterEvent(self, event):
-        if self.is_hover_enabled:
-            self.animation.stop()
-            self.animation.setStartValue(self.original_size)
-            self.animation.setEndValue(self.hover_size)
-            self.animation.start()
-
-    def leaveEvent(self, event):
-        if self.is_hover_enabled:
-            self.animation.stop()
-            self.animation.setStartValue(self.hover_size)
-            self.animation.setEndValue(self.original_size)
-            self.animation.start()
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
