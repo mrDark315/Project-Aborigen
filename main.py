@@ -4,10 +4,10 @@ import os, sys, json, requests
 from func.download_data import cached_games_data
 from func.nav_pages import next_page, prev_page
 from func.search_func import handle_search, delay_search
-from components.NavArrows import AnimatedArrowButton
 from components.SearchBar import SearchBar
 from components.ProfileButton import ProfileButton
-
+from components.CreatedByButton import CreatedByButton
+from components.NavArrows import AnimatedArrowButton
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -48,11 +48,7 @@ class Ui_MainWindow(object):
         # self.search_filter_layout.addWidget(self.home_btn)
 
         # Created by button
-        self.created_by_btn = QtWidgets.QPushButton("Created by:")
-        self.created_by_btn.setFixedSize(300, 75)
-        self.profile_btn.setCursor(QtGui.QCursor(Qt.PointingHandCursor))
-        self.created_by_btn.setStyleSheet("""QPushButton{background-color: #898989; color: #454C55; border: 2px solid #454C55; border-radius: 35px; font-size: 32px;}
-        QPushButton:hover {border: 4px solid #454C55;}""")
+        self.created_by_btn = CreatedByButton(self)
 
         # Add Search Bar to Layout
         self.search_filter_layout.addWidget(self.created_by_btn)
