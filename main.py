@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import QComboBox, QListWidget, QListWidgetItem, QCheckBox, 
 import sys
 import json
 import requests
+import os
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -41,6 +42,32 @@ class Ui_MainWindow(object):
         self.profile_btn.setIconSize(QSize(75, 75))
         self.profile_btn.setCursor(QtGui.QCursor(Qt.PointingHandCursor))
         self.profile_btn.setStyleSheet("""border: none;""")
+        self.profile_btn.clicked.connect(self.open_profile)
+        # Create Home Button
+        self.home_btn = QtWidgets.QPushButton("Home")
+        self.home_btn.setFixedSize(100, 50)
+        self.home_btn.setFont(QtGui.QFont("Arial", 16))
+        self.home_btn.setStyleSheet("""
+            QPushButton {
+                background-color: #454C55;
+                color: white;
+                border-radius: 20px;
+                font-size: 16px;
+                border: 2px solid #626262;
+            }
+            QPushButton:hover {
+                background-color: #898989;
+            }
+        """)
+        self.home_btn.clicked.connect(self.go_home)
+
+        # Add Home Button to Layout (Top Left)
+        self.search_filter_layout.addWidget(self.home_btn)
+
+
+
+        # Add Home Button to Layout (Top Left)
+        self.search_filter_layout.addWidget(self.home_btn)
 
         # Created by button
         self.created_by_btn = QtWidgets.QPushButton("Created by:")
@@ -124,7 +151,7 @@ class Ui_MainWindow(object):
         # Dropdown lists
         for i, title in enumerate(dropdown_titles):
             dropdown = QtWidgets.QComboBox()
-            dropdown.addItem(title)
+            dropdown.addItem(f"All {title}")  # Add "All" option
 
             if title == "Publisher":
                 publishers = [pub for pub in publishers if pub.strip()]
@@ -134,12 +161,23 @@ class Ui_MainWindow(object):
                 dropdown.addItems(developers)
             else:
                 dropdown.addItems(predefined_options.get(title, []))
-            dropdown.setStyleSheet("""
-                QComboBox {background-color: #454C55; border: none; height: 50px; border-radius: 25px; padding-left: 30px; font-size: 28px; color: #000; }
-                QComboBox::drop-down {background-color: transparent; }
-                QComboBox QAbstractItemView {font-size: 20px; background-color: #454C55; color: #000; selection-background-color: #454C55; selection-color: #898989; border-radius: 10px; outline: none;}
-            """)
+
+            dropdown.setStyleSheet(""" QComboBox {background-color: #454C55; border: none; height: 50px;
+                                    border-radius: 25px; padding-left: 30px; font-size: 28px; color: #000; }
+                                    QComboBox::drop-down {background-color: transparent; }
+                                    QComboBox QAbstractItemView {font-size: 20px; background-color: #454C55;
+                                    color: #000; selection-background-color: #454C55; selection-color: #898989;
+                                    border-radius: 10px; outline: none;}""")
+
+            # **Connect each filter to perform_search**
+            dropdown.currentIndexChanged.connect(self.perform_search)
+
+            # Store filters in a list for easy access
+            setattr(self, f"{title.lower().replace(' ', '_')}_filter", dropdown)
+
             self.side_filter_layout.addWidget(dropdown)
+
+
 
         # Grid Layout for Displaying Games
         self.grid_layout = QtWidgets.QGridLayout()
@@ -173,19 +211,40 @@ class Ui_MainWindow(object):
         # Show all games initially
         self.perform_search()
 
+    def go_home(self):
+                """Switch the source back to data.json and update the UI."""
+                print("🏠 Home button clicked: Showing all games.")
+
+                # Switch back to all games (load from data.json)
+                self.perform_search("data.json")
+
+
     def load_game_data(self, file_path):
-        try:
-            with open(file_path, "r", encoding="utf-8") as file:
-                games_list = json.load(file)
+        """Load game data from the specified JSON file."""
+        if os.path.exists(file_path):
+            try:
+                with open(file_path, "r", encoding="utf-8") as file:
+                    games = json.load(file)
 
-            # Создаем словарь для быстрого доступа по названию
-            games_dict = {game["name"].lower(): game for game in games_list}
+                # ✅ Handle `favorites.json` (stored as a dictionary)
+                if isinstance(games, dict):
+                    games_list = list(games.values())  # Convert dictionary to list
+                else:
+                    games_list = games  # Already a list
 
-            return games_list, games_dict
+                # Convert list to dictionary for quick lookup
+                games_dict = {str(game["appid"]): game for game in games_list}
 
-        except Exception as e:
-            print(f"Error loading data.json: {e}")
+                return games_list, games_dict
+
+            except json.JSONDecodeError:
+                print(f"⚠️ Error: {file_path} is corrupted. Returning empty list.")
+                return [], {}
+
+        else:
+            print(f"⚠️ Warning: {file_path} not found. Returning empty list.")
             return [], {}
+
 
     def delayed_search(self):
         self.search_timer.start(500)
@@ -209,28 +268,36 @@ class Ui_MainWindow(object):
         # ✅ Display games
         self.display_game_icons()
 
-    def perform_search(self):
+    def perform_search(self, data_source="data.json"):
+        """Update game results dynamically from the specified data source."""
+
+        # ✅ If switching back to all games, reset `is_profile_mode`
+        if data_source == "data.json":
+            self.is_profile_mode = False
+
+        # Load data from the given source file
+        self.games_data, self.games_data_dict = self.load_game_data(data_source)
+
         search_query = self.search_bar.text().strip().lower()
 
-        # Фильтрация без создания нового списка (используем filter)
+        # Filter games normally
         self.filtered_games = list(filter(lambda game: search_query in game["name"].lower(), self.games_data))
 
-        # Преобразование строки рейтинга в число для сравнения
+        # ✅ Sort games by rating (Highest to Lowest)
         def get_valid_rating(game):
             rating = str(game.get("rating", "0"))
             return int(rating) if rating.isdigit() else 0
 
-        # Проверяем, была ли сортировка уже выполнена
-        if not hasattr(self, "_is_sorted") or not self._is_sorted:
-            self.filtered_games.sort(key=get_valid_rating, reverse=True)
-            self._is_sorted = True  # Отмечаем, что сортировка уже была
+        self.filtered_games.sort(key=get_valid_rating, reverse=True)
 
-        print(f"🔍 Найдено {len(self.filtered_games)} игр после фильтрации.")
+        print(f"🔍 Found {len(self.filtered_games)} games from {data_source}.")
 
-        self.current_page = 0  # Сбрасываем страницу
+        self.current_page = 0  # Reset page index
 
         self.grid_widget.setVisible(len(self.filtered_games) > 0)
         self.display_game_icons()
+
+
 
     def display_game_icons(self):
         while self.grid_layout.count():
@@ -280,90 +347,151 @@ class Ui_MainWindow(object):
         main_layout = QtWidgets.QVBoxLayout(game_card)
         main_layout.setContentsMargins(0, 0, 0, 0)
 
-        # Game Image
+        # 🖼️ Game Image (Using QPixmap)
         game_img = QtWidgets.QLabel()
-        game_img.setGeometry(QtCore.QRect(0, 0, 460, 215))
+        game_img.setFixedSize(350, 180)
 
         game_pixmap = self.download_image(game["img"])
         if game_pixmap:
             game_img.setPixmap(game_pixmap)
             game_img.setScaledContents(True)
 
-            # Apply mask to round the top corners
-            mask = QtGui.QRegion(game_img.rect())
-            radius = 35
-
-            left_circle_region = QtGui.QRegion(0, 0, radius*2, radius*2, QtGui.QRegion.Ellipse)
-            right_circle_region = QtGui.QRegion(game_img.width() - radius*2, 0, radius*2, radius*2, QtGui.QRegion.Ellipse)
-
-            final_mask = mask.intersected(left_circle_region.united(right_circle_region).boundingRect())
-
-            mask = QtGui.QRegion(game_img.rect())
-            mask -= QtGui.QRegion(0, 0, radius, radius)
-            mask -= QtGui.QRegion(game_img.width() - radius, 0, radius, radius)
-
-            left_circle_region = QtGui.QRegion(0, 0, radius*2, radius*2, QtGui.QRegion.Ellipse)
-            right_circle_region = QtGui.QRegion(game_img.width() - radius*2, 0, radius*2, radius*2, QtGui.QRegion.Ellipse)
-            final_mask = mask.united(left_circle_region).united(right_circle_region)
-
-            game_img.setMask(final_mask)
-
         main_layout.addWidget(game_img)
 
-        # Game Name & Platform Layout
+        # Game Name Layout
         info_layout = QtWidgets.QHBoxLayout()
-        info_layout.setContentsMargins(20, 10, 20, 0)
-        truncated_name = self.truncate_text(game["name"], 29)
+        info_layout.setContentsMargins(15, 5, 15, 0)
+        truncated_name = self.truncate_text(game["name"], 25)
         game_name = QtWidgets.QLabel(truncated_name)
-        game_name.setStyleSheet("font-size: 30px; color: #fff;")
+        game_name.setStyleSheet("font-size: 22px; color: #fff;")
         info_layout.addWidget(game_name)
-
         info_layout.addStretch()
+
         main_layout.addLayout(info_layout)
 
-        # Rating & Controller Layout
+        # ⭐ Rating & Controller Layout
         rating_layout = QtWidgets.QHBoxLayout()
-        rating_layout.setContentsMargins(20, 10, 20, 20)
+        rating_layout.setContentsMargins(15, 5, 15, 10)
 
-        try:
-            metacritic_data = eval(game.get("metacritic", "{}"))
-            rating = metacritic_data.get("score", "N/A")
-        except Exception:
-            rating = "N/A"
-
-        # Create QLabel for logo
+        rating = game.get("rating", "N/A")
         metacritic_icon = QtWidgets.QLabel()
-        metacritic_pixmap = QtGui.QPixmap("img/Metacritic_Logo.png")
-        metacritic_pixmap = metacritic_pixmap.scaled(40, 40, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation)
+        metacritic_pixmap = QtGui.QPixmap("img/Metacritic_Logo.png").scaled(30, 30, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation)
         metacritic_icon.setPixmap(metacritic_pixmap)
 
-        # Create QLabel for rating
         rating_label = QtWidgets.QLabel(f"{rating}")
-        rating_label.setStyleSheet("font-size: 28px; color: #fff;")
+        rating_label.setStyleSheet("font-size: 20px; color: #fff;")
 
-        # Add icon&rating in `rating_layout`
         rating_layout.addWidget(metacritic_icon)
-        rating_layout.addWidget(rating_label)
         rating_layout.addWidget(rating_label)
         rating_layout.addStretch()
 
         # 🎮 Controller Icon
         controller_icon = QtWidgets.QLabel()
         controller_img = "img/Controller_On.png" if game.get("controller_support") == "full" else "img/Controller_Off.png"
-        controller_pixmap = QtGui.QPixmap(controller_img)
-        controller_icon.setPixmap(controller_pixmap.scaled(40, 33, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation))
+        controller_pixmap = QtGui.QPixmap(controller_img).scaled(30, 30, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation)
+        controller_icon.setPixmap(controller_pixmap)
         rating_layout.addWidget(controller_icon)
-        rating_layout.addSpacing(20)
+        rating_layout.addSpacing(10)
 
-        # Bookmark Icon
-        bookmark_label = QtWidgets.QLabel()
-        star_pixmap = QtGui.QPixmap("img/Bookmark_No_Fill.png")
-        bookmark_label.setPixmap(star_pixmap.scaled(40, 40, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation))
-        rating_layout.addWidget(bookmark_label)
+        # ⭐ Bookmark Button (Add to Favorites)
+        bookmark_button = QtWidgets.QPushButton()
+        bookmark_button.setFixedSize(40, 40)
+        bookmark_button.setStyleSheet("background: transparent; border: none;")
+
+        # Set default bookmark state
+        favorites = self.load_favorites()
+        if game["appid"] in favorites:
+            bookmark_button.setIcon(QtGui.QIcon("img/Bookmark_Fill.png"))
+        else:
+            bookmark_button.setIcon(QtGui.QIcon("img/Bookmark_No_Fill.png"))
+
+        bookmark_button.clicked.connect(lambda: self.toggle_favorite(game, bookmark_button))
+
+        rating_layout.addWidget(bookmark_button)
 
         main_layout.addLayout(rating_layout)
 
         return game_card
+
+
+    def toggle_favorite(self, game, button):
+        """Toggle a game in the favorites list (add/remove)."""
+        favorites = self.load_favorites()
+        game_id = str(game["appid"])  # Ensure game IDs are strings
+
+        if game_id in favorites:
+            del favorites[game_id]  # Remove game
+            button.setIcon(QtGui.QIcon("img/Bookmark_No_Fill.png"))  # Change to unfilled icon
+            print(f"❌ Removed {game['name']} from favorites.")
+        else:
+            favorites[game_id] = game  # Add game
+            button.setIcon(QtGui.QIcon("img/Bookmark_Fill.png"))  # Change to filled icon
+            print(f"⭐ Added {game['name']} to favorites.")
+
+        self.save_favorites(favorites)
+
+
+
+    def load_favorites(self):
+        """Load favorite games from a JSON file (returns a dictionary)."""
+        if os.path.exists("favorites.json"):
+            try:
+                with open("favorites.json", "r", encoding="utf-8") as file:
+                    return json.load(file)
+            except json.JSONDecodeError:
+                return {}  # Return empty if file is corrupted
+        return {}
+
+    def save_favorites(self, favorites):
+        """Save favorite games to JSON file."""
+        with open("favorites.json", "w", encoding="utf-8") as file:
+            json.dump(favorites, file, indent=4, ensure_ascii=False)
+
+
+    def hide_widgets_in_layout(self, layout):
+        """Hide all widgets in the given layout."""
+        for i in range(layout.count()):
+            widget = layout.itemAt(i).widget()
+            if widget:
+                widget.setVisible(False)
+
+    def show_widgets_in_layout(self, layout):
+        """Show all widgets in the given layout."""
+        for i in range(layout.count()):
+            widget = layout.itemAt(i).widget()
+            if widget:
+                widget.setVisible(True)
+
+    def open_profile(self):
+        """Update the game display to show only favorite games without hiding filters/search bar."""
+
+        # ✅ Change data source to `favorites.json`
+        self.perform_search("favorites.json")
+
+        # ✅ Keep all UI elements visible (DO NOT hide filters, search bar, or arrows)
+        self.show_widgets_in_layout(self.search_filter_layout)
+        self.show_widgets_in_layout(self.grid_navigation_layout)
+
+        print("🔹 Switched to profile mode. Showing only favorite games.")
+
+
+
+
+
+    def remove_from_favorites(self, game):
+        """Remove a game from favorites and refresh the UI to show updated favorites."""
+        favorites = self.load_favorites()
+
+        game_id = str(game["appid"])
+
+        if game_id in favorites:
+            del favorites[game_id]
+            self.save_favorites(favorites)
+            print(f"❌ Removed {game['name']} from favorites.")
+
+        self.open_profile()  # Refresh the profile section in the same window
+
+
 
     def truncate_text(self, text, max_length):
         return text if len(text) <= max_length else text[:max_length] + "..."
