@@ -1,12 +1,19 @@
-from func.download_data import cached_games_data
+from func.download_data import *
 
 def search_games(query):
     query = query.strip().lower()
-    return [game for game in cached_games_data if query in game["name"].lower()]
+    return [cached_games_dict[key] for key in cached_games_dict if query in key]
 
 def handle_search(ui):
     search_query = ui.search_bar.text().strip()
-    ui.filtered_games = search_games(search_query) if search_query else cached_games_data
+    if not cached_games_data:
+        print("⚠️ Ошибка: Данные игр не загружены!")
+        return
+
+    if search_query:
+        ui.filtered_games = search_games(search_query)
+    else:
+        ui.filtered_games = cached_games_data[:]
     ui.current_page = 0
     ui.grid_widget.setVisible(len(ui.filtered_games) > 0)
     ui.display_game_icons()

@@ -179,19 +179,16 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.main)
 
         # Load Game Data
-        self.filtered_games = cached_games_data
-        handle_search(self)
+        self.filtered_games = cached_games_data[:]
         self.current_page = 0
+        handle_search(self)
+
 
         # Connect search bar & filter event
         self.search_timer = QtCore.QTimer()
         self.search_timer.setSingleShot(True)
         self.search_timer.timeout.connect(lambda: handle_search(self))
         self.search_bar.textChanged.connect(lambda: delay_search(self))
-
-        # Connect handle_search
-        self.filtered_games = []
-        self.search_bar.textChanged.connect(lambda: handle_search(self))
 
     def go_home(self):
                 print("🏠 Home button clicked: Showing all games.")
@@ -227,7 +224,11 @@ class Ui_MainWindow(object):
 
     def next_page(self):
         total_games = len(self.filtered_games)
-        max_pages = (total_games // 6) + (1 if total_games % 6 else 0)
+        max_pages = (total_games + 5) // 6
+
+        if total_games == 0:
+            print("⚠️ Нет игр для перелистывания!")
+            return
 
         if self.current_page + 1 < max_pages:
             self.current_page += 1
