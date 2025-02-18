@@ -5,7 +5,7 @@ import random
 cached_games_data = []
 cached_games_dict = {}
 
-def load_json_data(file_path="data.json"):
+def load_json_data(file_path="store/data.json"):
     global cached_games_data, cached_games_dict
 
     if os.path.exists(file_path):

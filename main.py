@@ -99,7 +99,7 @@ class Ui_MainWindow(object):
         self.side_filter_widget.setStyleSheet("background-color: transparent; margin-left: 25;")
 
         # Upload JSON file
-        file_path = "data.json"
+        file_path = "store/data.json"
         with open(file_path, "r", encoding="utf-8") as file:
             data = json.load(file)
 
@@ -318,7 +318,6 @@ class Ui_MainWindow(object):
         return game_card
 
     def toggle_favorite(self, game, button):
-        """Toggle a game in the favorites list (add/remove)."""
         favorites = self.load_favorites()
         game_id = str(game["appid"])  # Ensure game IDs are strings
 
@@ -335,9 +334,9 @@ class Ui_MainWindow(object):
 
     def load_favorites(self):
         """Load favorite games from a JSON file (returns a dictionary)."""
-        if os.path.exists("favorites.json"):
+        if os.path.exists("store/favorites.json"):
             try:
-                with open("favorites.json", "r", encoding="utf-8") as file:
+                with open("store/favorites.json", "r", encoding="utf-8") as file:
                     return json.load(file)
             except json.JSONDecodeError:
                 return {}  # Return empty if file is corrupted
@@ -345,7 +344,7 @@ class Ui_MainWindow(object):
 
     def save_favorites(self, favorites):
         """Save favorite games to JSON file."""
-        with open("favorites.json", "w", encoding="utf-8") as file:
+        with open("store/favorites.json", "w", encoding="utf-8") as file:
             json.dump(favorites, file, indent=4, ensure_ascii=False)
 
     def hide_widgets_in_layout(self, layout):
@@ -366,7 +365,7 @@ class Ui_MainWindow(object):
         """Update the game display to show only favorite games without hiding filters/search bar."""
 
         # ✅ Change data source to `favorites.json`
-        self.perform_search("favorites.json")
+        self.perform_search("store/favorites.json")
 
         # ✅ Keep all UI elements visible (DO NOT hide filters, search bar, or arrows)
         self.show_widgets_in_layout(self.search_filter_layout)
