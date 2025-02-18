@@ -205,7 +205,7 @@ class Ui_MainWindow(object):
 
         total_games = len(self.filtered_games)
         start_index = self.current_page * 6
-        end_index = start_index + 6
+        end_index = min(start_index + 6, total_games)
         games_to_display = self.filtered_games[start_index:end_index]
 
         # ✅ Print which games are being displayed (Debugging)
@@ -223,16 +223,21 @@ class Ui_MainWindow(object):
 
         # ✅ Enable/Disable Arrows based on pages
         self.left_arrow.setEnabled(self.current_page > 0)
-        self.right_arrow.setEnabled((self.current_page + 1) * 6 < len(self.filtered_games))
+        self.right_arrow.setEnabled((self.current_page + 1) * 6 < total_games)
 
     def next_page(self):
-        if (self.current_page + 1) * 6 < len(self.filtered_games):
+        total_games = len(self.filtered_games)
+        max_pages = (total_games // 6) + (1 if total_games % 6 else 0)
+
+        if self.current_page + 1 < max_pages:
             self.current_page += 1
+            print(f"➡️ Change page {self.current_page + 1}/{max_pages}")
             self.display_game_icons()
 
     def prev_page(self):
         if self.current_page > 0:
             self.current_page -= 1
+            print(f"⬅️ Change page {self.current_page + 1}")
             self.display_game_icons()
 
     def create_game_card(self, game):
