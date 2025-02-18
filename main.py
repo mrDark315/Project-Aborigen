@@ -31,17 +31,6 @@ class Ui_MainWindow(object):
         self.search_filter_layout.setAlignment(Qt.AlignCenter)
         self.search_filter_layout.setSpacing(50)
 
-        # Create Home Button
-        # self.home_btn = QtWidgets.QPushButton("Home")
-        # self.home_btn.setFixedSize(100, 50)
-        # self.home_btn.setFont(QtGui.QFont("Arial", 16))
-        # self.home_btn.setStyleSheet("""QPushButton {background-color: #454C55; color: white; border-radius: 20px; font-size: 16px; border: 2px solid #626262;}
-        #     QPushButton:hover {background-color: #898989;}""")
-        # self.home_btn.clicked.connect(self.go_home)
-
-        # Add Home Button to Layout (Top Left)
-        # self.search_filter_layout.addWidget(self.home_btn)
-
         # Created by button
         self.created_by_btn = CreatedByButton(self)
 
@@ -99,10 +88,6 @@ class Ui_MainWindow(object):
         self.search_timer.timeout.connect(lambda: handle_search(self))
         self.search_bar.textChanged.connect(lambda: delay_search(self))
 
-    # def go_home(self):
-    #             print("🏠 Home button clicked: Showing all games.")
-    #             handle_search(self)
-
     def display_game_icons(self):
         while self.grid_layout.count():
             widget = self.grid_layout.takeAt(0).widget()
@@ -131,67 +116,52 @@ class Ui_MainWindow(object):
         self.left_arrow.setEnabled(self.current_page > 0)
         self.right_arrow.setEnabled((self.current_page + 1) * 6 < total_games)
 
-    def toggle_favorite(self, game, button):
-        favorites = self.load_favorites()
-        game_id = str(game["appid"])  # Ensure game IDs are strings
+    # def load_favorites(self):
+    #     if os.path.exists("store/favorites.json"):
+    #         try:
+    #             with open("store/favorites.json", "r", encoding="utf-8") as file:
+    #                 return json.load(file)
+    #         except json.JSONDecodeError:
+    #             return {}  # Return empty if file is corrupted
+    #     return {}
 
-        if game_id in favorites:
-            del favorites[game_id]  # Remove game
-            button.setIcon(QtGui.QIcon("img/Bookmark_No_Fill.png"))  # Change to unfilled icon
-            print(f"❌ Removed {game['name']} from favorites.")
-        else:
-            favorites[game_id] = game  # Add game
-            button.setIcon(QtGui.QIcon("img/Bookmark_Fill.png"))  # Change to filled icon
-            print(f"⭐ Added {game['name']} to favorites.")
+    # def save_favorites(self, favorites):
+    #     with open("store/favorites.json", "w", encoding="utf-8") as file:
+    #         json.dump(favorites, file, indent=4, ensure_ascii=False)
 
-        self.save_favorites(favorites)
+    # def hide_widgets_in_layout(self, layout):
+    #     for i in range(layout.count()):
+    #         widget = layout.itemAt(i).widget()
+    #         if widget:
+    #             widget.setVisible(False)
 
-    def load_favorites(self):
-        if os.path.exists("store/favorites.json"):
-            try:
-                with open("store/favorites.json", "r", encoding="utf-8") as file:
-                    return json.load(file)
-            except json.JSONDecodeError:
-                return {}  # Return empty if file is corrupted
-        return {}
+    # def show_widgets_in_layout(self, layout):
+    #     for i in range(layout.count()):
+    #         widget = layout.itemAt(i).widget()
+    #         if widget:
+    #             widget.setVisible(True)
 
-    def save_favorites(self, favorites):
-        with open("store/favorites.json", "w", encoding="utf-8") as file:
-            json.dump(favorites, file, indent=4, ensure_ascii=False)
+    # def open_profile(self):
+    #     # Change data source to `favorites.json`
+    #     self.perform_search("store/favorites.json")
 
-    def hide_widgets_in_layout(self, layout):
-        for i in range(layout.count()):
-            widget = layout.itemAt(i).widget()
-            if widget:
-                widget.setVisible(False)
+    #     # Keep all UI elements visible (DO NOT hide filters, search bar, or arrows)
+    #     self.show_widgets_in_layout(self.search_filter_layout)
+    #     self.show_widgets_in_layout(self.grid_navigation_layout)
 
-    def show_widgets_in_layout(self, layout):
-        for i in range(layout.count()):
-            widget = layout.itemAt(i).widget()
-            if widget:
-                widget.setVisible(True)
+    #     print("🔹 Switched to profile mode. Showing only favorite games.")
 
-    def open_profile(self):
-        # Change data source to `favorites.json`
-        self.perform_search("store/favorites.json")
+    # def remove_from_favorites(self, game):
+    #     favorites = self.load_favorites()
 
-        # Keep all UI elements visible (DO NOT hide filters, search bar, or arrows)
-        self.show_widgets_in_layout(self.search_filter_layout)
-        self.show_widgets_in_layout(self.grid_navigation_layout)
+    #     game_id = str(game["appid"])
 
-        print("🔹 Switched to profile mode. Showing only favorite games.")
+    #     if game_id in favorites:
+    #         del favorites[game_id]
+    #         self.save_favorites(favorites)
+    #         print(f"❌ Removed {game['name']} from favorites.")
 
-    def remove_from_favorites(self, game):
-        favorites = self.load_favorites()
-
-        game_id = str(game["appid"])
-
-        if game_id in favorites:
-            del favorites[game_id]
-            self.save_favorites(favorites)
-            print(f"❌ Removed {game['name']} from favorites.")
-
-        self.open_profile()  # Refresh the profile section in the same window
+    #     self.open_profile()  # Refresh the profile section in the same window
 
 
 if __name__ == "__main__":

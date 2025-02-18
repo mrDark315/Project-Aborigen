@@ -15,7 +15,7 @@ class GameCardHome(QtWidgets.QFrame):
         main_layout = QtWidgets.QVBoxLayout(self)
         main_layout.setContentsMargins(0, 0, 0, 0)
 
-        # 🖼️ Game Image
+        # Game Image
         game_img = QtWidgets.QLabel()
         game_img.setMaximumSize(460, 215)
         game_img.setMinimumSize(360, 215)
@@ -30,7 +30,7 @@ class GameCardHome(QtWidgets.QFrame):
         # Game Name
         info_layout = QtWidgets.QHBoxLayout()
         info_layout.setContentsMargins(20, 5, 20, 0)
-        truncated_name = self.truncate_text(game.get("name", "Unknown Game"), 25)
+        truncated_name = self.truncate_text(game.get("name", "Unknown Game"), 32)
         game_name = QtWidgets.QLabel(truncated_name)
         game_name.setStyleSheet("font-size: 24px; color: #fff;")
         info_layout.addWidget(game_name)
@@ -68,14 +68,15 @@ class GameCardHome(QtWidgets.QFrame):
         bookmark_button.setIconSize(QtCore.QSize(40, 40))
         bookmark_button.setFixedSize(30, 40)
         bookmark_button.setStyleSheet("background: transparent; border: none;")
+        bookmark_button.setIcon(QtGui.QIcon("img/Bookmark_No_Fill.png"))
 
-        favorites = self.parent_ui.load_favorites()
-        if str(game.get("appid", "")) in favorites:
-            bookmark_button.setIcon(QtGui.QIcon("img/Bookmark_Fill.png"))
-        else:
-            bookmark_button.setIcon(QtGui.QIcon("img/Bookmark_No_Fill.png"))
+        # favorites = self.parent_ui.load_favorites()
+        # if str(game.get("appid", "")) in favorites:
+        #     bookmark_button.setIcon(QtGui.QIcon("img/Bookmark_Fill.png"))
+        # else:
+        #     bookmark_button.setIcon(QtGui.QIcon("img/Bookmark_No_Fill.png"))
 
-        bookmark_button.clicked.connect(lambda: self.parent_ui.toggle_favorite(game, bookmark_button))
+        # bookmark_button.clicked.connect(lambda: self.parent_ui.toggle_favorite(game, bookmark_button))
 
         rating_layout.addWidget(bookmark_button)
         main_layout.addLayout(rating_layout)
