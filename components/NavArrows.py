@@ -1,9 +1,12 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import Qt
+from func.nav_pages import next_page, prev_page
 
 class AnimatedArrowButton(QtWidgets.QPushButton):
-    def __init__(self, icon_path, parent=None):
-        super().__init__(parent)
+    def __init__(self, icon_path, parent_ui, direction):
+        super().__init__(parent_ui.main)
+        self.parent_ui = parent_ui
+
         self.setFixedSize(50, 50)
         self.setCursor(QtGui.QCursor(Qt.PointingHandCursor))
         self.setIcon(QtGui.QIcon(icon_path))
@@ -13,7 +16,7 @@ class AnimatedArrowButton(QtWidgets.QPushButton):
         self.opacity_effect = QtWidgets.QGraphicsOpacityEffect(self)
         self.setGraphicsEffect(self.opacity_effect)
 
-        # Resize Animation
+        # Resize animation
         self.animation = QtCore.QPropertyAnimation(self, b"iconSize")
         self.animation.setDuration(200)
         self.animation.setEasingCurve(QtCore.QEasingCurve.OutQuad)
@@ -22,6 +25,12 @@ class AnimatedArrowButton(QtWidgets.QPushButton):
         self.hover_size = QtCore.QSize(50, 50)
         self.disabled_size = QtCore.QSize(30, 30)
         self.is_hover_enabled = True
+
+        # Connecting click handlers
+        if direction == "left":
+            self.clicked.connect(lambda: prev_page(self.parent_ui))
+        elif direction == "right":
+            self.clicked.connect(lambda: next_page(self.parent_ui))
 
     def setEnabled(self, enabled):
         super().setEnabled(enabled)

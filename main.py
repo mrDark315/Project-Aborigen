@@ -2,7 +2,6 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import QSize, Qt
 import os, sys, json, requests
 from func.download_data import cached_games_data
-from func.nav_pages import next_page, prev_page
 from func.search_func import handle_search, delay_search
 from components.SearchBar import SearchBar
 from components.ProfileButton import ProfileButton
@@ -60,12 +59,10 @@ class Ui_MainWindow(object):
         self.grid_navigation_layout.setAlignment(Qt.AlignCenter)
 
         # Left Arrow Button
-        self.left_arrow = AnimatedArrowButton("img/Arrow_Left.png")
-        self.left_arrow.clicked.connect(lambda: prev_page(self))
+        self.left_arrow = AnimatedArrowButton("img/Arrow_Left.png", self, "left")
 
         # Right Arrow Button
-        self.right_arrow = AnimatedArrowButton("img/Arrow_Right.png")
-        self.right_arrow.clicked.connect(lambda: next_page(self))
+        self.right_arrow = AnimatedArrowButton("img/Arrow_Right.png", self, "right")
 
         # Side Filter Layout
         self.main_layout = QtWidgets.QHBoxLayout(self.main)
