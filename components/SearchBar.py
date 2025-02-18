@@ -11,7 +11,7 @@ class SearchBar(QtWidgets.QLineEdit):
         self.setFont(font)
         self.setStyleSheet("""QLineEdit{background-color: #454C55; color: #898989; border-radius: 35px; padding-left: 15px; font-size: 32px; border: 2px solid #626262;}
             QLineEdit:hover {border: 2px solid #898989;}""")
-        self.setPlaceholderText("Search for a game...")
+        self.setPlaceholderText("Enter at least 3 letters to search games...")
 
         self.search_timer = QtCore.QTimer()
         self.search_timer.setSingleShot(True)

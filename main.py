@@ -1,8 +1,7 @@
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtCore import QSize, Qt
-import os, sys, json, requests
-from func.download_data import cached_games_data
-from func.search_func import handle_search, delay_search
+import sys
+from func.search_func import handle_search, delay_search, cached_games_dict
 from components.SearchBar import SearchBar
 from components.ProfileButton import ProfileButton
 from components.CreatedByButton import CreatedByButton
@@ -78,7 +77,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.main)
 
         # Load Game Data
-        self.filtered_games = cached_games_data[:]
+        self.filtered_games = list(cached_games_dict.values())
         self.current_page = 0
         handle_search(self)
 

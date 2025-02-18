@@ -70,14 +70,6 @@ class GameCardHome(QtWidgets.QFrame):
         bookmark_button.setStyleSheet("background: transparent; border: none;")
         bookmark_button.setIcon(QtGui.QIcon("img/Bookmark_No_Fill.png"))
 
-        # favorites = self.parent_ui.load_favorites()
-        # if str(game.get("appid", "")) in favorites:
-        #     bookmark_button.setIcon(QtGui.QIcon("img/Bookmark_Fill.png"))
-        # else:
-        #     bookmark_button.setIcon(QtGui.QIcon("img/Bookmark_No_Fill.png"))
-
-        # bookmark_button.clicked.connect(lambda: self.parent_ui.toggle_favorite(game, bookmark_button))
-
         rating_layout.addWidget(bookmark_button)
         main_layout.addLayout(rating_layout)
 

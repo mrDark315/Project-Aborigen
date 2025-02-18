@@ -1,0 +1,7173 @@
+[
+    {
+        "id": 10,
+        "name": "Counter-Strike",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Team Fortress Classic",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 30,
+        "name": "Day of Defeat",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 40,
+        "name": "Deathmatch Classic",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 50,
+        "name": "Half-Life: Opposing Force",
+        "developers": [
+            "Gearbox Software"
+        ]
+    },
+    {
+        "id": 60,
+        "name": "Ricochet",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 70,
+        "name": "Half-Life",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 80,
+        "name": "Counter-Strike: Condition Zero",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 130,
+        "name": "Half-Life: Blue Shift",
+        "developers": [
+            "Gearbox Software"
+        ]
+    },
+    {
+        "id": 220,
+        "name": "Half-Life 2",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 240,
+        "name": "Counter-Strike: Source",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 280,
+        "name": "Half-Life: Source",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 300,
+        "name": "Day of Defeat: Source",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 320,
+        "name": "Half-Life 2: Deathmatch",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 340,
+        "name": "Half-Life 2: Lost Coast",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 360,
+        "name": "Half-Life Deathmatch: Source",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 380,
+        "name": "Half-Life 2: Episode One",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 400,
+        "name": "Portal",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 420,
+        "name": "Half-Life 2: Episode Two",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 440,
+        "name": "Team Fortress 2",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 500,
+        "name": "Left 4 Dead",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 550,
+        "name": "Left 4 Dead 2",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 570,
+        "name": "Dota 2",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 620,
+        "name": "Portal 2",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 630,
+        "name": "Alien Swarm",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 730,
+        "name": "Counter-Strike 2",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 1250,
+        "name": "Killing Floor",
+        "developers": [
+            "Tripwire Interactive"
+        ]
+    },
+    {
+        "id": 1840,
+        "name": "Source Filmmaker",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 2100,
+        "name": "Dark Messiah of Might & Magic",
+        "developers": [
+            "Arkane Studios"
+        ]
+    },
+    {
+        "id": 2280,
+        "name": "DOOM (1993)",
+        "developers": [
+            "id Software"
+        ]
+    },
+    {
+        "id": 2310,
+        "name": "Quake",
+        "developers": [
+            "id Software",
+            "Nightdive Studios",
+            "MachineGames"
+        ]
+    },
+    {
+        "id": 2400,
+        "name": "The Ship: Murder Party",
+        "developers": [
+            "Outerlight Ltd."
+        ]
+    },
+    {
+        "id": 2630,
+        "name": "Call of Duty® 2",
+        "developers": [
+            "Infinity Ward"
+        ]
+    },
+    {
+        "id": 3590,
+        "name": "Plants vs. Zombies GOTY Edition",
+        "developers": [
+            "PopCap Games, Inc."
+        ]
+    },
+    {
+        "id": 3830,
+        "name": "Psychonauts",
+        "developers": [
+            "Double Fine Productions"
+        ]
+    },
+    {
+        "id": 3900,
+        "name": "Sid Meier's Civilization® IV",
+        "developers": [
+            "Firaxis Games"
+        ]
+    },
+    {
+        "id": 3910,
+        "name": "Sid Meier's Civilization® III Complete",
+        "developers": [
+            "Firaxis Games"
+        ]
+    },
+    {
+        "id": 4000,
+        "name": "Garry's Mod",
+        "developers": [
+            "Facepunch Studios"
+        ]
+    },
+    {
+        "id": 4500,
+        "name": "S.T.A.L.K.E.R.: Shadow of Chernobyl",
+        "developers": [
+            "GSC Game World"
+        ]
+    },
+    {
+        "id": 4560,
+        "name": "Company of Heroes - Legacy Edition",
+        "developers": [
+            "Relic Entertainment"
+        ]
+    },
+    {
+        "id": 4570,
+        "name": "Warhammer® 40,000: Dawn of War® - Game of the Year Edition",
+        "developers": [
+            "Relic Entertainment"
+        ]
+    },
+    {
+        "id": 4580,
+        "name": "Warhammer® 40,000: Dawn of War® - Dark Crusade",
+        "developers": [
+            "Relic Entertainment"
+        ]
+    },
+    {
+        "id": 4700,
+        "name": "Total War: MEDIEVAL II – Definitive Edition",
+        "developers": [
+            "CREATIVE ASSEMBLY",
+            "Feral Interactive (Mac)",
+            "Feral Interactive (Linux)"
+        ]
+    },
+    {
+        "id": 4760,
+        "name": "Rome: Total War™ - Collection",
+        "developers": [
+            "CREATIVE ASSEMBLY"
+        ]
+    },
+    {
+        "id": 4920,
+        "name": "Natural Selection 2",
+        "developers": [
+            "Unknown Worlds Entertainment"
+        ]
+    },
+    {
+        "id": 6000,
+        "name": "STAR WARS™ Republic Commando™",
+        "developers": [
+            "LucasArts"
+        ]
+    },
+    {
+        "id": 6020,
+        "name": "STAR WARS™ Jedi Knight - Jedi Academy™",
+        "developers": [
+            "Raven Software"
+        ]
+    },
+    {
+        "id": 6060,
+        "name": "Star Wars: Battlefront 2 (Classic, 2005)",
+        "developers": [
+            "Pandemic Studios"
+        ]
+    },
+    {
+        "id": 6850,
+        "name": "Hitman 2: Silent Assassin",
+        "developers": [
+            "Io-Interactive A/S"
+        ]
+    },
+    {
+        "id": 6860,
+        "name": "Hitman: Blood Money",
+        "developers": [
+            "Io-Interactive A/S"
+        ]
+    },
+    {
+        "id": 6880,
+        "name": "Just Cause",
+        "developers": [
+            "Avalanche Studios"
+        ]
+    },
+    {
+        "id": 6900,
+        "name": "Hitman: Codename 47",
+        "developers": [
+            "IO Interactive A/S"
+        ]
+    },
+    {
+        "id": 6910,
+        "name": "Deus Ex: Game of the Year Edition",
+        "developers": [
+            "Ion Storm"
+        ]
+    },
+    {
+        "id": 6920,
+        "name": "Deus Ex: Invisible War",
+        "developers": [
+            "Ion Storm"
+        ]
+    },
+    {
+        "id": 7670,
+        "name": "BioShock™",
+        "developers": [
+            "2K Boston",
+            "2K Australia"
+        ]
+    },
+    {
+        "id": 7760,
+        "name": "X-COM: UFO Defense",
+        "developers": [
+            "MicroProse Software, Inc"
+        ]
+    },
+    {
+        "id": 7940,
+        "name": "Call of Duty® 4: Modern Warfare® (2007)",
+        "developers": [
+            "Infinity Ward"
+        ]
+    },
+    {
+        "id": 8190,
+        "name": "Just Cause 2",
+        "developers": [
+            "Avalanche Studios"
+        ]
+    },
+    {
+        "id": 8230,
+        "name": "Sam & Max 104: Abe Lincoln Must Die!",
+        "developers": [
+            "Telltale Games"
+        ]
+    },
+    {
+        "id": 8500,
+        "name": "EVE Online",
+        "developers": [
+            "CCP"
+        ]
+    },
+    {
+        "id": 8850,
+        "name": "BioShock® 2",
+        "developers": [
+            "2K Marin",
+            "2K China",
+            "Digital Extremes",
+            "2K Australia"
+        ]
+    },
+    {
+        "id": 8870,
+        "name": "BioShock Infinite",
+        "developers": [
+            "Irrational Games",
+            "Virtual Programming (Linux)"
+        ]
+    },
+    {
+        "id": 8930,
+        "name": "Sid Meier's Civilization® V",
+        "developers": [
+            "Firaxis Games",
+            "Aspyr (Mac)",
+            "Aspyr (Linux)"
+        ]
+    },
+    {
+        "id": 8980,
+        "name": "Borderlands Game of the Year",
+        "developers": [
+            "Gearbox Software"
+        ]
+    },
+    {
+        "id": 9340,
+        "name": "Company of Heroes: Opposing Fronts",
+        "developers": [
+            "Relic Entertainment"
+        ]
+    },
+    {
+        "id": 9420,
+        "name": "Supreme Commander: Forged Alliance",
+        "developers": [
+            "Gas Powered Games"
+        ]
+    },
+    {
+        "id": 9450,
+        "name": "Warhammer® 40,000: Dawn of War® - Soulstorm",
+        "developers": [
+            "Relic Entertainment"
+        ]
+    },
+    {
+        "id": 9480,
+        "name": "Saints Row 2",
+        "developers": [
+            "Volition"
+        ]
+    },
+    {
+        "id": 9880,
+        "name": "Champions Online",
+        "developers": [
+            "Cryptic Studios"
+        ]
+    },
+    {
+        "id": 9900,
+        "name": "Star Trek Online",
+        "developers": [
+            "Cryptic Studios"
+        ]
+    },
+    {
+        "id": 10090,
+        "name": "Call of Duty: World at War",
+        "developers": [
+            "Treyarch"
+        ]
+    },
+    {
+        "id": 10180,
+        "name": "Call of Duty®: Modern Warfare® 2 (2009)",
+        "developers": [
+            "Infinity Ward"
+        ]
+    },
+    {
+        "id": 10500,
+        "name": "Total War: EMPIRE – Definitive Edition",
+        "developers": [
+            "CREATIVE ASSEMBLY",
+            "Feral Interactive (Mac)",
+            "Feral Interactive (Linux)"
+        ]
+    },
+    {
+        "id": 10680,
+        "name": "Aliens vs. Predator™",
+        "developers": [
+            "Rebellion"
+        ]
+    },
+    {
+        "id": 11020,
+        "name": "TrackMania Nations Forever",
+        "developers": [
+            "Nadeo"
+        ]
+    },
+    {
+        "id": 12100,
+        "name": "Grand Theft Auto III",
+        "developers": [
+            "Rockstar Games"
+        ]
+    },
+    {
+        "id": 12110,
+        "name": "Grand Theft Auto: Vice City",
+        "developers": [
+            "Rockstar Games"
+        ]
+    },
+    {
+        "id": 12120,
+        "name": "Grand Theft Auto: San Andreas",
+        "developers": [
+            "Rockstar Games"
+        ]
+    },
+    {
+        "id": 12200,
+        "name": "Bully: Scholarship Edition",
+        "developers": [
+            "Rockstar New England"
+        ]
+    },
+    {
+        "id": 12210,
+        "name": "Grand Theft Auto IV: The Complete Edition",
+        "developers": [
+            "Rockstar North",
+            "Rockstar Toronto"
+        ]
+    },
+    {
+        "id": 12220,
+        "name": "Grand Theft Auto: Episodes from Liberty City",
+        "developers": [
+            "Rockstar North / Toronto"
+        ]
+    },
+    {
+        "id": 12810,
+        "name": "Overlord II",
+        "developers": [
+            "Triumph Studios"
+        ]
+    },
+    {
+        "id": 12900,
+        "name": "AudioSurf",
+        "developers": [
+            "Dylan Fitterer"
+        ]
+    },
+    {
+        "id": 13520,
+        "name": "Far Cry®",
+        "developers": [
+            "Crytek Studios"
+        ]
+    },
+    {
+        "id": 15100,
+        "name": "Assassin's Creed™: Director's Cut Edition",
+        "developers": [
+            "Ubisoft Montreal"
+        ]
+    },
+    {
+        "id": 15620,
+        "name": "Warhammer 40,000: Dawn of War II",
+        "developers": [
+            "Relic Entertainment",
+            "Feral Interactive (Mac/Linux)"
+        ]
+    },
+    {
+        "id": 15700,
+        "name": "Oddworld: Abe's Oddysee®",
+        "developers": [
+            "Oddworld Inhabitants"
+        ]
+    },
+    {
+        "id": 17080,
+        "name": "Tribes: Ascend",
+        "developers": [
+            "Hi-Rez Studios"
+        ]
+    },
+    {
+        "id": 17300,
+        "name": "Crysis",
+        "developers": [
+            "Crytek"
+        ]
+    },
+    {
+        "id": 17330,
+        "name": "Crysis Warhead®",
+        "developers": [
+            "Crytek"
+        ]
+    },
+    {
+        "id": 17390,
+        "name": "SPORE™",
+        "developers": [
+            "Maxis™"
+        ]
+    },
+    {
+        "id": 17410,
+        "name": "Mirror's Edge™",
+        "developers": [
+            "DICE"
+        ]
+    },
+    {
+        "id": 17460,
+        "name": "Mass Effect (2007)",
+        "developers": [
+            "BioWare"
+        ]
+    },
+    {
+        "id": 17470,
+        "name": "Dead Space (2008)",
+        "developers": [
+            "EA Redwood Shores"
+        ]
+    },
+    {
+        "id": 17480,
+        "name": "Command & Conquer: Red Alert 3",
+        "developers": [
+            "EA Los Angeles"
+        ]
+    },
+    {
+        "id": 19680,
+        "name": "Alice: Madness Returns",
+        "developers": [
+            "Spicy Horse Games"
+        ]
+    },
+    {
+        "id": 19900,
+        "name": "Far Cry® 2",
+        "developers": [
+            "Ubisoft Montreal"
+        ]
+    },
+    {
+        "id": 20500,
+        "name": "Red Faction Guerrilla Steam Edition",
+        "developers": [
+            "Volition",
+            "Reactor Zero",
+            "THQ Nordic"
+        ]
+    },
+    {
+        "id": 20510,
+        "name": "S.T.A.L.K.E.R.: Clear Sky",
+        "developers": [
+            "GSC Game World"
+        ]
+    },
+    {
+        "id": 20570,
+        "name": "Warhammer® 40,000: Dawn of War® II Chaos Rising",
+        "developers": [
+            "Relic Entertainment",
+            "Feral Interactive (Mac/Linux)"
+        ]
+    },
+    {
+        "id": 20900,
+        "name": "The Witcher: Enhanced Edition Director's Cut",
+        "developers": [
+            "CD PROJEKT RED"
+        ]
+    },
+    {
+        "id": 20920,
+        "name": "The Witcher 2: Assassins of Kings Enhanced Edition",
+        "developers": [
+            "CD PROJEKT RED"
+        ]
+    },
+    {
+        "id": 21100,
+        "name": "F.E.A.R. 3",
+        "developers": [
+            "Day 1 Studios"
+        ]
+    },
+    {
+        "id": 21090,
+        "name": "F.E.A.R.",
+        "developers": [
+            "Monolith Productions, Inc.",
+            "Timegate"
+        ]
+    },
+    {
+        "id": 21090,
+        "name": "F.E.A.R.",
+        "developers": [
+            "Monolith Productions, Inc.",
+            "Timegate"
+        ]
+    },
+    {
+        "id": 21690,
+        "name": "Resident Evil 5",
+        "developers": [
+            "Capcom"
+        ]
+    },
+    {
+        "id": 22000,
+        "name": "World of Goo",
+        "developers": [
+            "2D BOY"
+        ]
+    },
+    {
+        "id": 22320,
+        "name": "The Elder Scrolls III: Morrowind® Game of the Year Edition",
+        "developers": [
+            "Bethesda Game Studios"
+        ]
+    },
+    {
+        "id": 22330,
+        "name": "The Elder Scrolls IV: Oblivion® Game of the Year Edition",
+        "developers": [
+            "Bethesda Game Studios"
+        ]
+    },
+    {
+        "id": 22350,
+        "name": "BRINK",
+        "developers": [
+            "Splash Damage"
+        ]
+    },
+    {
+        "id": 22370,
+        "name": "Fallout 3: Game of the Year Edition",
+        "developers": [
+            "Bethesda Game Studios"
+        ]
+    },
+    {
+        "id": 22380,
+        "name": "Fallout: New Vegas",
+        "developers": [
+            "Obsidian Entertainment"
+        ]
+    },
+    {
+        "id": 24200,
+        "name": "DC Universe™ Online",
+        "developers": [
+            "Dimensional Ink Games"
+        ]
+    },
+    {
+        "id": 24240,
+        "name": "PAYDAY™ The Heist",
+        "developers": [
+            "OVERKILL Software"
+        ]
+    },
+    {
+        "id": 24740,
+        "name": "Burnout Paradise: The Ultimate Box",
+        "developers": [
+            "Criterion Games"
+        ]
+    },
+    {
+        "id": 24960,
+        "name": "Battlefield: Bad Company™ 2",
+        "developers": [
+            "DICE"
+        ]
+    },
+    {
+        "id": 24980,
+        "name": "Mass Effect 2 (2010 Edition)",
+        "developers": [
+            "BioWare"
+        ]
+    },
+    {
+        "id": 26800,
+        "name": "Braid",
+        "developers": [
+            "Number None"
+        ]
+    },
+    {
+        "id": 32370,
+        "name": "STAR WARS™ Knights of the Old Republic™",
+        "developers": [
+            "BioWare",
+            "Aspyr (Mac)"
+        ]
+    },
+    {
+        "id": 32430,
+        "name": "STAR WARS™ - The Force Unleashed™ Ultimate Sith Edition",
+        "developers": [
+            "LucasArts"
+        ]
+    },
+    {
+        "id": 32470,
+        "name": "STAR WARS™ Empire at War - Gold Pack",
+        "developers": [
+            "Petroglyph"
+        ]
+    },
+    {
+        "id": 32800,
+        "name": "Lord of the Rings: War in the North",
+        "developers": [
+            "Snowblind Studios"
+        ]
+    },
+    {
+        "id": 33230,
+        "name": "Assassin's Creed 2",
+        "developers": [
+            "Ubisoft Montreal"
+        ]
+    },
+    {
+        "id": 33900,
+        "name": "Arma 2",
+        "developers": [
+            "Bohemia Interactive"
+        ]
+    },
+    {
+        "id": 33930,
+        "name": "Arma 2: Operation Arrowhead",
+        "developers": [
+            "Bohemia Interactive"
+        ]
+    },
+    {
+        "id": 34030,
+        "name": "Total War: NAPOLEON – Definitive Edition",
+        "developers": [
+            "CREATIVE ASSEMBLY",
+            "Feral Interactive (Mac)"
+        ]
+    },
+    {
+        "id": 34270,
+        "name": "SEGA Mega Drive and Genesis Classics",
+        "developers": [
+            "D3T Limited"
+        ]
+    },
+    {
+        "id": 3990,
+        "name": "Civilization IV®: Warlords",
+        "developers": [
+            "Firaxis Games"
+        ]
+    },
+    {
+        "id": 34870,
+        "name": "Sniper: Ghost Warrior 2",
+        "developers": [
+            "City Interactive"
+        ]
+    },
+    {
+        "id": 35140,
+        "name": "Batman: Arkham Asylum Game of the Year Edition",
+        "developers": [
+            "Rocksteady Studios"
+        ]
+    },
+    {
+        "id": 35450,
+        "name": "Red Orchestra 2: Heroes of Stalingrad with Rising Storm",
+        "developers": [
+            "Tripwire Interactive"
+        ]
+    },
+    {
+        "id": 35700,
+        "name": "Trine Enchanted Edition",
+        "developers": [
+            "Frozenbyte"
+        ]
+    },
+    {
+        "id": 35720,
+        "name": "Trine 2: Complete Story",
+        "developers": [
+            "Frozenbyte"
+        ]
+    },
+    {
+        "id": 38400,
+        "name": "Fallout: A Post Nuclear Role Playing Game",
+        "developers": [
+            "Interplay Inc."
+        ]
+    },
+    {
+        "id": 38410,
+        "name": "Fallout 2: A Post Nuclear Role Playing Game",
+        "developers": [
+            "Black Isle Studios"
+        ]
+    },
+    {
+        "id": 38420,
+        "name": "Fallout Tactics: Brotherhood of Steel",
+        "developers": [
+            "14° East"
+        ]
+    },
+    {
+        "id": 39000,
+        "name": "Moonbase Alpha",
+        "developers": [
+            "Virtual Heroes",
+            "Army Game Studio"
+        ]
+    },
+    {
+        "id": 39120,
+        "name": "RIFT",
+        "developers": [
+            "gamigo US Inc."
+        ]
+    },
+    {
+        "id": 39140,
+        "name": "FINAL FANTASY VII",
+        "developers": [
+            "Square Enix"
+        ]
+    },
+    {
+        "id": 39210,
+        "name": "FINAL FANTASY XIV Online",
+        "developers": [
+            "Square Enix"
+        ]
+    },
+    {
+        "id": 39500,
+        "name": "Gothic® 3",
+        "developers": [
+            "Piranha Bytes"
+        ]
+    },
+    {
+        "id": 40100,
+        "name": "Supreme Commander 2",
+        "developers": [
+            "Gas Powered Games"
+        ]
+    },
+    {
+        "id": 40800,
+        "name": "Super Meat Boy",
+        "developers": [
+            "Team Meat"
+        ]
+    },
+    {
+        "id": 40950,
+        "name": "Stronghold HD",
+        "developers": [
+            "FireFly Studios"
+        ]
+    },
+    {
+        "id": 40970,
+        "name": "Stronghold Crusader HD",
+        "developers": [
+            "FireFly Studios"
+        ]
+    },
+    {
+        "id": 40990,
+        "name": "Mafia",
+        "developers": [
+            "Illusion Softworks"
+        ]
+    },
+    {
+        "id": 41000,
+        "name": "Serious Sam HD: The First Encounter",
+        "developers": [
+            "Croteam"
+        ]
+    },
+    {
+        "id": 41070,
+        "name": "Serious Sam 3: BFE",
+        "developers": [
+            "Croteam"
+        ]
+    },
+    {
+        "id": 41500,
+        "name": "Torchlight",
+        "developers": [
+            "Runic Games"
+        ]
+    },
+    {
+        "id": 41700,
+        "name": "S.T.A.L.K.E.R.: Call of Pripyat",
+        "developers": [
+            "GSC Game World"
+        ]
+    },
+    {
+        "id": 42700,
+        "name": "Call of Duty®: Black Ops",
+        "developers": [
+            "Treyarch"
+        ]
+    },
+    {
+        "id": 42910,
+        "name": "Magicka",
+        "developers": [
+            "Arrowhead Game Studios"
+        ]
+    },
+    {
+        "id": 42960,
+        "name": "Victoria II",
+        "developers": [
+            "Paradox Development Studio"
+        ]
+    },
+    {
+        "id": 47780,
+        "name": "Dead Space™ 2",
+        "developers": [
+            "Visceral Games"
+        ]
+    },
+    {
+        "id": 47790,
+        "name": "Medal of Honor™",
+        "developers": [
+            "Electronic Arts"
+        ]
+    },
+    {
+        "id": 47810,
+        "name": "Dragon Age: Origins - Ultimate Edition",
+        "developers": [
+            "BioWare"
+        ]
+    },
+    {
+        "id": 47870,
+        "name": "Need For Speed: Hot Pursuit",
+        "developers": [
+            "Criterion Games"
+        ]
+    },
+    {
+        "id": 47890,
+        "name": "The Sims™ 3",
+        "developers": [
+            "The Sims Studio"
+        ]
+    },
+    {
+        "id": 48000,
+        "name": "LIMBO",
+        "developers": [
+            "Playdead"
+        ]
+    },
+    {
+        "id": 48190,
+        "name": "Assassin’s Creed® Brotherhood",
+        "developers": [
+            "Ubisoft Montreal"
+        ]
+    },
+    {
+        "id": 48700,
+        "name": "Mount & Blade: Warband",
+        "developers": [
+            "TaleWorlds Entertainment"
+        ]
+    },
+    {
+        "id": 49520,
+        "name": "Borderlands 2",
+        "developers": [
+            "Gearbox Software",
+            "Aspyr (Mac)",
+            "Aspyr (Linux)"
+        ]
+    },
+    {
+        "id": 49540,
+        "name": "Aliens: Colonial Marines Collection",
+        "developers": [
+            "Gearbox Software"
+        ]
+    },
+    {
+        "id": 50130,
+        "name": "Mafia II (Classic)",
+        "developers": [
+            "2K Czech"
+        ]
+    },
+    {
+        "id": 50300,
+        "name": "Spec Ops: The Line",
+        "developers": [
+            "YAGER"
+        ]
+    },
+    {
+        "id": 50620,
+        "name": "Darksiders™",
+        "developers": [
+            "Vigil Games"
+        ]
+    },
+    {
+        "id": 55100,
+        "name": "Homefront",
+        "developers": [
+            "Kaos Studios",
+            "Digital Extremes"
+        ]
+    },
+    {
+        "id": 55110,
+        "name": "Red Faction®: Armageddon™",
+        "developers": [
+            "Volition"
+        ]
+    },
+    {
+        "id": 55150,
+        "name": "Warhammer 40,000: Space Marine - Anniversary Edition",
+        "developers": [
+            "Relic Entertainment"
+        ]
+    },
+    {
+        "id": 55230,
+        "name": "Saints Row: The Third",
+        "developers": [
+            "Volition"
+        ]
+    },
+    {
+        "id": 56400,
+        "name": "Warhammer 40,000: Dawn of War II: Retribution",
+        "developers": [
+            "Relic Entertainment",
+            "Feral Interactive (Mac/Linux)"
+        ]
+    },
+    {
+        "id": 57300,
+        "name": "Amnesia: The Dark Descent",
+        "developers": [
+            "Frictional Games"
+        ]
+    },
+    {
+        "id": 57690,
+        "name": "Tropico 4",
+        "developers": [
+            "Haemimont Games"
+        ]
+    },
+    {
+        "id": 63380,
+        "name": "Sniper Elite V2",
+        "developers": [
+            "Rebellion"
+        ]
+    },
+    {
+        "id": 65790,
+        "name": "ARMA: Cold War Assault",
+        "developers": [
+            "Bohemia Interactive"
+        ]
+    },
+    {
+        "id": 65800,
+        "name": "Dungeon Defenders",
+        "developers": [
+            "Chromatic Games"
+        ]
+    },
+    {
+        "id": 65930,
+        "name": "The Bureau: XCOM Declassified",
+        "developers": [
+            "2K Marin"
+        ]
+    },
+    {
+        "id": 65980,
+        "name": "Sid Meier's Civilization®: Beyond Earth™",
+        "developers": [
+            "Firaxis Games",
+            "Aspyr (Mac)",
+            "Aspyr (Linux)"
+        ]
+    },
+    {
+        "id": 67370,
+        "name": "The Darkness II",
+        "developers": [
+            "Digital Extremes"
+        ]
+    },
+    {
+        "id": 70000,
+        "name": "Dino D-Day",
+        "developers": [
+            "800 North and Digital Ranch"
+        ]
+    },
+    {
+        "id": 72850,
+        "name": "The Elder Scrolls V: Skyrim",
+        "developers": [
+            "Bethesda Game Studios"
+        ]
+    },
+    {
+        "id": 96000,
+        "name": "The Tiny Bang Story",
+        "developers": [
+            "Colibri Games"
+        ]
+    },
+    {
+        "id": 96100,
+        "name": "Defy Gravity Extended",
+        "developers": [
+            "Paul Fisch"
+        ]
+    },
+    {
+        "id": 99900,
+        "name": "Spiral Knights",
+        "developers": [
+            "Grey Havens"
+        ]
+    },
+    {
+        "id": 102500,
+        "name": "Kingdoms of Amalur: Reckoning™",
+        "developers": [
+            "Big Huge Games",
+            "38 Studios"
+        ]
+    },
+    {
+        "id": 102600,
+        "name": "Orcs Must Die!",
+        "developers": [
+            "Robot Entertainment"
+        ]
+    },
+    {
+        "id": 104900,
+        "name": "ORION: Prelude",
+        "developers": [
+            "DANKIE"
+        ]
+    },
+    {
+        "id": 105450,
+        "name": "Age of Empires® III (2007)",
+        "developers": [
+            "Ensemble Studios"
+        ]
+    },
+    {
+        "id": 105600,
+        "name": "Terraria",
+        "developers": [
+            "Re-Logic"
+        ]
+    },
+    {
+        "id": 107100,
+        "name": "Bastion",
+        "developers": [
+            "Supergiant Games"
+        ]
+    },
+    {
+        "id": 107310,
+        "name": "Cthulhu Saves the World",
+        "developers": [
+            "Zeboyd Digital Entertainment LLC"
+        ]
+    },
+    {
+        "id": 107410,
+        "name": "Arma 3",
+        "developers": [
+            "Bohemia Interactive"
+        ]
+    },
+    {
+        "id": 108600,
+        "name": "Project Zomboid",
+        "developers": [
+            "The Indie Stone"
+        ]
+    },
+    {
+        "id": 108710,
+        "name": "Alan Wake",
+        "developers": [
+            "Remedy Entertainment"
+        ]
+    },
+    {
+        "id": 108800,
+        "name": "Crysis 2 - Maximum Edition",
+        "developers": [
+            "Crytek Studios"
+        ]
+    },
+    {
+        "id": 109600,
+        "name": "Neverwinter",
+        "developers": [
+            "Cryptic Studios"
+        ]
+    },
+    {
+        "id": 110800,
+        "name": "L.A. Noire",
+        "developers": [
+            "Team Bondi",
+            "Rockstar Leeds"
+        ]
+    },
+    {
+        "id": 113020,
+        "name": "Monaco: What's Yours Is Mine",
+        "developers": [
+            "Pocketwatch Games"
+        ]
+    },
+    {
+        "id": 113200,
+        "name": "The Binding of Isaac",
+        "developers": [
+            "Edmund McMillen",
+            "Florian Himsl"
+        ]
+    },
+    {
+        "id": 113400,
+        "name": "APB Reloaded",
+        "developers": [
+            "Reloaded Productions"
+        ]
+    },
+    {
+        "id": 113420,
+        "name": "Fallen Earth Classic",
+        "developers": [
+            "Little Orbit"
+        ]
+    },
+    {
+        "id": 42680,
+        "name": "Call of Duty®: Modern Warfare® 3",
+        "developers": [
+            "Infinity Ward",
+            "Sledgehammer Games"
+        ]
+    },
+    {
+        "id": 200170,
+        "name": "Worms Revolution",
+        "developers": [
+            "Team17 Digital Ltd"
+        ]
+    },
+    {
+        "id": 200210,
+        "name": "Realm of the Mad God Exalt",
+        "developers": [
+            "Wild Shadow Studios",
+            "Deca Games"
+        ]
+    },
+    {
+        "id": 200260,
+        "name": "Batman: Arkham City - Game of the Year Edition",
+        "developers": [
+            "Rocksteady Studios"
+        ]
+    },
+    {
+        "id": 200510,
+        "name": "XCOM: Enemy Unknown",
+        "developers": [
+            "Firaxis Games",
+            "Feral Interactive (Linux)"
+        ]
+    },
+    {
+        "id": 200710,
+        "name": "Torchlight II",
+        "developers": [
+            "Runic Games"
+        ]
+    },
+    {
+        "id": 34330,
+        "name": "Total War: SHOGUN 2",
+        "developers": [
+            "CREATIVE ASSEMBLY",
+            "Feral Interactive (Mac)",
+            "Feral Interactive (Linux)"
+        ]
+    },
+    {
+        "id": 201790,
+        "name": "Orcs Must Die! 2",
+        "developers": [
+            "Robot Entertainment"
+        ]
+    },
+    {
+        "id": 201810,
+        "name": "Wolfenstein: The New Order",
+        "developers": [
+            "MachineGames"
+        ]
+    },
+    {
+        "id": 201870,
+        "name": "Assassin's Creed® Revelations",
+        "developers": [
+            "Ubisoft Montreal"
+        ]
+    },
+    {
+        "id": 202170,
+        "name": "Sleeping Dogs",
+        "developers": [
+            "United Front Games"
+        ]
+    },
+    {
+        "id": 202750,
+        "name": "Alan Wake's American Nightmare",
+        "developers": [
+            "Remedy Entertainment"
+        ]
+    },
+    {
+        "id": 202970,
+        "name": "Call of Duty®: Black Ops II",
+        "developers": [
+            "Treyarch"
+        ]
+    },
+    {
+        "id": 203140,
+        "name": "Hitman: Absolution™",
+        "developers": [
+            "Io-Interactive A/S"
+        ]
+    },
+    {
+        "id": 203160,
+        "name": "Tomb Raider",
+        "developers": [
+            "Crystal Dynamics",
+            "Eidos-Montréal",
+            "Feral Interactive (Mac)",
+            "Nixxes"
+        ]
+    },
+    {
+        "id": 203290,
+        "name": "America's Army: Proving Grounds",
+        "developers": [
+            "U.S. Army"
+        ]
+    },
+    {
+        "id": 203770,
+        "name": "Crusader Kings II",
+        "developers": [
+            "Paradox Development Studio"
+        ]
+    },
+    {
+        "id": 204100,
+        "name": "Max Payne 3",
+        "developers": [
+            "Rockstar Studios"
+        ]
+    },
+    {
+        "id": 204300,
+        "name": "Awesomenauts - the 2D moba",
+        "developers": [
+            "Ronimo Games"
+        ]
+    },
+    {
+        "id": 204340,
+        "name": "Serious Sam 2",
+        "developers": [
+            "Croteam"
+        ]
+    },
+    {
+        "id": 204360,
+        "name": "Castle Crashers®",
+        "developers": [
+            "The Behemoth"
+        ]
+    },
+    {
+        "id": 204450,
+        "name": "Call of Juarez: Gunslinger",
+        "developers": [
+            "Techland"
+        ]
+    },
+    {
+        "id": 204880,
+        "name": "Sins of a Solar Empire®: Rebellion",
+        "developers": [
+            "Ironclad Games",
+            "Stardock Entertainment"
+        ]
+    },
+    {
+        "id": 205100,
+        "name": "Dishonored",
+        "developers": [
+            "Arkane Studios"
+        ]
+    },
+    {
+        "id": 205230,
+        "name": "Hell Yeah! Wrath of the Dead Rabbit",
+        "developers": [
+            "Arkedo"
+        ]
+    },
+    {
+        "id": 206210,
+        "name": "Gotham City Impostors Free to Play",
+        "developers": [
+            "Monolith Productions, Inc."
+        ]
+    },
+    {
+        "id": 206420,
+        "name": "Saints Row IV: Re-Elected",
+        "developers": [
+            "Deep Silver Volition"
+        ]
+    },
+    {
+        "id": 206440,
+        "name": "To the Moon",
+        "developers": [
+            "Freebird Games"
+        ]
+    },
+    {
+        "id": 206480,
+        "name": "Dungeons & Dragons Online®",
+        "developers": [
+            "Standing Stone Games, LLC"
+        ]
+    },
+    {
+        "id": 206500,
+        "name": "AirMech Strike",
+        "developers": [
+            "Carbon Games"
+        ]
+    },
+    {
+        "id": 207140,
+        "name": "SpeedRunners",
+        "developers": [
+            "DoubleDutch Games"
+        ]
+    },
+    {
+        "id": 207230,
+        "name": "ArcheBlade™",
+        "developers": [
+            "CodeBrush Games"
+        ]
+    },
+    {
+        "id": 207610,
+        "name": "The Walking Dead",
+        "developers": [
+            "Telltale Games"
+        ]
+    },
+    {
+        "id": 208090,
+        "name": "Loadout",
+        "developers": [
+            "Edge of Reality"
+        ]
+    },
+    {
+        "id": 208140,
+        "name": "ENDLESS™ Space - Definitive Edition",
+        "developers": [
+            "AMPLITUDE Studios"
+        ]
+    },
+    {
+        "id": 208580,
+        "name": "STAR WARS™ Knights of the Old Republic™ II - The Sith Lords™",
+        "developers": [
+            "Obsidian Entertainment",
+            "Aspyr (Mac, Linux, & Windows Update)"
+        ]
+    },
+    {
+        "id": 208650,
+        "name": "Batman™: Arkham Knight",
+        "developers": [
+            "Rocksteady Studios"
+        ]
+    },
+    {
+        "id": 209000,
+        "name": "Batman™: Arkham Origins",
+        "developers": [
+            "WB Games Montreal",
+            "Splash Damage"
+        ]
+    },
+    {
+        "id": 209080,
+        "name": "Guns of Icarus Online",
+        "developers": [
+            "Muse Games"
+        ]
+    },
+    {
+        "id": 209160,
+        "name": "Call of Duty®: Ghosts",
+        "developers": [
+            "Infinity Ward"
+        ]
+    },
+    {
+        "id": 209670,
+        "name": "Cortex Command",
+        "developers": [
+            "Data Realms"
+        ]
+    },
+    {
+        "id": 209870,
+        "name": "Blacklight: Retribution",
+        "developers": [
+            "Hardsuit Labs, Inc."
+        ]
+    },
+    {
+        "id": 210770,
+        "name": "Sanctum 2",
+        "developers": [
+            "Coffee Stain Studios"
+        ]
+    },
+    {
+        "id": 210970,
+        "name": "The Witness",
+        "developers": [
+            "Thekla, Inc."
+        ]
+    },
+    {
+        "id": 211420,
+        "name": "DARK SOULS™: Prepare To Die™ Edition",
+        "developers": [
+            "FromSoftware"
+        ]
+    },
+    {
+        "id": 211500,
+        "name": "RaceRoom Racing Experience",
+        "developers": [
+            "KW Studios"
+        ]
+    },
+    {
+        "id": 211820,
+        "name": "Starbound",
+        "developers": [
+            "Chucklefish"
+        ]
+    },
+    {
+        "id": 212070,
+        "name": "Star Conflict",
+        "developers": [
+            "Star Gem Inc."
+        ]
+    },
+    {
+        "id": 212160,
+        "name": "Vindictus",
+        "developers": [
+            "devCAT"
+        ]
+    },
+    {
+        "id": 212500,
+        "name": "The Lord of the Rings Online™",
+        "developers": [
+            "Standing Stone Games, LLC"
+        ]
+    },
+    {
+        "id": 212680,
+        "name": "FTL: Faster Than Light",
+        "developers": [
+            "Subset Games"
+        ]
+    },
+    {
+        "id": 212740,
+        "name": "TERA - Action MMORPG",
+        "developers": [
+            "Bluehole, Inc."
+        ]
+    },
+    {
+        "id": 213670,
+        "name": "South Park™: The Stick of Truth™",
+        "developers": [
+            "Obsidian Entertainment"
+        ]
+    },
+    {
+        "id": 214420,
+        "name": "Gear Up",
+        "developers": [
+            "Doctor Entertainment AB"
+        ]
+    },
+    {
+        "id": 214490,
+        "name": "Alien: Isolation",
+        "developers": [
+            "Creative Assembly",
+            "Feral Interactive (Mac)",
+            "Feral Interactive (Linux)"
+        ]
+    },
+    {
+        "id": 214560,
+        "name": "Mark of the Ninja",
+        "developers": [
+            "Klei Entertainment"
+        ]
+    },
+    {
+        "id": 214950,
+        "name": "Total War: ROME II - Emperor Edition",
+        "developers": [
+            "CREATIVE ASSEMBLY"
+        ]
+    },
+    {
+        "id": 215080,
+        "name": "WAKFU",
+        "developers": [
+            "Ankama Studio"
+        ]
+    },
+    {
+        "id": 215280,
+        "name": "Secret World Legends",
+        "developers": [
+            "Funcom"
+        ]
+    },
+    {
+        "id": 216150,
+        "name": "MapleStory",
+        "developers": [
+            "Nexon"
+        ]
+    },
+    {
+        "id": 218230,
+        "name": "PlanetSide 2",
+        "developers": [
+            "Rogue Planet Games"
+        ]
+    },
+    {
+        "id": 218620,
+        "name": "PAYDAY 2",
+        "developers": [
+            "OVERKILL - a Starbreeze Studio."
+        ]
+    },
+    {
+        "id": 218680,
+        "name": "Scribblenauts Unlimited",
+        "developers": [
+            "5th Cell Media"
+        ]
+    },
+    {
+        "id": 219150,
+        "name": "Hotline Miami",
+        "developers": [
+            "Dennaton Games"
+        ]
+    },
+    {
+        "id": 219640,
+        "name": "Chivalry: Medieval Warfare",
+        "developers": [
+            "Torn Banner Studios"
+        ]
+    },
+    {
+        "id": 219740,
+        "name": "Don't Starve",
+        "developers": [
+            "Klei Entertainment"
+        ]
+    },
+    {
+        "id": 219990,
+        "name": "Grim Dawn",
+        "developers": [
+            "Crate Entertainment"
+        ]
+    },
+    {
+        "id": 220200,
+        "name": "Kerbal Space Program",
+        "developers": [
+            "Squad"
+        ]
+    },
+    {
+        "id": 220240,
+        "name": "Far Cry 3",
+        "developers": [
+            "Ubisoft Montreal, Massive Entertainment, and Ubisoft Shanghai"
+        ]
+    },
+    {
+        "id": 220440,
+        "name": "DmC: Devil May Cry",
+        "developers": [
+            "Ninja Theory"
+        ]
+    },
+    {
+        "id": 221040,
+        "name": "Resident Evil 6",
+        "developers": [
+            "Capcom"
+        ]
+    },
+    {
+        "id": 221100,
+        "name": "DayZ",
+        "developers": [
+            "Bohemia Interactive"
+        ]
+    },
+    {
+        "id": 221380,
+        "name": "Age of Empires II (2013)",
+        "developers": [
+            "Skybox Labs",
+            "Hidden Path Entertainment",
+            "Ensemble Studios",
+            "Forgotten Empires"
+        ]
+    },
+    {
+        "id": 221910,
+        "name": "The Stanley Parable",
+        "developers": [
+            "Galactic Cafe"
+        ]
+    },
+    {
+        "id": 222480,
+        "name": "Resident Evil Revelations",
+        "developers": [
+            "Capcom"
+        ]
+    },
+    {
+        "id": 222880,
+        "name": "Insurgency",
+        "developers": [
+            "New World Interactive"
+        ]
+    },
+    {
+        "id": 223470,
+        "name": "POSTAL 2",
+        "developers": [
+            "Running With Scissors"
+        ]
+    },
+    {
+        "id": 223710,
+        "name": "Cry of Fear",
+        "developers": [
+            "Team Psykskallar"
+        ]
+    },
+    {
+        "id": 223750,
+        "name": "DCS World Steam Edition",
+        "developers": [
+            "Eagle Dynamics SA"
+        ]
+    },
+    {
+        "id": 224260,
+        "name": "No More Room in Hell",
+        "developers": [
+            "No More Room in Hell Team"
+        ]
+    },
+    {
+        "id": 224540,
+        "name": "Ace of Spades: Battle Builder",
+        "developers": [
+            "Jagex Limited"
+        ]
+    },
+    {
+        "id": 224600,
+        "name": "Defiance",
+        "developers": [
+            "Trion Worlds"
+        ]
+    },
+    {
+        "id": 224760,
+        "name": "FEZ",
+        "developers": [
+            "Polytron Corporation"
+        ]
+    },
+    {
+        "id": 225080,
+        "name": "Brothers - A Tale of Two Sons",
+        "developers": [
+            "Starbreeze Studios AB"
+        ]
+    },
+    {
+        "id": 225260,
+        "name": "Brutal Legend",
+        "developers": [
+            "Double Fine Productions"
+        ]
+    },
+    {
+        "id": 225540,
+        "name": "Just Cause™ 3",
+        "developers": [
+            "Avalanche Studios"
+        ]
+    },
+    {
+        "id": 226700,
+        "name": "Infestation: Survivor Stories 2020",
+        "developers": [
+            "Fredaikis AB"
+        ]
+    },
+    {
+        "id": 226840,
+        "name": "Age of Wonders III",
+        "developers": [
+            "Triumph Studios"
+        ]
+    },
+    {
+        "id": 227300,
+        "name": "Euro Truck Simulator 2",
+        "developers": [
+            "SCS Software"
+        ]
+    },
+    {
+        "id": 227940,
+        "name": "Heroes & Generals",
+        "developers": [
+            "TLM Partners"
+        ]
+    },
+    {
+        "id": 228200,
+        "name": "Company of Heroes",
+        "developers": [
+            "Relic Entertainment"
+        ]
+    },
+    {
+        "id": 228280,
+        "name": "Baldur's Gate: Enhanced Edition",
+        "developers": [
+            "Beamdog"
+        ]
+    },
+    {
+        "id": 228380,
+        "name": "Wreckfest",
+        "developers": [
+            "Bugbear"
+        ]
+    },
+    {
+        "id": 230230,
+        "name": "Divinity: Original Sin (Classic)",
+        "developers": [
+            "Larian Studios"
+        ]
+    },
+    {
+        "id": 230290,
+        "name": "Universe Sandbox",
+        "developers": [
+            "Giant Army"
+        ]
+    },
+    {
+        "id": 230410,
+        "name": "Warframe",
+        "developers": [
+            "Digital Extremes"
+        ]
+    },
+    {
+        "id": 231060,
+        "name": "Ragnarok Online 2",
+        "developers": [
+            "Gravity, Inc."
+        ]
+    },
+    {
+        "id": 231430,
+        "name": "Company of Heroes 2",
+        "developers": [
+            "Relic Entertainment",
+            "Feral Interactive (Mac)",
+            "Feral Interactive (Linux)"
+        ]
+    },
+    {
+        "id": 232010,
+        "name": "Euro Truck Simulator",
+        "developers": [
+            "SCS Software"
+        ]
+    },
+    {
+        "id": 232050,
+        "name": "Eador. Masters of the Broken World",
+        "developers": [
+            "Snowbird Games"
+        ]
+    },
+    {
+        "id": 232090,
+        "name": "Killing Floor 2",
+        "developers": [
+            "Tripwire Interactive"
+        ]
+    },
+    {
+        "id": 232770,
+        "name": "POSTAL",
+        "developers": [
+            "Running With Scissors"
+        ]
+    },
+    {
+        "id": 232890,
+        "name": "Stronghold Crusader 2",
+        "developers": [
+            "FireFly Studios"
+        ]
+    },
+    {
+        "id": 233130,
+        "name": "Shadow Warrior",
+        "developers": [
+            "Flying Wild Hog"
+        ]
+    },
+    {
+        "id": 233270,
+        "name": "Far Cry 3 - Blood Dragon",
+        "developers": [
+            "Ubisoft Montreal"
+        ]
+    },
+    {
+        "id": 233450,
+        "name": "Prison Architect",
+        "developers": [
+            "Double Eleven",
+            "Introversion Software"
+        ]
+    },
+    {
+        "id": 233860,
+        "name": "Kenshi",
+        "developers": [
+            "Lo-Fi Games"
+        ]
+    },
+    {
+        "id": 234140,
+        "name": "Mad Max",
+        "developers": [
+            "Avalanche Studios"
+        ]
+    },
+    {
+        "id": 234630,
+        "name": "Project CARS",
+        "developers": [
+            "Slightly Mad Studios"
+        ]
+    },
+    {
+        "id": 234650,
+        "name": "Shadowrun Returns",
+        "developers": [
+            "Harebrained Schemes"
+        ]
+    },
+    {
+        "id": 235460,
+        "name": "METAL GEAR RISING: REVENGEANCE",
+        "developers": [
+            "PlatinumGames"
+        ]
+    },
+    {
+        "id": 235540,
+        "name": "Warhammer: End Times - Vermintide",
+        "developers": [
+            "Fatshark"
+        ]
+    },
+    {
+        "id": 235600,
+        "name": "Tom Clancy’s Splinter Cell Blacklist",
+        "developers": [
+            "Ubisoft Toronto"
+        ]
+    },
+    {
+        "id": 236390,
+        "name": "War Thunder",
+        "developers": [
+            "Gaijin Entertainment"
+        ]
+    },
+    {
+        "id": 236850,
+        "name": "Europa Universalis IV",
+        "developers": [
+            "Paradox Development Studio",
+            "Paradox Tinto"
+        ]
+    },
+    {
+        "id": 236870,
+        "name": "HITMAN™",
+        "developers": [
+            "IO Interactive A/S",
+            "Feral Interactive (Linux)",
+            "Feral Interactive (Mac)"
+        ]
+    },
+    {
+        "id": 237110,
+        "name": "Mortal Kombat Komplete Edition",
+        "developers": [
+            "NetherRealm Studios",
+            "High Voltage Software"
+        ]
+    },
+    {
+        "id": 237310,
+        "name": "Elsword",
+        "developers": [
+            "KOG"
+        ]
+    },
+    {
+        "id": 237930,
+        "name": "Transistor",
+        "developers": [
+            "Supergiant Games"
+        ]
+    },
+    {
+        "id": 238010,
+        "name": "Deus Ex: Human Revolution - Director's Cut",
+        "developers": [
+            "Eidos Montreal"
+        ]
+    },
+    {
+        "id": 238090,
+        "name": "Sniper Elite 3",
+        "developers": [
+            "Rebellion"
+        ]
+    },
+    {
+        "id": 238320,
+        "name": "Outlast",
+        "developers": [
+            "Red Barrels"
+        ]
+    },
+    {
+        "id": 238370,
+        "name": "Magicka 2",
+        "developers": [
+            "Pieces Interactive"
+        ]
+    },
+    {
+        "id": 238430,
+        "name": "Contagion",
+        "developers": [
+            "Monochrome, Inc"
+        ]
+    },
+    {
+        "id": 238460,
+        "name": "BattleBlock Theater®",
+        "developers": [
+            "The Behemoth"
+        ]
+    },
+    {
+        "id": 238960,
+        "name": "Path of Exile",
+        "developers": [
+            "Grinding Gear Games"
+        ]
+    },
+    {
+        "id": 239030,
+        "name": "Papers, Please",
+        "developers": [
+            "Lucas Pope"
+        ]
+    },
+    {
+        "id": 239140,
+        "name": "Dying Light",
+        "developers": [
+            "Techland"
+        ]
+    },
+    {
+        "id": 239160,
+        "name": "Thief",
+        "developers": [
+            "Eidos-Montréal",
+            "Feral Interactive (Mac)"
+        ]
+    },
+    {
+        "id": 239200,
+        "name": "Amnesia: A Machine for Pigs",
+        "developers": [
+            "The Chinese Room"
+        ]
+    },
+    {
+        "id": 239350,
+        "name": "Spelunky",
+        "developers": [
+            "Mossmouth"
+        ]
+    },
+    {
+        "id": 239820,
+        "name": "Game Dev Tycoon",
+        "developers": [
+            "Greenheart Games 💚"
+        ]
+    },
+    {
+        "id": 240320,
+        "name": "Panzar",
+        "developers": [
+            "Panzar Studio"
+        ]
+    },
+    {
+        "id": 240720,
+        "name": "Getting Over It with Bennett Foddy",
+        "developers": [
+            "Bennett Foddy"
+        ]
+    },
+    {
+        "id": 241600,
+        "name": "Rogue Legacy",
+        "developers": [
+            "Cellar Door Games"
+        ]
+    },
+    {
+        "id": 241930,
+        "name": "Middle-earth™: Shadow of Mordor™",
+        "developers": [
+            "Monolith Productions"
+        ]
+    },
+    {
+        "id": 242050,
+        "name": "Assassin’s Creed® IV Black Flag™",
+        "developers": [
+            "Ubisoft Montreal"
+        ]
+    },
+    {
+        "id": 242640,
+        "name": "Styx: Master of Shadows",
+        "developers": [
+            "Cyanide Studio"
+        ]
+    },
+    {
+        "id": 242700,
+        "name": "Injustice: Gods Among Us Ultimate Edition",
+        "developers": [
+            "NetherRealm Studios",
+            "High Voltage Software"
+        ]
+    },
+    {
+        "id": 242720,
+        "name": "GunZ 2: The Second Duel",
+        "developers": [
+            "Masangsoft, Inc."
+        ]
+    },
+    {
+        "id": 242760,
+        "name": "The Forest",
+        "developers": [
+            "Endnight Games Ltd"
+        ]
+    },
+    {
+        "id": 242860,
+        "name": "Verdun",
+        "developers": [
+            "M2H",
+            "Blackmill Games"
+        ]
+    },
+    {
+        "id": 242920,
+        "name": "Banished",
+        "developers": [
+            "Shining Rock Software LLC"
+        ]
+    },
+    {
+        "id": 243470,
+        "name": "Watch_Dogs™",
+        "developers": [
+            "Ubisoft"
+        ]
+    },
+    {
+        "id": 244210,
+        "name": "Assetto Corsa",
+        "developers": [
+            "Kunos Simulazioni"
+        ]
+    },
+    {
+        "id": 244450,
+        "name": "Men of War: Assault Squad 2",
+        "developers": [
+            "Digitalmindsoft"
+        ]
+    },
+    {
+        "id": 244850,
+        "name": "Space Engineers",
+        "developers": [
+            "Keen Software House"
+        ]
+    },
+    {
+        "id": 244930,
+        "name": "SNOW - The Ultimate Edition",
+        "developers": [
+            "Poppermost Productions",
+            "WastedStudios",
+            "Crytek"
+        ]
+    },
+    {
+        "id": 245170,
+        "name": "Skullgirls 2nd Encore",
+        "developers": [
+            "Hidden Variable Studios"
+        ]
+    },
+    {
+        "id": 245620,
+        "name": "Tropico 5",
+        "developers": [
+            "Haemimont Games"
+        ]
+    },
+    {
+        "id": 246620,
+        "name": "Plague Inc: Evolved",
+        "developers": [
+            "Ndemic Creations"
+        ]
+    },
+    {
+        "id": 246900,
+        "name": "Viscera Cleanup Detail",
+        "developers": [
+            "RuneStorm"
+        ]
+    },
+    {
+        "id": 247080,
+        "name": "Crypt of the NecroDancer",
+        "developers": [
+            "Brace Yourself Games"
+        ]
+    },
+    {
+        "id": 247120,
+        "name": "Portal 2 Sixense Perceptual Pack",
+        "developers": []
+    },
+    {
+        "id": 248570,
+        "name": "Toribash",
+        "developers": [
+            "Nabi Studios"
+        ]
+    },
+    {
+        "id": 248820,
+        "name": "Risk of Rain",
+        "developers": [
+            "Hopoo Games"
+        ]
+    },
+    {
+        "id": 250320,
+        "name": "The Wolf Among Us",
+        "developers": [
+            "Telltale"
+        ]
+    },
+    {
+        "id": 250400,
+        "name": "How to Survive",
+        "developers": [
+            "Eko Software"
+        ]
+    },
+    {
+        "id": 250900,
+        "name": "The Binding of Isaac: Rebirth",
+        "developers": [
+            "Nicalis, Inc.",
+            "Edmund McMillen"
+        ]
+    },
+    {
+        "id": 251060,
+        "name": "Wargame: Red Dragon",
+        "developers": [
+            "Eugen Systems"
+        ]
+    },
+    {
+        "id": 251570,
+        "name": "7 Days to Die",
+        "developers": [
+            "The Fun Pimps"
+        ]
+    },
+    {
+        "id": 252130,
+        "name": "Divide By Sheep",
+        "developers": [
+            "Victor Solodilov",
+            "Denis Novikov"
+        ]
+    },
+    {
+        "id": 252150,
+        "name": "Grimm",
+        "developers": [
+            "Spicyhorse Games"
+        ]
+    },
+    {
+        "id": 252490,
+        "name": "Rust",
+        "developers": [
+            "Facepunch Studios"
+        ]
+    },
+    {
+        "id": 252950,
+        "name": "Rocket League®",
+        "developers": [
+            "Psyonix LLC"
+        ]
+    },
+    {
+        "id": 253710,
+        "name": "theHunter Classic",
+        "developers": [
+            "Expansive Worlds",
+            "Avalanche Studios"
+        ]
+    },
+    {
+        "id": 253900,
+        "name": "Knights and Merchants",
+        "developers": [
+            "Topware Interactive"
+        ]
+    },
+    {
+        "id": 253980,
+        "name": "Enclave",
+        "developers": [
+            "Starbreeze"
+        ]
+    },
+    {
+        "id": 254700,
+        "name": "Resident Evil 4 (2005)",
+        "developers": [
+            "Capcom"
+        ]
+    },
+    {
+        "id": 255710,
+        "name": "Cities: Skylines",
+        "developers": [
+            "Colossal Order Ltd."
+        ]
+    },
+    {
+        "id": 257350,
+        "name": "Baldur's Gate II: Enhanced Edition",
+        "developers": [
+            "Beamdog"
+        ]
+    },
+    {
+        "id": 257510,
+        "name": "The Talos Principle",
+        "developers": [
+            "Croteam"
+        ]
+    },
+    {
+        "id": 258970,
+        "name": "Gauntlet™ Slayer Edition",
+        "developers": [
+            "Arrowhead Game Studios"
+        ]
+    },
+    {
+        "id": 259080,
+        "name": "Just Cause 2: Multiplayer Mod",
+        "developers": [
+            "Avalanche Studios"
+        ]
+    },
+    {
+        "id": 261030,
+        "name": "The Walking Dead: Season Two",
+        "developers": [
+            "Telltale Games"
+        ]
+    },
+    {
+        "id": 261110,
+        "name": "Killer is Dead - Nightmare Edition",
+        "developers": [
+            "KADOKAWA GAMES / GRASSHOPPER MANUFACTURE"
+        ]
+    },
+    {
+        "id": 261550,
+        "name": "Mount & Blade II: Bannerlord",
+        "developers": [
+            "TaleWorlds Entertainment"
+        ]
+    },
+    {
+        "id": 261570,
+        "name": "Ori and the Blind Forest",
+        "developers": [
+            "Moon Studios GmbH"
+        ]
+    },
+    {
+        "id": 261640,
+        "name": "Borderlands: The Pre-Sequel",
+        "developers": [
+            "2K Australia",
+            "Gearbox Software",
+            "Aspyr (Linux)"
+        ]
+    },
+    {
+        "id": 262060,
+        "name": "Darkest Dungeon®",
+        "developers": [
+            "Red Hook Studios"
+        ]
+    },
+    {
+        "id": 262280,
+        "name": "Dungeons 2",
+        "developers": [
+            "Realmforge Studios"
+        ]
+    },
+    {
+        "id": 262410,
+        "name": "World of Guns: Gun Disassembly",
+        "developers": [
+            "Noble Empire Corp."
+        ]
+    },
+    {
+        "id": 263500,
+        "name": "Dragons and Titans",
+        "developers": [
+            "Wyrmbyte"
+        ]
+    },
+    {
+        "id": 264710,
+        "name": "Subnautica",
+        "developers": [
+            "Unknown Worlds Entertainment"
+        ]
+    },
+    {
+        "id": 265210,
+        "name": "Viscera Cleanup Detail: Santa's Rampage",
+        "developers": [
+            "RuneStorm"
+        ]
+    },
+    {
+        "id": 265550,
+        "name": "Dead Rising 3 Apocalypse Edition",
+        "developers": [
+            "Capcom Game Studio Vancouver"
+        ]
+    },
+    {
+        "id": 265590,
+        "name": "The Red Solstice",
+        "developers": [
+            "Ironward"
+        ]
+    },
+    {
+        "id": 265630,
+        "name": "Fistful of Frags",
+        "developers": [
+            "Fistful of Frags Team"
+        ]
+    },
+    {
+        "id": 265930,
+        "name": "Goat Simulator",
+        "developers": [
+            "Coffee Stain Studios"
+        ]
+    },
+    {
+        "id": 266840,
+        "name": "Age of Mythology: Extended Edition",
+        "developers": [
+            "SkyBox Labs",
+            "Ensemble Studios"
+        ]
+    },
+    {
+        "id": 268050,
+        "name": "The Evil Within",
+        "developers": [
+            "Tango Gameworks"
+        ]
+    },
+    {
+        "id": 268420,
+        "name": "Aura Kingdom",
+        "developers": [
+            "X-Legend"
+        ]
+    },
+    {
+        "id": 268500,
+        "name": "XCOM® 2",
+        "developers": [
+            "Firaxis Games",
+            "Feral Interactive (Mac)",
+            "Feral Interactive (Linux)"
+        ]
+    },
+    {
+        "id": 268910,
+        "name": "Cuphead",
+        "developers": [
+            "Studio MDHR Entertainment Inc."
+        ]
+    },
+    {
+        "id": 269210,
+        "name": "Hero Siege",
+        "developers": [
+            "Panic Art Studios Ltd."
+        ]
+    },
+    {
+        "id": 270150,
+        "name": "RUNNING WITH RIFLES",
+        "developers": [
+            "Osumia Games"
+        ]
+    },
+    {
+        "id": 270880,
+        "name": "American Truck Simulator",
+        "developers": [
+            "SCS Software"
+        ]
+    },
+    {
+        "id": 271590,
+        "name": "Grand Theft Auto V",
+        "developers": [
+            "Rockstar North"
+        ]
+    },
+    {
+        "id": 272060,
+        "name": "Serena",
+        "developers": [
+            "Senscape"
+        ]
+    },
+    {
+        "id": 273110,
+        "name": "Counter-Strike Nexon: Studio",
+        "developers": [
+            "Valve",
+            "NEXON"
+        ]
+    },
+    {
+        "id": 273350,
+        "name": "Evolve Stage 2",
+        "developers": [
+            "Turtle Rock Studios"
+        ]
+    },
+    {
+        "id": 274170,
+        "name": "Hotline Miami 2: Wrong Number",
+        "developers": []
+    },
+    {
+        "id": 274190,
+        "name": "Broforce",
+        "developers": [
+            "Free Lives"
+        ]
+    },
+    {
+        "id": 274940,
+        "name": "Depth",
+        "developers": [
+            "Digital Confectioners"
+        ]
+    },
+    {
+        "id": 275390,
+        "name": "Guacamelee! Super Turbo Championship Edition",
+        "developers": [
+            "DrinkBox Studios"
+        ]
+    },
+    {
+        "id": 275850,
+        "name": "No Man's Sky",
+        "developers": [
+            "Hello Games"
+        ]
+    },
+    {
+        "id": 278080,
+        "name": "DYNASTY WARRIORS 8: Xtreme Legends Complete Edition",
+        "developers": [
+            "KOEI TECMO GAMES CO., LTD."
+        ]
+    },
+    {
+        "id": 278360,
+        "name": "A Story About My Uncle",
+        "developers": [
+            "Gone North Games"
+        ]
+    },
+    {
+        "id": 279720,
+        "name": "The I of the Dragon",
+        "developers": [
+            "Primal"
+        ]
+    },
+    {
+        "id": 280790,
+        "name": "Creativerse",
+        "developers": [
+            "Playful Corp."
+        ]
+    },
+    {
+        "id": 281990,
+        "name": "Stellaris",
+        "developers": [
+            "Paradox Development Studio"
+        ]
+    },
+    {
+        "id": 282070,
+        "name": "This War of Mine",
+        "developers": [
+            "11 bit studios"
+        ]
+    },
+    {
+        "id": 282140,
+        "name": "SOMA",
+        "developers": [
+            "Frictional Games"
+        ]
+    },
+    {
+        "id": 282440,
+        "name": "Quake Live",
+        "developers": [
+            "id Software"
+        ]
+    },
+    {
+        "id": 284160,
+        "name": "BeamNG.drive",
+        "developers": [
+            "BeamNG"
+        ]
+    },
+    {
+        "id": 285190,
+        "name": "Warhammer 40,000: Dawn of War III",
+        "developers": [
+            "Relic Entertainment",
+            "Feral Interactive (Mac)",
+            "Feral Interactive (Linux)"
+        ]
+    },
+    {
+        "id": 285800,
+        "name": "Braveland",
+        "developers": [
+            "Tortuga Team"
+        ]
+    },
+    {
+        "id": 285900,
+        "name": "Gang Beasts",
+        "developers": [
+            "Boneloaf",
+            "Coatsink"
+        ]
+    },
+    {
+        "id": 286160,
+        "name": "Tabletop Simulator",
+        "developers": [
+            "Berserk Games"
+        ]
+    },
+    {
+        "id": 286570,
+        "name": "F1 2015",
+        "developers": [
+            "Codemasters",
+            "Feral Interactive (Linux)"
+        ]
+    },
+    {
+        "id": 286690,
+        "name": "Metro 2033 Redux",
+        "developers": [
+            "4A Games"
+        ]
+    },
+    {
+        "id": 286940,
+        "name": "S.K.I.L.L. - Special Force 2 (Shooter)",
+        "developers": []
+    },
+    {
+        "id": 287290,
+        "name": "Resident Evil Revelations 2",
+        "developers": [
+            "CAPCOM Co., Ltd."
+        ]
+    },
+    {
+        "id": 287390,
+        "name": "Metro: Last Light Redux",
+        "developers": [
+            "4A Games"
+        ]
+    },
+    {
+        "id": 287450,
+        "name": "Rise of Nations: Extended Edition",
+        "developers": [
+            "SkyBox Labs",
+            "Big Huge Games"
+        ]
+    },
+    {
+        "id": 287700,
+        "name": "METAL GEAR SOLID V: THE PHANTOM PAIN",
+        "developers": [
+            "KONAMI"
+        ]
+    },
+    {
+        "id": 289070,
+        "name": "Sid Meier’s Civilization® VI",
+        "developers": [
+            "Firaxis Games",
+            "Aspyr (Mac)",
+            "Aspyr (Linux)"
+        ]
+    },
+    {
+        "id": 289130,
+        "name": "ENDLESS™ Legend",
+        "developers": [
+            "AMPLITUDE Studios"
+        ]
+    },
+    {
+        "id": 289650,
+        "name": "Assassin's Creed® Unity",
+        "developers": [
+            "Ubisoft"
+        ]
+    },
+    {
+        "id": 291480,
+        "name": "Warface",
+        "developers": [
+            "MY.GAMES"
+        ]
+    },
+    {
+        "id": 291550,
+        "name": "Brawlhalla",
+        "developers": [
+            "Blue Mammoth Games"
+        ]
+    },
+    {
+        "id": 291650,
+        "name": "Pillars of Eternity",
+        "developers": [
+            "Obsidian Entertainment"
+        ]
+    },
+    {
+        "id": 292030,
+        "name": "The Witcher® 3: Wild Hunt",
+        "developers": [
+            "CD PROJEKT RED"
+        ]
+    },
+    {
+        "id": 292730,
+        "name": "Call of Duty®: Infinite Warfare",
+        "developers": [
+            "Infinity Ward"
+        ]
+    },
+    {
+        "id": 292910,
+        "name": "Deponia: The Complete Journey",
+        "developers": [
+            "Daedalic Entertainment"
+        ]
+    },
+    {
+        "id": 293180,
+        "name": "Overcast - Walden and the Werewolf",
+        "developers": [
+            "Microblast Games"
+        ]
+    },
+    {
+        "id": 293540,
+        "name": "Guns and Robots",
+        "developers": [
+            "Masthead Studios Ltd"
+        ]
+    },
+    {
+        "id": 294100,
+        "name": "RimWorld",
+        "developers": [
+            "Ludeon Studios"
+        ]
+    },
+    {
+        "id": 295110,
+        "name": "Just Survive",
+        "developers": [
+            "Daybreak Game Company"
+        ]
+    },
+    {
+        "id": 297000,
+        "name": "Heroes® of Might & Magic® III - HD Edition",
+        "developers": [
+            "Dotemu"
+        ]
+    },
+    {
+        "id": 298110,
+        "name": "Far Cry® 4",
+        "developers": [
+            "Ubisoft Montreal, Red Storm, Shanghai, Toronto, Kiev"
+        ]
+    },
+    {
+        "id": 298240,
+        "name": "War Trigger 3",
+        "developers": [
+            "Rocketeer Games Studio, LLC"
+        ]
+    },
+    {
+        "id": 298630,
+        "name": "The Escapists",
+        "developers": [
+            "Mouldy Toof Studios"
+        ]
+    },
+    {
+        "id": 299360,
+        "name": "Block N Load",
+        "developers": [
+            "Toadman Interactive",
+            "Artplant"
+        ]
+    },
+    {
+        "id": 299460,
+        "name": "Woodle Tree Adventures",
+        "developers": [
+            "Fabio Ferrara"
+        ]
+    },
+    {
+        "id": 301520,
+        "name": "Robocraft",
+        "developers": [
+            "Freejam"
+        ]
+    },
+    {
+        "id": 301640,
+        "name": "Zombie Army Trilogy",
+        "developers": [
+            "Rebellion"
+        ]
+    },
+    {
+        "id": 302510,
+        "name": "Ryse: Son of Rome",
+        "developers": [
+            "Crytek"
+        ]
+    },
+    {
+        "id": 302670,
+        "name": "Call to Arms",
+        "developers": [
+            "Digitalmindsoft"
+        ]
+    },
+    {
+        "id": 302830,
+        "name": "BLOCKADE 3D",
+        "developers": [
+            "Novalink"
+        ]
+    },
+    {
+        "id": 303390,
+        "name": "Dead Bits",
+        "developers": [
+            "Microblast Games"
+        ]
+    },
+    {
+        "id": 304030,
+        "name": "ArcheAge",
+        "developers": [
+            "XLGAMES"
+        ]
+    },
+    {
+        "id": 304050,
+        "name": "Trove",
+        "developers": [
+            "gamigo US Inc."
+        ]
+    },
+    {
+        "id": 304240,
+        "name": "Resident Evil",
+        "developers": [
+            "CAPCOM Co., Ltd."
+        ]
+    },
+    {
+        "id": 304390,
+        "name": "FOR HONOR™",
+        "developers": [
+            "Ubisoft Montreal",
+            "Ubisoft Quebec",
+            "Ubisoft Toronto",
+            "Blue Byte"
+        ]
+    },
+    {
+        "id": 304430,
+        "name": "INSIDE",
+        "developers": [
+            "Playdead"
+        ]
+    },
+    {
+        "id": 304930,
+        "name": "Unturned",
+        "developers": [
+            "Smartly Dressed Games"
+        ]
+    },
+    {
+        "id": 305620,
+        "name": "The Long Dark",
+        "developers": [
+            "Hinterland Studio Inc."
+        ]
+    },
+    {
+        "id": 306130,
+        "name": "The Elder Scrolls® Online",
+        "developers": [
+            "ZeniMax Online Studios"
+        ]
+    },
+    {
+        "id": 307690,
+        "name": "Sleeping Dogs: Definitive Edition",
+        "developers": [
+            "United Front Games",
+            "Feral Interactive (Mac)"
+        ]
+    },
+    {
+        "id": 307780,
+        "name": "Mortal Kombat X",
+        "developers": [
+            "NetherRealm Studios",
+            "QLOC"
+        ]
+    },
+    {
+        "id": 308040,
+        "name": "Back to Bed",
+        "developers": [
+            "Bedtime Digital Games"
+        ]
+    },
+    {
+        "id": 308600,
+        "name": "Gene Shift Auto",
+        "developers": [
+            "Nik Nak Studios"
+        ]
+    },
+    {
+        "id": 310560,
+        "name": "DiRT Rally",
+        "developers": [
+            "Codemasters",
+            "Feral Interactive (Linux)",
+            "Feral Interactive (Mac)"
+        ]
+    },
+    {
+        "id": 310950,
+        "name": "Street Fighter V",
+        "developers": [
+            "CAPCOM Co., Ltd."
+        ]
+    },
+    {
+        "id": 311210,
+        "name": "Call of Duty®: Black Ops III",
+        "developers": [
+            "Treyarch",
+            "Aspyr (Mac)"
+        ]
+    },
+    {
+        "id": 311240,
+        "name": "Zero Escape: Zero Time Dilemma",
+        "developers": [
+            "Spike Chunsoft Co., Ltd."
+        ]
+    },
+    {
+        "id": 311340,
+        "name": "METAL GEAR SOLID V: GROUND ZEROES",
+        "developers": [
+            "KONAMI"
+        ]
+    },
+    {
+        "id": 311560,
+        "name": "Assassin’s Creed® Rogue",
+        "developers": [
+            "Ubisoft Sofia",
+            "Ubisoft Kiev"
+        ]
+    },
+    {
+        "id": 311690,
+        "name": "Enter the Gungeon",
+        "developers": [
+            "Dodge Roll"
+        ]
+    },
+    {
+        "id": 311860,
+        "name": "Data Hacker: Initiation",
+        "developers": [
+            "New Reality Games"
+        ]
+    },
+    {
+        "id": 312520,
+        "name": "Rain World",
+        "developers": [
+            "Videocult"
+        ]
+    },
+    {
+        "id": 312530,
+        "name": "Duck Game",
+        "developers": [
+            "Landon Podbielski"
+        ]
+    },
+    {
+        "id": 312660,
+        "name": "Sniper Elite 4",
+        "developers": [
+            "Rebellion"
+        ]
+    },
+    {
+        "id": 312990,
+        "name": "The Expendabros",
+        "developers": [
+            "Free Lives"
+        ]
+    },
+    {
+        "id": 313120,
+        "name": "Stranded Deep",
+        "developers": [
+            "Beam Team Games"
+        ]
+    },
+    {
+        "id": 314160,
+        "name": "Microsoft Flight Simulator X: Steam Edition",
+        "developers": [
+            "Microsoft Game Studios"
+        ]
+    },
+    {
+        "id": 316010,
+        "name": "Magic Duels",
+        "developers": [
+            "Stainless Games Ltd."
+        ]
+    },
+    {
+        "id": 317360,
+        "name": "Double Action: Boogaloo",
+        "developers": [
+            "Double Action Factory"
+        ]
+    },
+    {
+        "id": 319510,
+        "name": "Five Nights at Freddy's",
+        "developers": [
+            "Scott Cawthon"
+        ]
+    },
+    {
+        "id": 319630,
+        "name": "Life is Strange - Episode 1",
+        "developers": [
+            "DONTNOD Entertainment",
+            "Feral Interactive (Mac)",
+            "Feral Interactive (Linux)"
+        ]
+    },
+    {
+        "id": 319830,
+        "name": "AX:EL - Air XenoDawn",
+        "developers": [
+            "Alex Piola"
+        ]
+    },
+    {
+        "id": 322170,
+        "name": "Geometry Dash",
+        "developers": [
+            "RobTop Games"
+        ]
+    },
+    {
+        "id": 322330,
+        "name": "Don't Starve Together",
+        "developers": [
+            "Klei Entertainment"
+        ]
+    },
+    {
+        "id": 322500,
+        "name": "SUPERHOT",
+        "developers": [
+            "SUPERHOT Team"
+        ]
+    },
+    {
+        "id": 323190,
+        "name": "Frostpunk",
+        "developers": [
+            "11 bit studios"
+        ]
+    },
+    {
+        "id": 323470,
+        "name": "DRAGON BALL XENOVERSE",
+        "developers": [
+            "DIMPS"
+        ]
+    },
+    {
+        "id": 323580,
+        "name": "Jotun: Valhalla Edition",
+        "developers": [
+            "Thunder Lotus Games"
+        ]
+    },
+    {
+        "id": 323850,
+        "name": "Move or Die",
+        "developers": [
+            "Those Awesome Guys"
+        ]
+    },
+    {
+        "id": 324800,
+        "name": "Shadow Warrior 2",
+        "developers": [
+            "Flying Wild Hog"
+        ]
+    },
+    {
+        "id": 325610,
+        "name": "Total War: ATTILA",
+        "developers": [
+            "CREATIVE ASSEMBLY"
+        ]
+    },
+    {
+        "id": 327690,
+        "name": "Gigantic",
+        "developers": [
+            "Motiga Inc."
+        ]
+    },
+    {
+        "id": 329050,
+        "name": "Devil May Cry 4 Special Edition",
+        "developers": [
+            "CAPCOM Co., Ltd."
+        ]
+    },
+    {
+        "id": 330020,
+        "name": "Children of Morta",
+        "developers": [
+            "Dead Mage"
+        ]
+    },
+    {
+        "id": 331470,
+        "name": "Everlasting Summer",
+        "developers": [
+            "Soviet Games"
+        ]
+    },
+    {
+        "id": 332070,
+        "name": "School of Dragons",
+        "developers": [
+            "JumpStart Games, Inc."
+        ]
+    },
+    {
+        "id": 332950,
+        "name": "Dark Deception",
+        "developers": [
+            "Glowstick Entertainment"
+        ]
+    },
+    {
+        "id": 333420,
+        "name": "Cossacks 3",
+        "developers": [
+            "GSC Game World"
+        ]
+    },
+    {
+        "id": 333930,
+        "name": "Dirty Bomb®",
+        "developers": [
+            "Splash Damage"
+        ]
+    },
+    {
+        "id": 334230,
+        "name": "Town of Salem",
+        "developers": [
+            "BlankMediaGames"
+        ]
+    },
+    {
+        "id": 335240,
+        "name": "Transformice",
+        "developers": [
+            "Atelier 801"
+        ]
+    },
+    {
+        "id": 335300,
+        "name": "DARK SOULS™ II: Scholar of the First Sin",
+        "developers": [
+            "FromSoftware, Inc"
+        ]
+    },
+    {
+        "id": 337000,
+        "name": "Deus Ex: Mankind Divided",
+        "developers": [
+            "Eidos Montreal",
+            "Feral Interactive (Linux)",
+            "Feral Interactive (Mac)"
+        ]
+    },
+    {
+        "id": 337320,
+        "name": "Paint the Town Red",
+        "developers": [
+            "South East Games"
+        ]
+    },
+    {
+        "id": 339280,
+        "name": "Strife®",
+        "developers": [
+            "S2 Games"
+        ]
+    },
+    {
+        "id": 339610,
+        "name": "Freestyle 2: Street Basketball",
+        "developers": [
+            "JOYCITY"
+        ]
+    },
+    {
+        "id": 342200,
+        "name": "MechWarrior Online™ Legends",
+        "developers": [
+            "Piranha Games Inc."
+        ]
+    },
+    {
+        "id": 343710,
+        "name": "Kholat",
+        "developers": [
+            "IMGN.PRO"
+        ]
+    },
+    {
+        "id": 346010,
+        "name": "Besiege",
+        "developers": [
+            "Spiderling Studios"
+        ]
+    },
+    {
+        "id": 346110,
+        "name": "ARK: Survival Evolved",
+        "developers": [
+            "Studio Wildcard",
+            "Instinct Games",
+            "Efecto Studios",
+            "Virtual Basement LLC"
+        ]
+    },
+    {
+        "id": 346330,
+        "name": "BrainBread 2",
+        "developers": [
+            "Reperio Studios"
+        ]
+    },
+    {
+        "id": 346900,
+        "name": "AdVenture Capitalist",
+        "developers": [
+            "Hyper Hippo Games"
+        ]
+    },
+    {
+        "id": 349040,
+        "name": "NARUTO SHIPPUDEN: Ultimate Ninja STORM 4",
+        "developers": [
+            "CyberConnect2 Co. Ltd."
+        ]
+    },
+    {
+        "id": 349700,
+        "name": "Romero's Aftermath",
+        "developers": [
+            "Free Reign Entertainment"
+        ]
+    },
+    {
+        "id": 350640,
+        "name": "Sherlock Holmes: The Devil's Daughter",
+        "developers": [
+            "Frogwares"
+        ]
+    },
+    {
+        "id": 351940,
+        "name": "The Descendant",
+        "developers": [
+            "Gaming Corps AB"
+        ]
+    },
+    {
+        "id": 355180,
+        "name": "Codename CURE",
+        "developers": [
+            "Hoobalugalar_X"
+        ]
+    },
+    {
+        "id": 355840,
+        "name": "Survarium",
+        "developers": [
+            "Vostok Games"
+        ]
+    },
+    {
+        "id": 356190,
+        "name": "Middle-earth™: Shadow of War™",
+        "developers": [
+            "Monolith Productions"
+        ]
+    },
+    {
+        "id": 356670,
+        "name": "Spooky's Jump Scare Mansion",
+        "developers": [
+            "Lag Studios"
+        ]
+    },
+    {
+        "id": 359320,
+        "name": "Elite Dangerous",
+        "developers": [
+            "Frontier Developments"
+        ]
+    },
+    {
+        "id": 359550,
+        "name": "Tom Clancy's Rainbow Six® Siege",
+        "developers": [
+            "Ubisoft Montreal"
+        ]
+    },
+    {
+        "id": 360430,
+        "name": "Mafia III: Definitive Edition",
+        "developers": [
+            "Hangar 13",
+            "Aspyr (Mac)"
+        ]
+    },
+    {
+        "id": 361420,
+        "name": "ASTRONEER",
+        "developers": [
+            "System Era Softworks"
+        ]
+    },
+    {
+        "id": 362890,
+        "name": "Black Mesa",
+        "developers": [
+            "Crowbar Collective"
+        ]
+    },
+    {
+        "id": 363970,
+        "name": "Clicker Heroes",
+        "developers": [
+            "Playsaurus"
+        ]
+    },
+    {
+        "id": 364360,
+        "name": "Total War: WARHAMMER",
+        "developers": [
+            "CREATIVE ASSEMBLY",
+            "Feral Interactive (Linux)",
+            "Feral Interactive (Mac)"
+        ]
+    },
+    {
+        "id": 364470,
+        "name": "The Elder Scrolls®: Legends™",
+        "developers": [
+            "Sparkypants Studios, LLC"
+        ]
+    },
+    {
+        "id": 365450,
+        "name": "Hacknet",
+        "developers": [
+            "Team Fractal Alligator"
+        ]
+    },
+    {
+        "id": 365590,
+        "name": "Tom Clancy’s The Division™",
+        "developers": [
+            "Massive Entertainment"
+        ]
+    },
+    {
+        "id": 365670,
+        "name": "Blender",
+        "developers": [
+            "Blender Foundation"
+        ]
+    },
+    {
+        "id": 367450,
+        "name": "Poly Bridge",
+        "developers": [
+            "Dry Cactus"
+        ]
+    },
+    {
+        "id": 367500,
+        "name": "Dragon's Dogma: Dark Arisen",
+        "developers": [
+            "Capcom"
+        ]
+    },
+    {
+        "id": 367520,
+        "name": "Hollow Knight",
+        "developers": [
+            "Team Cherry"
+        ]
+    },
+    {
+        "id": 368230,
+        "name": "Kingdom: Classic",
+        "developers": [
+            "Noio",
+            "Licorice"
+        ]
+    },
+    {
+        "id": 368260,
+        "name": "Marvel's Midnight Suns",
+        "developers": [
+            "Firaxis Games"
+        ]
+    },
+    {
+        "id": 368370,
+        "name": "Her Story",
+        "developers": [
+            "Sam Barlow"
+        ]
+    },
+    {
+        "id": 368500,
+        "name": "Assassin's Creed® Syndicate",
+        "developers": [
+            "Ubisoft Quebec, in collaboration with Ubisoft Annecy, Bucharest, Kiev, Montreal, Montpellier, Shanghai, Singapore, Sofia, Toronto studios"
+        ]
+    },
+    {
+        "id": 370910,
+        "name": "Kathy Rain",
+        "developers": [
+            "Clifftop Games"
+        ]
+    },
+    {
+        "id": 372000,
+        "name": "Tree of Savior (English Ver.)",
+        "developers": [
+            "IMCGAMES Co.,Ltd."
+        ]
+    },
+    {
+        "id": 373420,
+        "name": "Divinity: Original Sin - Enhanced Edition",
+        "developers": [
+            "Larian Studios"
+        ]
+    },
+    {
+        "id": 374040,
+        "name": "Portal Knights",
+        "developers": [
+            "Keen Games GmbH"
+        ]
+    },
+    {
+        "id": 374320,
+        "name": "DARK SOULS™ III",
+        "developers": [
+            "FromSoftware, Inc."
+        ]
+    },
+    {
+        "id": 375450,
+        "name": "NOBUNAGA'S AMBITION: Sphere of Influence - Ascension",
+        "developers": [
+            "KOEI TECMO GAMES CO., LTD."
+        ]
+    },
+    {
+        "id": 376210,
+        "name": "The Isle",
+        "developers": [
+            "Afterthought LLC"
+        ]
+    },
+    {
+        "id": 377160,
+        "name": "Fallout 4",
+        "developers": [
+            "Bethesda Game Studios"
+        ]
+    },
+    {
+        "id": 378540,
+        "name": "The Surge",
+        "developers": [
+            "Deck13"
+        ]
+    },
+    {
+        "id": 378860,
+        "name": "Project CARS 2",
+        "developers": [
+            "Slightly Mad Studios"
+        ]
+    },
+    {
+        "id": 379430,
+        "name": "Kingdom Come: Deliverance",
+        "developers": [
+            "Warhorse Studios"
+        ]
+    },
+    {
+        "id": 379720,
+        "name": "DOOM",
+        "developers": [
+            "id Software"
+        ]
+    },
+    {
+        "id": 380600,
+        "name": "Fishing Planet",
+        "developers": [
+            "Fishing Planet LLC"
+        ]
+    },
+    {
+        "id": 381210,
+        "name": "Dead by Daylight",
+        "developers": [
+            "Behaviour Interactive Inc."
+        ]
+    },
+    {
+        "id": 382490,
+        "name": "Relic Hunters Zero: Remix",
+        "developers": [
+            "Rogue Snail"
+        ]
+    },
+    {
+        "id": 383080,
+        "name": "Sakura Clicker",
+        "developers": [
+            "Winged Cloud"
+        ]
+    },
+    {
+        "id": 383150,
+        "name": "Dead Island Definitive Edition",
+        "developers": [
+            "Techland"
+        ]
+    },
+    {
+        "id": 383870,
+        "name": "Firewatch",
+        "developers": [
+            "Campo Santo"
+        ]
+    },
+    {
+        "id": 386180,
+        "name": "Crossout",
+        "developers": [
+            "Targem Games"
+        ]
+    },
+    {
+        "id": 386360,
+        "name": "SMITE®",
+        "developers": [
+            "Titan Forge Games"
+        ]
+    },
+    {
+        "id": 386940,
+        "name": "Ultimate Chicken Horse",
+        "developers": [
+            "Clever Endeavour Games"
+        ]
+    },
+    {
+        "id": 387290,
+        "name": "Ori and the Blind Forest: Definitive Edition",
+        "developers": [
+            "Moon Studios GmbH"
+        ]
+    },
+    {
+        "id": 387990,
+        "name": "Scrap Mechanic",
+        "developers": [
+            "Axolot Games"
+        ]
+    },
+    {
+        "id": 388410,
+        "name": "Darksiders II Deathinitive Edition",
+        "developers": [
+            "Gunfire Games",
+            "Vigil Games",
+            "THQ Nordic"
+        ]
+    },
+    {
+        "id": 389430,
+        "name": "Knight Online",
+        "developers": [
+            "Noah System",
+            "Mgame"
+        ]
+    },
+    {
+        "id": 389570,
+        "name": "Mitos.is: The Game",
+        "developers": [
+            "Freakinware Studios"
+        ]
+    },
+    {
+        "id": 389730,
+        "name": "TEKKEN 7",
+        "developers": [
+            "BANDAI NAMCO Studios Inc."
+        ]
+    },
+    {
+        "id": 391220,
+        "name": "Rise of the Tomb Raider™",
+        "developers": [
+            "Crystal Dynamics",
+            "Eidos-Montréal",
+            "Feral Interactive (Mac)",
+            "Feral Interactive (Linux)",
+            "Nixxes"
+        ]
+    },
+    {
+        "id": 391460,
+        "name": "WARMODE",
+        "developers": [
+            "Novalink"
+        ]
+    },
+    {
+        "id": 391540,
+        "name": "Undertale",
+        "developers": [
+            "tobyfox"
+        ]
+    },
+    {
+        "id": 391720,
+        "name": "Layers of Fear (2016)",
+        "developers": [
+            "Bloober Team SA"
+        ]
+    },
+    {
+        "id": 392110,
+        "name": "ENDLESS™ Space 2",
+        "developers": [
+            "AMPLITUDE Studios"
+        ]
+    },
+    {
+        "id": 392160,
+        "name": "X4: Foundations",
+        "developers": [
+            "Egosoft"
+        ]
+    },
+    {
+        "id": 393380,
+        "name": "Squad",
+        "developers": [
+            "Offworld Industries"
+        ]
+    },
+    {
+        "id": 394360,
+        "name": "Hearts of Iron IV",
+        "developers": [
+            "Paradox Development Studio"
+        ]
+    },
+    {
+        "id": 394510,
+        "name": "HELLDIVERS™ Dive Harder Edition",
+        "developers": [
+            "Arrowhead Game Studios"
+        ]
+    },
+    {
+        "id": 395170,
+        "name": "DISTRAINT: Deluxe Edition",
+        "developers": [
+            "Jesse Makkonen"
+        ]
+    },
+    {
+        "id": 397540,
+        "name": "Borderlands 3",
+        "developers": [
+            "Gearbox Software"
+        ]
+    },
+    {
+        "id": 397900,
+        "name": "Business Tour - Board Game with Online Multiplayer",
+        "developers": [
+            "Creobit"
+        ]
+    },
+    {
+        "id": 400250,
+        "name": "Heaven Island - VR MMO",
+        "developers": [
+            "Fabio Ferrara",
+            "Giulia Airoldi"
+        ]
+    },
+    {
+        "id": 403640,
+        "name": "Dishonored 2",
+        "developers": [
+            "Arkane Studios"
+        ]
+    },
+    {
+        "id": 407530,
+        "name": "ARK: The Survival Of The Fittest",
+        "developers": [
+            "Studio Wildcard",
+            "Instinct Games",
+            "Efecto Studios",
+            "Virtual Basement LLC"
+        ]
+    },
+    {
+        "id": 409710,
+        "name": "BioShock™ Remastered",
+        "developers": [
+            "2K Boston",
+            "2K Australia",
+            "Blind Squirrel",
+            "Feral Interactive (Mac)"
+        ]
+    },
+    {
+        "id": 409720,
+        "name": "BioShock™ 2 Remastered",
+        "developers": [
+            "2K Marin",
+            "2K China",
+            "Digital Extremes",
+            "2K Australia",
+            "Blind Squirrel",
+            "Feral Interactive (Mac)"
+        ]
+    },
+    {
+        "id": 412020,
+        "name": "Metro Exodus",
+        "developers": [
+            "4A Games"
+        ]
+    },
+    {
+        "id": 413150,
+        "name": "Stardew Valley",
+        "developers": [
+            "ConcernedApe"
+        ]
+    },
+    {
+        "id": 414340,
+        "name": "Hellblade: Senua's Sacrifice",
+        "developers": [
+            "Ninja Theory"
+        ]
+    },
+    {
+        "id": 414700,
+        "name": "Outlast 2",
+        "developers": [
+            "Red Barrels"
+        ]
+    },
+    {
+        "id": 417860,
+        "name": "Emily is Away",
+        "developers": [
+            "Kyle Seeley"
+        ]
+    },
+    {
+        "id": 417910,
+        "name": "Street Warriors Online",
+        "developers": [
+            "Crazy Rocks Studios"
+        ]
+    },
+    {
+        "id": 418070,
+        "name": "Turbo Pug",
+        "developers": [
+            "Space Cat Studios",
+            "SnowFlame",
+            "Back To Basics Gaming"
+        ]
+    },
+    {
+        "id": 418240,
+        "name": "Shadow Tactics: Blades of the Shogun",
+        "developers": [
+            "Mimimi Games"
+        ]
+    },
+    {
+        "id": 418370,
+        "name": "Resident Evil 7 Biohazard",
+        "developers": [
+            "CAPCOM Co., Ltd."
+        ]
+    },
+    {
+        "id": 418460,
+        "name": "Rising Storm 2: Vietnam",
+        "developers": [
+            "Antimatter Games",
+            "Tripwire Interactive"
+        ]
+    },
+    {
+        "id": 423230,
+        "name": "Furi",
+        "developers": [
+            "The Game Bakers"
+        ]
+    },
+    {
+        "id": 424370,
+        "name": "Wolcen: Lords of Mayhem",
+        "developers": [
+            "WOLCEN Studio"
+        ]
+    },
+    {
+        "id": 424840,
+        "name": "Little Nightmares",
+        "developers": [
+            "Tarsier Studios"
+        ]
+    },
+    {
+        "id": 427270,
+        "name": "Orcs Must Die! Unchained",
+        "developers": [
+            "Robot Entertainment"
+        ]
+    },
+    {
+        "id": 427520,
+        "name": "Factorio",
+        "developers": [
+            "Wube Software LTD."
+        ]
+    },
+    {
+        "id": 427730,
+        "name": "Who's Your Daddy?!",
+        "developers": [
+            "Evil Tortilla Games"
+        ]
+    },
+    {
+        "id": 429470,
+        "name": "Space Pilgrim Episode I: Alpha Centauri",
+        "developers": [
+            "Pilgrim Adventures",
+            "GrabTheGames Studios"
+        ]
+    },
+    {
+        "id": 431240,
+        "name": "Golf With Your Friends",
+        "developers": [
+            "Blacklight Interactive",
+            "Team17"
+        ]
+    },
+    {
+        "id": 431960,
+        "name": "Wallpaper Engine",
+        "developers": [
+            "Wallpaper Engine Team"
+        ]
+    },
+    {
+        "id": 433340,
+        "name": "Slime Rancher",
+        "developers": [
+            "Monomi Park"
+        ]
+    },
+    {
+        "id": 433850,
+        "name": "Z1 Battle Royale",
+        "developers": [
+            "Daybreak Game Company"
+        ]
+    },
+    {
+        "id": 434650,
+        "name": "Lost Castle / 失落城堡",
+        "developers": [
+            "Hunter Studio"
+        ]
+    },
+    {
+        "id": 435150,
+        "name": "Divinity: Original Sin 2 - Definitive Edition",
+        "developers": [
+            "Larian Studios"
+        ]
+    },
+    {
+        "id": 436150,
+        "name": "Governor of Poker 3",
+        "developers": [
+            "Azerion",
+            "YoudaGames"
+        ]
+    },
+    {
+        "id": 436520,
+        "name": "Line of Sight",
+        "developers": [
+            "BlackSpot Entertainment"
+        ]
+    },
+    {
+        "id": 437220,
+        "name": "The Culling",
+        "developers": [
+            "Xaviant"
+        ]
+    },
+    {
+        "id": 438040,
+        "name": "Shakes and Fidget",
+        "developers": [
+            "Playa Games GmbH"
+        ]
+    },
+    {
+        "id": 438100,
+        "name": "VRChat",
+        "developers": [
+            "VRChat Inc."
+        ]
+    },
+    {
+        "id": 438740,
+        "name": "Friday the 13th: The Game",
+        "developers": [
+            "IllFonic"
+        ]
+    },
+    {
+        "id": 439190,
+        "name": "Stories: The Path of Destinies",
+        "developers": [
+            "Spearhead Games"
+        ]
+    },
+    {
+        "id": 439700,
+        "name": "Z1 Battle Royale: Test Server",
+        "developers": [
+            "Daybreak Game Company"
+        ]
+    },
+    {
+        "id": 440900,
+        "name": "Conan Exiles",
+        "developers": [
+            "Funcom"
+        ]
+    },
+    {
+        "id": 442080,
+        "name": "Riders of Icarus",
+        "developers": [
+            "WeMade",
+            "VALOFE"
+        ]
+    },
+    {
+        "id": 444090,
+        "name": "Paladins®",
+        "developers": [
+            "Evil Mojo Games"
+        ]
+    },
+    {
+        "id": 444200,
+        "name": "World of Tanks Blitz",
+        "developers": [
+            "Wargaming Group Limited"
+        ]
+    },
+    {
+        "id": 444640,
+        "name": "Bloons TD Battles",
+        "developers": [
+            "Ninja Kiwi"
+        ]
+    },
+    {
+        "id": 445980,
+        "name": "Wizard of Legend",
+        "developers": [
+            "Contingent99"
+        ]
+    },
+    {
+        "id": 447020,
+        "name": "Farming Simulator 17",
+        "developers": [
+            "GIANTS Software"
+        ]
+    },
+    {
+        "id": 447040,
+        "name": "Watch_Dogs® 2",
+        "developers": [
+            "Ubisoft"
+        ]
+    },
+    {
+        "id": 447820,
+        "name": "Day of Infamy",
+        "developers": [
+            "New World Interactive"
+        ]
+    },
+    {
+        "id": 448470,
+        "name": "Bacteria",
+        "developers": [
+            "Sometimes You"
+        ]
+    },
+    {
+        "id": 448510,
+        "name": "Overcooked",
+        "developers": [
+            "Ghost Town Games Ltd."
+        ]
+    },
+    {
+        "id": 450390,
+        "name": "The Lab",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 450540,
+        "name": "Hot Dogs, Horseshoes & Hand Grenades",
+        "developers": [
+            "RUST LTD."
+        ]
+    },
+    {
+        "id": 453480,
+        "name": "Shadowverse CCG",
+        "developers": [
+            "Cygames, Inc."
+        ]
+    },
+    {
+        "id": 454650,
+        "name": "DRAGON BALL XENOVERSE 2",
+        "developers": [
+            "QLOC",
+            "DIMPS"
+        ]
+    },
+    {
+        "id": 457140,
+        "name": "Oxygen Not Included",
+        "developers": [
+            "Klei Entertainment"
+        ]
+    },
+    {
+        "id": 457330,
+        "name": "High Octane Drift",
+        "developers": [
+            "Cruderocks"
+        ]
+    },
+    {
+        "id": 459820,
+        "name": "Crush Crush",
+        "developers": [
+            "Sad Panda Studios"
+        ]
+    },
+    {
+        "id": 460790,
+        "name": "Bayonetta",
+        "developers": [
+            "PlatinumGames"
+        ]
+    },
+    {
+        "id": 460920,
+        "name": "Steep™",
+        "developers": [
+            "Ubisoft Annecy",
+            "Ubisoft Montpellier",
+            "Ubisoft Kiev"
+        ]
+    },
+    {
+        "id": 460930,
+        "name": "Tom Clancy's Ghost Recon® Wildlands",
+        "developers": [
+            "Ubisoft Paris",
+            "Ubisoft Annecy",
+            "Ubisoft Bucharest",
+            "Ubisoft Montpellier",
+            "Ubisoft Milan",
+            "Reflections",
+            "Ubisoft Belgrade"
+        ]
+    },
+    {
+        "id": 460950,
+        "name": "Katana ZERO",
+        "developers": [
+            "Askiisoft"
+        ]
+    },
+    {
+        "id": 462780,
+        "name": "Darksiders Warmastered Edition",
+        "developers": [
+            "KAIKO",
+            "Vigil Games"
+        ]
+    },
+    {
+        "id": 464920,
+        "name": "Surviving Mars",
+        "developers": [
+            "Haemimont Games",
+            "Abstraction"
+        ]
+    },
+    {
+        "id": 466240,
+        "name": "Deceit",
+        "developers": [
+            "World Makers"
+        ]
+    },
+    {
+        "id": 466560,
+        "name": "Northgard",
+        "developers": [
+            "Shiro Games"
+        ]
+    },
+    {
+        "id": 470220,
+        "name": "UNO",
+        "developers": [
+            "Ubisoft Entertainment"
+        ]
+    },
+    {
+        "id": 471710,
+        "name": "Rec Room",
+        "developers": [
+            "Rec Room"
+        ]
+    },
+    {
+        "id": 474960,
+        "name": "Quantum Break",
+        "developers": [
+            "Remedy Entertainment"
+        ]
+    },
+    {
+        "id": 475150,
+        "name": "Titan Quest Anniversary Edition",
+        "developers": [
+            "Iron Lore Entertainment",
+            "THQ Nordic"
+        ]
+    },
+    {
+        "id": 475550,
+        "name": "Beholder",
+        "developers": [
+            "Warm Lamp Games"
+        ]
+    },
+    {
+        "id": 476480,
+        "name": "Heaven Forest - VR MMO",
+        "developers": [
+            "Fabio Ferrara"
+        ]
+    },
+    {
+        "id": 476600,
+        "name": "Call of Duty®: WWII",
+        "developers": [
+            "Sledgehammer Games",
+            "Raven Software"
+        ]
+    },
+    {
+        "id": 477160,
+        "name": "Human: Fall Flat",
+        "developers": [
+            "No Brakes Games"
+        ]
+    },
+    {
+        "id": 480490,
+        "name": "Prey",
+        "developers": [
+            "Arkane Studios"
+        ]
+    },
+    {
+        "id": 482730,
+        "name": "Football Manager 2017",
+        "developers": [
+            "Sports Interactive"
+        ]
+    },
+    {
+        "id": 485510,
+        "name": "Nioh: Complete Edition",
+        "developers": [
+            "KOEI TECMO GAMES CO., LTD."
+        ]
+    },
+    {
+        "id": 488790,
+        "name": "South Park™: The Fractured But Whole™",
+        "developers": [
+            "Ubisoft San Francisco"
+        ]
+    },
+    {
+        "id": 489520,
+        "name": "Minion Masters",
+        "developers": [
+            "BetaDwarf"
+        ]
+    },
+    {
+        "id": 489830,
+        "name": "The Elder Scrolls V: Skyrim Special Edition",
+        "developers": [
+            "Bethesda Game Studios"
+        ]
+    },
+    {
+        "id": 491950,
+        "name": "Orwell: Keeping an Eye On You",
+        "developers": [
+            "Osmotic Studios"
+        ]
+    },
+    {
+        "id": 492720,
+        "name": "Tropico 6",
+        "developers": [
+            "Limbic Entertainment",
+            "Realmforge Studios"
+        ]
+    },
+    {
+        "id": 493340,
+        "name": "Planet Coaster",
+        "developers": [
+            "Frontier Developments",
+            "Aspyr (Mac)"
+        ]
+    },
+    {
+        "id": 493520,
+        "name": "GTFO",
+        "developers": [
+            "10 Chambers"
+        ]
+    },
+    {
+        "id": 495420,
+        "name": "State of Decay 2: Juggernaut Edition",
+        "developers": [
+            "Undead Labs"
+        ]
+    },
+    {
+        "id": 502500,
+        "name": "ACE COMBAT™ 7: SKIES UNKNOWN",
+        "developers": [
+            "Bandai Namco Studios Inc."
+        ]
+    },
+    {
+        "id": 504230,
+        "name": "Celeste",
+        "developers": [
+            "Maddy Makes Games Inc.",
+            "Extremely OK Games, Ltd."
+        ]
+    },
+    {
+        "id": 504370,
+        "name": "Battlerite",
+        "developers": [
+            "Stunlock Studios"
+        ]
+    },
+    {
+        "id": 505460,
+        "name": "Foxhole",
+        "developers": [
+            "Siege Camp"
+        ]
+    },
+    {
+        "id": 506540,
+        "name": "Last Man Standing",
+        "developers": [
+            "Free Reign Entertainment",
+            "Free Reign Entertainment"
+        ]
+    },
+    {
+        "id": 506670,
+        "name": "ORBITAL",
+        "developers": [
+            "Ardi Studio"
+        ]
+    },
+    {
+        "id": 508440,
+        "name": "Totally Accurate Battle Simulator",
+        "developers": [
+            "Landfall"
+        ]
+    },
+    {
+        "id": 509980,
+        "name": "BIGFOOT",
+        "developers": [
+            "CyberLight Game Studio"
+        ]
+    },
+    {
+        "id": 510840,
+        "name": "Evolvation",
+        "developers": [
+            "Eric Ruts",
+            "Jacob Kooiman"
+        ]
+    },
+    {
+        "id": 511470,
+        "name": "Glass Masquerade",
+        "developers": [
+            "Onyx Lute"
+        ]
+    },
+    {
+        "id": 512900,
+        "name": "Streets of Rogue",
+        "developers": [
+            "Matt Dabrowski"
+        ]
+    },
+    {
+        "id": 513710,
+        "name": "SCUM",
+        "developers": [
+            "Gamepires"
+        ]
+    },
+    {
+        "id": 516750,
+        "name": "My Summer Car",
+        "developers": [
+            "Amistech Games"
+        ]
+    },
+    {
+        "id": 518790,
+        "name": "theHunter: Call of the Wild™",
+        "developers": [
+            "Expansive Worlds"
+        ]
+    },
+    {
+        "id": 519860,
+        "name": "DUSK",
+        "developers": [
+            "David Szymanski"
+        ]
+    },
+    {
+        "id": 524220,
+        "name": "NieR:Automata™",
+        "developers": [
+            "Square Enix",
+            "PlatinumGames Inc."
+        ]
+    },
+    {
+        "id": 526870,
+        "name": "Satisfactory",
+        "developers": [
+            "Coffee Stain Studios"
+        ]
+    },
+    {
+        "id": 527230,
+        "name": "For The King",
+        "developers": [
+            "IronOak Games"
+        ]
+    },
+    {
+        "id": 527430,
+        "name": "Warhammer 40,000: Inquisitor - Martyr",
+        "developers": [
+            "NeocoreGames"
+        ]
+    },
+    {
+        "id": 530700,
+        "name": "Argo",
+        "developers": [
+            "Bohemia Interactive"
+        ]
+    },
+    {
+        "id": 532210,
+        "name": "Life is Strange 2",
+        "developers": [
+            "DONTNOD Entertainment",
+            "Feral Interactive (Mac)",
+            "Feral Interactive (Linux)"
+        ]
+    },
+    {
+        "id": 534380,
+        "name": "Dying Light 2 Stay Human",
+        "developers": [
+            "Techland"
+        ]
+    },
+    {
+        "id": 535930,
+        "name": "Two Point Hospital",
+        "developers": [
+            "Two Point Studios"
+        ]
+    },
+    {
+        "id": 536930,
+        "name": "MOBIUS FINAL FANTASY™",
+        "developers": [
+            "Square Enix"
+        ]
+    },
+    {
+        "id": 537180,
+        "name": "Digimon Masters Online",
+        "developers": []
+    },
+    {
+        "id": 544730,
+        "name": "Catan Universe",
+        "developers": [
+            "Client/Frontend: Endava  / Backend: SuperNimbus"
+        ]
+    },
+    {
+        "id": 544810,
+        "name": "KARDS - The WW2 Card Game",
+        "developers": [
+            "1939 Games"
+        ]
+    },
+    {
+        "id": 546560,
+        "name": "Half-Life: Alyx",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 548430,
+        "name": "Deep Rock Galactic",
+        "developers": [
+            "Ghost Ship Games"
+        ]
+    },
+    {
+        "id": 550650,
+        "name": "Black Squad",
+        "developers": [
+            "VALOFE",
+            "NS STUDIO"
+        ]
+    },
+    {
+        "id": 550900,
+        "name": "Metin2",
+        "developers": []
+    },
+    {
+        "id": 552500,
+        "name": "Warhammer: Vermintide 2",
+        "developers": [
+            "Fatshark"
+        ]
+    },
+    {
+        "id": 552520,
+        "name": "Far Cry® 5",
+        "developers": [
+            "Ubisoft Montreal",
+            "Red Storm",
+            "Ubisoft Shanghai",
+            "Ubisoft Toronto",
+            "Ubisoft Kiev"
+        ]
+    },
+    {
+        "id": 552990,
+        "name": "World of Warships",
+        "developers": [
+            "Wargaming Group Limited"
+        ]
+    },
+    {
+        "id": 555160,
+        "name": "Pavlov VR",
+        "developers": [
+            "Vankrupt Games"
+        ]
+    },
+    {
+        "id": 555570,
+        "name": "Infestation: The New Z",
+        "developers": [
+            "Fredaikis AB"
+        ]
+    },
+    {
+        "id": 558100,
+        "name": "Art of War: Red Tides",
+        "developers": [
+            "Game Science"
+        ]
+    },
+    {
+        "id": 563560,
+        "name": "Alien Swarm: Reactive Drop",
+        "developers": [
+            "Reactive Drop Team"
+        ]
+    },
+    {
+        "id": 567630,
+        "name": "Blood of Steel",
+        "developers": [
+            "YC Games"
+        ]
+    },
+    {
+        "id": 568220,
+        "name": "Lobotomy Corporation | Monster Management Simulation",
+        "developers": [
+            "ProjectMoon"
+        ]
+    },
+    {
+        "id": 569480,
+        "name": "Kingdoms and Castles",
+        "developers": [
+            "Lion Shield, LLC"
+        ]
+    },
+    {
+        "id": 570940,
+        "name": "DARK SOULS™: REMASTERED",
+        "developers": [
+            "QLOC"
+        ]
+    },
+    {
+        "id": 571740,
+        "name": "Golf It!",
+        "developers": [
+            "Perfuse Entertainment"
+        ]
+    },
+    {
+        "id": 577800,
+        "name": "NBA 2K18",
+        "developers": [
+            "Visual Concepts"
+        ]
+    },
+    {
+        "id": 578080,
+        "name": "PUBG: BATTLEGROUNDS",
+        "developers": [
+            "KRAFTON, Inc."
+        ]
+    },
+    {
+        "id": 578310,
+        "name": "BRAIN / OUT",
+        "developers": [
+            "Desertkun"
+        ]
+    },
+    {
+        "id": 581320,
+        "name": "Insurgency: Sandstorm",
+        "developers": [
+            "New World Interactive"
+        ]
+    },
+    {
+        "id": 582010,
+        "name": "Monster Hunter: World",
+        "developers": [
+            "CAPCOM Co., Ltd."
+        ]
+    },
+    {
+        "id": 582160,
+        "name": "Assassin's Creed® Origins",
+        "developers": [
+            "Ubisoft Montreal"
+        ]
+    },
+    {
+        "id": 582500,
+        "name": "We Were Here",
+        "developers": [
+            "Total Mayhem Games"
+        ]
+    },
+    {
+        "id": 582660,
+        "name": "Black Desert",
+        "developers": [
+            "Pearl Abyss"
+        ]
+    },
+    {
+        "id": 585690,
+        "name": "Minimalism",
+        "developers": [
+            "PixelMouse"
+        ]
+    },
+    {
+        "id": 588430,
+        "name": "Fallout Shelter",
+        "developers": [
+            "Bethesda Game Studios"
+        ]
+    },
+    {
+        "id": 588650,
+        "name": "Dead Cells",
+        "developers": [
+            "Motion Twin"
+        ]
+    },
+    {
+        "id": 590380,
+        "name": "Into the Breach",
+        "developers": [
+            "Subset Games"
+        ]
+    },
+    {
+        "id": 594570,
+        "name": "Total War: WARHAMMER II",
+        "developers": [
+            "CREATIVE ASSEMBLY",
+            "Feral Interactive (Mac)",
+            "Feral Interactive (Linux)"
+        ]
+    },
+    {
+        "id": 594650,
+        "name": "Hunt: Showdown",
+        "developers": [
+            "Crytek"
+        ]
+    },
+    {
+        "id": 599140,
+        "name": "Graveyard Keeper",
+        "developers": [
+            "Lazy Bear Games"
+        ]
+    },
+    {
+        "id": 601150,
+        "name": "Devil May Cry 5",
+        "developers": [
+            "CAPCOM Co., Ltd."
+        ]
+    },
+    {
+        "id": 601430,
+        "name": "The Evil Within 2",
+        "developers": [
+            "Tango Gameworks"
+        ]
+    },
+    {
+        "id": 601510,
+        "name": "Yu-Gi-Oh! Duel Links",
+        "developers": [
+            "Konami Digital Entertainment"
+        ]
+    },
+    {
+        "id": 602960,
+        "name": "Barotrauma",
+        "developers": [
+            "FakeFish",
+            "Undertow Games"
+        ]
+    },
+    {
+        "id": 603850,
+        "name": "Age of History II",
+        "developers": [
+            "Łukasz Jakowski"
+        ]
+    },
+    {
+        "id": 606150,
+        "name": "Moonlighter",
+        "developers": [
+            "Digital Sun"
+        ]
+    },
+    {
+        "id": 606280,
+        "name": "Darksiders III",
+        "developers": [
+            "Gunfire Games"
+        ]
+    },
+    {
+        "id": 611500,
+        "name": "Quake Champions",
+        "developers": [
+            "id Software"
+        ]
+    },
+    {
+        "id": 612880,
+        "name": "Wolfenstein II: The New Colossus",
+        "developers": [
+            "Machine Games"
+        ]
+    },
+    {
+        "id": 613100,
+        "name": "House Flipper",
+        "developers": [
+            "Empyrean"
+        ]
+    },
+    {
+        "id": 617290,
+        "name": "Remnant: From the Ashes",
+        "developers": [
+            "Gunfire Games"
+        ]
+    },
+    {
+        "id": 620980,
+        "name": "Beat Saber",
+        "developers": [
+            "Beat Games"
+        ]
+    },
+    {
+        "id": 621060,
+        "name": "PC Building Simulator",
+        "developers": [
+            "Claudiu Kiss",
+            "The Irregular Corporation"
+        ]
+    },
+    {
+        "id": 627690,
+        "name": "Idle Champions of the Forgotten Realms",
+        "developers": [
+            "Codename Entertainment Inc."
+        ]
+    },
+    {
+        "id": 629520,
+        "name": "Soundpad",
+        "developers": [
+            "Leppsoft"
+        ]
+    },
+    {
+        "id": 629730,
+        "name": "Blade and Sorcery",
+        "developers": [
+            "WarpFrog"
+        ]
+    },
+    {
+        "id": 629760,
+        "name": "MORDHAU",
+        "developers": [
+            "Triternion"
+        ]
+    },
+    {
+        "id": 630100,
+        "name": "SoulWorker - Anime Action MMO",
+        "developers": []
+    },
+    {
+        "id": 632360,
+        "name": "Risk of Rain 2",
+        "developers": [
+            "Hopoo Games"
+        ]
+    },
+    {
+        "id": 632470,
+        "name": "Disco Elysium - The Final Cut",
+        "developers": [
+            "ZA/UM"
+        ]
+    },
+    {
+        "id": 633230,
+        "name": "NARUTO TO BORUTO: SHINOBI STRIKER",
+        "developers": [
+            "Soleil Ltd."
+        ]
+    },
+    {
+        "id": 635260,
+        "name": "CarX Drift Racing Online",
+        "developers": [
+            "CarX Technologies, LLC"
+        ]
+    },
+    {
+        "id": 636480,
+        "name": "Ravenfield",
+        "developers": [
+            "SteelRaven7"
+        ]
+    },
+    {
+        "id": 637090,
+        "name": "BATTLETECH",
+        "developers": [
+            "Harebrained Schemes"
+        ]
+    },
+    {
+        "id": 637650,
+        "name": "FINAL FANTASY XV WINDOWS EDITION",
+        "developers": [
+            "Square Enix"
+        ]
+    },
+    {
+        "id": 638970,
+        "name": "Yakuza 0",
+        "developers": [
+            "Ryu Ga Gotoku Studio"
+        ]
+    },
+    {
+        "id": 640590,
+        "name": "The LEGO® NINJAGO® Movie Video Game",
+        "developers": [
+            "Traveller's Tales",
+            "TT Games"
+        ]
+    },
+    {
+        "id": 640820,
+        "name": "Pathfinder: Kingmaker - Enhanced Plus Edition",
+        "developers": [
+            "Owlcat Games"
+        ]
+    },
+    {
+        "id": 641990,
+        "name": "The Escapists 2",
+        "developers": [
+            "Team17",
+            "Mouldy Toof Studios"
+        ]
+    },
+    {
+        "id": 644560,
+        "name": "Mirror",
+        "developers": [
+            "KAGAMI WORKS"
+        ]
+    },
+    {
+        "id": 644930,
+        "name": "They Are Billions",
+        "developers": [
+            "Numantian Games"
+        ]
+    },
+    {
+        "id": 645630,
+        "name": "Car Mechanic Simulator 2018",
+        "developers": [
+            "Red Dot Games"
+        ]
+    },
+    {
+        "id": 646570,
+        "name": "Slay the Spire",
+        "developers": [
+            "Mega Crit Games"
+        ]
+    },
+    {
+        "id": 646910,
+        "name": "The Crew™ 2",
+        "developers": [
+            "Ivory Tower"
+        ]
+    },
+    {
+        "id": 648350,
+        "name": "Jurassic World Evolution",
+        "developers": [
+            "Frontier Developments"
+        ]
+    },
+    {
+        "id": 648800,
+        "name": "Raft",
+        "developers": [
+            "Redbeet Interactive"
+        ]
+    },
+    {
+        "id": 657200,
+        "name": "Hand Simulator",
+        "developers": [
+            "HFM Games"
+        ]
+    },
+    {
+        "id": 666220,
+        "name": "CS2D",
+        "developers": [
+            "Unreal Software"
+        ]
+    },
+    {
+        "id": 668630,
+        "name": "Tricolour Lovestory",
+        "developers": [
+            "HL-Galgame"
+        ]
+    },
+    {
+        "id": 671860,
+        "name": "BattleBit Remastered",
+        "developers": [
+            "SgtOkiDoki",
+            "Vilaskis",
+            "TheLiquidHorse"
+        ]
+    },
+    {
+        "id": 673130,
+        "name": "AMID EVIL",
+        "developers": [
+            "Indefatigable"
+        ]
+    },
+    {
+        "id": 673950,
+        "name": "Farm Together",
+        "developers": [
+            "Milkstone Studios"
+        ]
+    },
+    {
+        "id": 674020,
+        "name": "World War 3",
+        "developers": [
+            "The Farm 51"
+        ]
+    },
+    {
+        "id": 674940,
+        "name": "Stick Fight: The Game",
+        "developers": [
+            "Landfall West"
+        ]
+    },
+    {
+        "id": 675010,
+        "name": "MudRunner",
+        "developers": [
+            "Saber Interactive"
+        ]
+    },
+    {
+        "id": 677620,
+        "name": "Splitgate",
+        "developers": [
+            "1047 Games"
+        ]
+    },
+    {
+        "id": 678950,
+        "name": "DRAGON BALL FighterZ",
+        "developers": [
+            "Arc System Works"
+        ]
+    },
+    {
+        "id": 678960,
+        "name": "CODE VEIN",
+        "developers": [
+            "Bandai Namco Studios"
+        ]
+    },
+    {
+        "id": 680420,
+        "name": "OUTRIDERS",
+        "developers": [
+            "People Can Fly"
+        ]
+    },
+    {
+        "id": 681660,
+        "name": "Bless Online",
+        "developers": [
+            "NEOWIZ BLESS STUDIO"
+        ]
+    },
+    {
+        "id": 683320,
+        "name": "GRIS",
+        "developers": [
+            "Nomada Studio"
+        ]
+    },
+    {
+        "id": 686810,
+        "name": "Hell Let Loose",
+        "developers": [
+            "Team17"
+        ]
+    },
+    {
+        "id": 690790,
+        "name": "DiRT Rally 2.0",
+        "developers": [
+            "Codemasters"
+        ]
+    },
+    {
+        "id": 698780,
+        "name": "Doki Doki Literature Club!",
+        "developers": [
+            "Team Salvato"
+        ]
+    },
+    {
+        "id": 700330,
+        "name": "SCP: Secret Laboratory",
+        "developers": [
+            "Northwood Studios"
+        ]
+    },
+    {
+        "id": 701160,
+        "name": "Kingdom Two Crowns",
+        "developers": [
+            "Stumpy🐙Squid",
+            "Fury Studios",
+            "Coatsink"
+        ]
+    },
+    {
+        "id": 703080,
+        "name": "Planet Zoo",
+        "developers": [
+            "Frontier Developments"
+        ]
+    },
+    {
+        "id": 704270,
+        "name": "Generation Zero®",
+        "developers": [
+            "Systemic Reaction™"
+        ]
+    },
+    {
+        "id": 704850,
+        "name": "Thief Simulator",
+        "developers": [
+            "Noble Muffins"
+        ]
+    },
+    {
+        "id": 706990,
+        "name": "BLOCKPOST",
+        "developers": [
+            "Skullcap Studios"
+        ]
+    },
+    {
+        "id": 728880,
+        "name": "Overcooked! 2",
+        "developers": [
+            "Ghost Town Games Ltd.",
+            "Team17"
+        ]
+    },
+    {
+        "id": 736220,
+        "name": "Post Scriptum",
+        "developers": [
+            "Periscope Games"
+        ]
+    },
+    {
+        "id": 736590,
+        "name": "Operation: Harsh Doorstop",
+        "developers": [
+            "Drakeling Labs"
+        ]
+    },
+    {
+        "id": 738060,
+        "name": "Freddy Fazbear's Pizzeria Simulator",
+        "developers": [
+            "Scott Cawthon"
+        ]
+    },
+    {
+        "id": 739630,
+        "name": "Phasmophobia",
+        "developers": [
+            "Kinetic Games"
+        ]
+    },
+    {
+        "id": 740130,
+        "name": "Tales of Arise",
+        "developers": [
+            "Bandai Namco Studios Inc."
+        ]
+    },
+    {
+        "id": 744900,
+        "name": "Dead Frontier 2",
+        "developers": [
+            "Creaky Corpse Ltd"
+        ]
+    },
+    {
+        "id": 750920,
+        "name": "Shadow of the Tomb Raider: Definitive Edition",
+        "developers": [
+            "Eidos-Montréal",
+            "Crystal Dynamics",
+            "Nixxes",
+            "Feral Interactive (Mac)",
+            "Feral interactive (Linux)"
+        ]
+    },
+    {
+        "id": 752590,
+        "name": "A Plague Tale: Innocence",
+        "developers": [
+            "Asobo Studio"
+        ]
+    },
+    {
+        "id": 753640,
+        "name": "Outer Wilds",
+        "developers": [
+            "Mobius Digital"
+        ]
+    },
+    {
+        "id": 755790,
+        "name": "Ring of Elysium",
+        "developers": [
+            "Aurora Studio"
+        ]
+    },
+    {
+        "id": 761890,
+        "name": "Albion Online",
+        "developers": [
+            "Sandbox Interactive GmbH"
+        ]
+    },
+    {
+        "id": 766570,
+        "name": "Russian Fishing 4",
+        "developers": [
+            "FishSoft, LLC"
+        ]
+    },
+    {
+        "id": 767560,
+        "name": "War Robots",
+        "developers": [
+            "Pixonic"
+        ]
+    },
+    {
+        "id": 774171,
+        "name": "Muse Dash",
+        "developers": [
+            "peropero"
+        ]
+    },
+    {
+        "id": 774861,
+        "name": "Project Winter",
+        "developers": [
+            "Other Ocean Interactive"
+        ]
+    },
+    {
+        "id": 779340,
+        "name": "Total War: THREE KINGDOMS",
+        "developers": [
+            "CREATIVE ASSEMBLY",
+            "Feral Interactive (Mac)",
+            "Feral Interactive (Linux)"
+        ]
+    },
+    {
+        "id": 780310,
+        "name": "The Riftbreaker",
+        "developers": [
+            "EXOR Studios"
+        ]
+    },
+    {
+        "id": 782330,
+        "name": "DOOM Eternal",
+        "developers": [
+            "id Software"
+        ]
+    },
+    {
+        "id": 783770,
+        "name": "Ironsight",
+        "developers": [
+            "WipleGames Inc.,"
+        ]
+    },
+    {
+        "id": 787860,
+        "name": "Farming Simulator 19",
+        "developers": [
+            "Giants Software"
+        ]
+    },
+    {
+        "id": 788100,
+        "name": "Neon Abyss",
+        "developers": [
+            "Veewo Games"
+        ]
+    },
+    {
+        "id": 794600,
+        "name": "LET IT DIE",
+        "developers": [
+            "GRASSHOPPER MANUFACTURE INC.",
+            "SUPERTRICK GAMES, Inc."
+        ]
+    },
+    {
+        "id": 809960,
+        "name": "Radical Heights",
+        "developers": [
+            "Boss Key Productions"
+        ]
+    },
+    {
+        "id": 812140,
+        "name": "Assassin's Creed® Odyssey",
+        "developers": [
+            "Ubisoft Quebec",
+            "Ubisoft Montreal",
+            "Ubisoft Bucharest",
+            "Ubisoft Singapore",
+            "Ubisoft Montpellier",
+            "Ubisoft Kiev",
+            "Ubisoft Shanghai"
+        ]
+    },
+    {
+        "id": 813630,
+        "name": "Supraland",
+        "developers": [
+            "Supra Games"
+        ]
+    },
+    {
+        "id": 813780,
+        "name": "Age of Empires II: Definitive Edition",
+        "developers": [
+            "Forgotten Empires",
+            "Tantalus Media",
+            "Wicked Witch",
+            "World's Edge"
+        ]
+    },
+    {
+        "id": 813820,
+        "name": "Realm Royale Reforged",
+        "developers": [
+            "Heroic Leap Games"
+        ]
+    },
+    {
+        "id": 814380,
+        "name": "Sekiro™: Shadows Die Twice - GOTY Edition",
+        "developers": [
+            "FromSoftware"
+        ]
+    },
+    {
+        "id": 815370,
+        "name": "Green Hell",
+        "developers": [
+            "Creepy Jar"
+        ]
+    },
+    {
+        "id": 816020,
+        "name": "JUMP FORCE",
+        "developers": [
+            "Spike Chunsoft Co., Ltd."
+        ]
+    },
+    {
+        "id": 823130,
+        "name": "Totally Accurate Battlegrounds",
+        "developers": [
+            "Landfall"
+        ]
+    },
+    {
+        "id": 823500,
+        "name": "BONEWORKS",
+        "developers": [
+            "Stress Level Zero"
+        ]
+    },
+    {
+        "id": 834910,
+        "name": "ATLAS",
+        "developers": [
+            "Grapeshot Games",
+            "Instinct Games"
+        ]
+    },
+    {
+        "id": 838350,
+        "name": "太吾绘卷 The Scroll Of Taiwu",
+        "developers": [
+            "ConchShip Games"
+        ]
+    },
+    {
+        "id": 841370,
+        "name": "NBA 2K19",
+        "developers": [
+            "Visual Concepts"
+        ]
+    },
+    {
+        "id": 843380,
+        "name": "Super Animal Royale",
+        "developers": [
+            "Pixile"
+        ]
+    },
+    {
+        "id": 844870,
+        "name": "KurtzPel",
+        "developers": [
+            "KOG"
+        ]
+    },
+    {
+        "id": 845070,
+        "name": "The Awesome Adventures of Captain Spirit",
+        "developers": [
+            "DONTNOD Entertainment"
+        ]
+    },
+    {
+        "id": 848450,
+        "name": "Subnautica: Below Zero",
+        "developers": [
+            "Unknown Worlds Entertainment"
+        ]
+    },
+    {
+        "id": 851850,
+        "name": "DRAGON BALL Z: KAKAROT",
+        "developers": [
+            "CyberConnect2 Co. Ltd."
+        ]
+    },
+    {
+        "id": 858820,
+        "name": "Tribes of Midgard",
+        "developers": [
+            "Norsfell"
+        ]
+    },
+    {
+        "id": 863550,
+        "name": "HITMAN™ 2",
+        "developers": [
+            "IO Interactive A/S"
+        ]
+    },
+    {
+        "id": 868270,
+        "name": "The Cycle: Frontier",
+        "developers": [
+            "YAGER"
+        ]
+    },
+    {
+        "id": 870780,
+        "name": "Control Ultimate Edition",
+        "developers": [
+            "Remedy Entertainment"
+        ]
+    },
+    {
+        "id": 871720,
+        "name": "Ultimate Custom Night",
+        "developers": [
+            "Scott Cawthon"
+        ]
+    },
+    {
+        "id": 872790,
+        "name": "Football Manager 2019",
+        "developers": [
+            "Sports Interactive"
+        ]
+    },
+    {
+        "id": 880940,
+        "name": "Pummel Party",
+        "developers": [
+            "Rebuilt Games"
+        ]
+    },
+    {
+        "id": 881100,
+        "name": "Noita",
+        "developers": [
+            "Nolla Games"
+        ]
+    },
+    {
+        "id": 883710,
+        "name": "Resident Evil 2",
+        "developers": [
+            "CAPCOM Co., Ltd."
+        ]
+    },
+    {
+        "id": 884660,
+        "name": "CRSED: F.O.A.D.",
+        "developers": [
+            "Darkflow Software"
+        ]
+    },
+    {
+        "id": 892970,
+        "name": "Valheim",
+        "developers": [
+            "Iron Gate AB"
+        ]
+    },
+    {
+        "id": 893520,
+        "name": "Creative Destruction",
+        "developers": [
+            "NetEase Games"
+        ]
+    },
+    {
+        "id": 899770,
+        "name": "Last Epoch",
+        "developers": [
+            "Eleventh Hour Games"
+        ]
+    },
+    {
+        "id": 22330,
+        "name": "The Elder Scrolls IV: Oblivion® Game of the Year Edition Deluxe",
+        "developers": [
+            "Bethesda Game Studios®"
+        ]
+    },
+    {
+        "id": 12210,
+        "name": "Grand Theft Auto IV: Complete Edition",
+        "developers": [
+            "Rockstar North",
+            "Rockstar Toronto"
+        ]
+    },
+    {
+        "id": 905370,
+        "name": "Conqueror's Blade",
+        "developers": []
+    },
+    {
+        "id": 911400,
+        "name": "Assassin's Creed® III Remastered",
+        "developers": [
+            "Ubisoft Entertainment"
+        ]
+    },
+    {
+        "id": 918570,
+        "name": "Century: Age of Ashes",
+        "developers": [
+            "Playwing LTD"
+        ]
+    },
+    {
+        "id": 920210,
+        "name": "LEGO® Star Wars™: The Skywalker Saga",
+        "developers": [
+            "TT Games"
+        ]
+    },
+    {
+        "id": 921060,
+        "name": "Modern Combat 5",
+        "developers": [
+            "Gameloft"
+        ]
+    },
+    {
+        "id": 921630,
+        "name": "音灵 INVAXION",
+        "developers": [
+            "Nanjing AQUATRAX"
+        ]
+    },
+    {
+        "id": 924970,
+        "name": "Back 4 Blood",
+        "developers": [
+            "Turtle Rock Studios"
+        ]
+    },
+    {
+        "id": 939960,
+        "name": "Far Cry® New Dawn",
+        "developers": [
+            "Ubisoft Montreal",
+            "Ubisoft Kiev",
+            "Ubisoft Shanghai"
+        ]
+    },
+    {
+        "id": 942970,
+        "name": "Unheard - Voices of Crime",
+        "developers": [
+            "NEXT Studios"
+        ]
+    },
+    {
+        "id": 945360,
+        "name": "Among Us",
+        "developers": [
+            "Innersloth"
+        ]
+    },
+    {
+        "id": 952060,
+        "name": "Resident Evil 3",
+        "developers": [
+            "CAPCOM Co., Ltd."
+        ]
+    },
+    {
+        "id": 955050,
+        "name": "Bright Memory",
+        "developers": [
+            "FYQD-Studio"
+        ]
+    },
+    {
+        "id": 960090,
+        "name": "Bloons TD 6",
+        "developers": [
+            "Ninja Kiwi"
+        ]
+    },
+    {
+        "id": 962130,
+        "name": "Grounded",
+        "developers": [
+            "Obsidian Entertainment"
+        ]
+    },
+    {
+        "id": 967050,
+        "name": "Pacify",
+        "developers": [
+            "Shawn Hitchcock"
+        ]
+    },
+    {
+        "id": 976310,
+        "name": "Mortal Kombat 11",
+        "developers": [
+            "NetherRealm Studios",
+            "QLOC",
+            "Shiver"
+        ]
+    },
+    {
+        "id": 976730,
+        "name": "Halo: The Master Chief Collection",
+        "developers": [
+            "343 Industries",
+            "Splash Damage",
+            "Ruffian Games",
+            "Bungie",
+            "Saber Interactive"
+        ]
+    },
+    {
+        "id": 977950,
+        "name": "A Dance of Fire and Ice",
+        "developers": [
+            "7th Beat Games"
+        ]
+    },
+    {
+        "id": 979690,
+        "name": "The Ascent",
+        "developers": [
+            "Neon Giant"
+        ]
+    },
+    {
+        "id": 990080,
+        "name": "Hogwarts Legacy",
+        "developers": [
+            "Avalanche Software"
+        ]
+    },
+    {
+        "id": 992300,
+        "name": "嗜血印 Bloody Spell",
+        "developers": [
+            "艺龙游戏"
+        ]
+    },
+    {
+        "id": 996470,
+        "name": "eFootball  PES 2020",
+        "developers": [
+            "Konami Digital Entertainment"
+        ]
+    },
+    {
+        "id": 1029690,
+        "name": "Sniper Elite 5",
+        "developers": [
+            "Rebellion"
+        ]
+    },
+    {
+        "id": 1030830,
+        "name": "Mafia II: Definitive Edition",
+        "developers": [
+            "Hangar 13",
+            "D3T"
+        ]
+    },
+    {
+        "id": 1030840,
+        "name": "Mafia: Definitive Edition",
+        "developers": [
+            "Hangar 13"
+        ]
+    },
+    {
+        "id": 1046930,
+        "name": "Dota Underlords",
+        "developers": [
+            "Valve"
+        ]
+    },
+    {
+        "id": 1049410,
+        "name": "Superliminal",
+        "developers": [
+            "Pillow Castle"
+        ]
+    },
+    {
+        "id": 1049590,
+        "name": "Eternal Return",
+        "developers": [
+            "Nimble Neuron"
+        ]
+    },
+    {
+        "id": 1056640,
+        "name": "Phantasy Star Online 2 New Genesis",
+        "developers": [
+            "SEGA"
+        ]
+    },
+    {
+        "id": 1056960,
+        "name": "Wolfenstein: Youngblood",
+        "developers": [
+            "Machine Games",
+            "Arkane Studios"
+        ]
+    },
+    {
+        "id": 1057090,
+        "name": "Ori and the Will of the Wisps",
+        "developers": [
+            "Moon Studios GmbH"
+        ]
+    },
+    {
+        "id": 1057240,
+        "name": "Crucible Beta",
+        "developers": [
+            "Relentless Studios"
+        ]
+    },
+    {
+        "id": 1058020,
+        "name": "STAR WARS™ Battlefront (Classic, 2004)",
+        "developers": [
+            "Pandemic Studios"
+        ]
+    },
+    {
+        "id": 1063730,
+        "name": "New World",
+        "developers": [
+            "Amazon Games"
+        ]
+    },
+    {
+        "id": 1085660,
+        "name": "Destiny 2",
+        "developers": [
+            "Bungie"
+        ]
+    },
+    {
+        "id": 1086940,
+        "name": "Baldur's Gate 3",
+        "developers": [
+            "Larian Studios"
+        ]
+    },
+    {
+        "id": 1088150,
+        "name": "Scribble It!",
+        "developers": [
+            "Detach Entertainment"
+        ]
+    },
+    {
+        "id": 1089090,
+        "name": "ONE PIECE: PIRATE WARRIORS 4",
+        "developers": [
+            "Koei Tecmo"
+        ]
+    },
+    {
+        "id": 1089350,
+        "name": "NBA 2K20",
+        "developers": [
+            "Visual Concepts"
+        ]
+    },
+    {
+        "id": 1089980,
+        "name": "The Henry Stickmin Collection",
+        "developers": [
+            "PuffballsUnited"
+        ]
+    },
+    {
+        "id": 1092790,
+        "name": "Inscryption",
+        "developers": [
+            "Daniel Mullins Games"
+        ]
+    },
+    {
+        "id": 1096530,
+        "name": "Solasta: Crown of the Magister",
+        "developers": [
+            "Tactical Adventures"
+        ]
+    },
+    {
+        "id": 1097150,
+        "name": "Fall Guys",
+        "developers": [
+            "Mediatonic"
+        ]
+    },
+    {
+        "id": 1100600,
+        "name": "Football Manager 2020",
+        "developers": [
+            "Sports Interactive"
+        ]
+    },
+    {
+        "id": 1113000,
+        "name": "Persona 4 Golden",
+        "developers": [
+            "ATLUS"
+        ]
+    },
+    {
+        "id": 1118200,
+        "name": "People Playground",
+        "developers": [
+            "mestiez"
+        ]
+    },
+    {
+        "id": 1128810,
+        "name": "RISK: Global Domination",
+        "developers": [
+            "SMG Studio"
+        ]
+    },
+    {
+        "id": 1129580,
+        "name": "Medieval Dynasty",
+        "developers": [
+            "Render Cube"
+        ]
+    },
+    {
+        "id": 1139900,
+        "name": "Ghostrunner",
+        "developers": [
+            "One More Level",
+            "3D Realms",
+            "Slipgate Ironworks™",
+            "All in! Games"
+        ]
+    },
+    {
+        "id": 1142710,
+        "name": "Total War: WARHAMMER III",
+        "developers": [
+            "CREATIVE ASSEMBLY",
+            "Feral Interactive"
+        ]
+    },
+    {
+        "id": 1144200,
+        "name": "Ready or Not",
+        "developers": [
+            "VOID Interactive"
+        ]
+    },
+    {
+        "id": 1145360,
+        "name": "Hades",
+        "developers": [
+            "Supergiant Games"
+        ]
+    },
+    {
+        "id": 1147550,
+        "name": "Not For Broadcast",
+        "developers": [
+            "NotGames"
+        ]
+    },
+    {
+        "id": 1147560,
+        "name": "Skul: The Hero Slayer",
+        "developers": [
+            "SOUTHPAW GAMES"
+        ]
+    },
+    {
+        "id": 1150690,
+        "name": "OMORI",
+        "developers": [
+            "OMOCAT, LLC"
+        ]
+    },
+    {
+        "id": 1151340,
+        "name": "Fallout 76",
+        "developers": [
+            "Bethesda Game Studios"
+        ]
+    },
+    {
+        "id": 1151640,
+        "name": "Horizon Zero Dawn™ Complete Edition",
+        "developers": [
+            "Guerrilla"
+        ]
+    },
+    {
+        "id": 1158310,
+        "name": "Crusader Kings III",
+        "developers": [
+            "Paradox Development Studio"
+        ]
+    },
+    {
+        "id": 1167630,
+        "name": "Teardown",
+        "developers": [
+            "Tuxedo Labs"
+        ]
+    },
+    {
+        "id": 1172380,
+        "name": "STAR WARS Jedi: Fallen Order™",
+        "developers": [
+            "Respawn Entertainment"
+        ]
+    },
+    {
+        "id": 1172470,
+        "name": "Apex Legends™",
+        "developers": [
+            "Respawn Entertainment"
+        ]
+    },
+    {
+        "id": 1172620,
+        "name": "Sea of Thieves 2023 Edition",
+        "developers": [
+            "Rare Ltd"
+        ]
+    },
+    {
+        "id": 1173690,
+        "name": "Resident Evil 3: Raccoon City Demo",
+        "developers": [
+            "CAPCOM Co., Ltd."
+        ]
+    },
+    {
+        "id": 1174180,
+        "name": "Red Dead Redemption 2",
+        "developers": [
+            "Rockstar Games"
+        ]
+    },
+    {
+        "id": 1178830,
+        "name": "Bright Memory: Infinite",
+        "developers": [
+            "FYQD-Studio"
+        ]
+    },
+    {
+        "id": 1180380,
+        "name": "Stay Out",
+        "developers": [
+            "MOBITECH LLC"
+        ]
+    },
+    {
+        "id": 1184370,
+        "name": "Pathfinder: Wrath of the Righteous - Enhanced Edition",
+        "developers": [
+            "Owlcat Games"
+        ]
+    },
+    {
+        "id": 1196590,
+        "name": "Resident Evil Village",
+        "developers": [
+            "CAPCOM Co., Ltd."
+        ]
+    },
+    {
+        "id": 1203220,
+        "name": "NARAKA: BLADEPOINT",
+        "developers": [
+            "24 Entertainment"
+        ]
+    },
+    {
+        "id": 1207590,
+        "name": "Builders of Egypt: Prologue",
+        "developers": [
+            "Strategy Labs"
+        ]
+    },
+    {
+        "id": 1213210,
+        "name": "Command & Conquer™ Remastered Collection",
+        "developers": [
+            "Petroglyph",
+            "Lemon Sky Studios"
+        ]
+    },
+    {
+        "id": 1214670,
+        "name": "Mr. Sun's Hatbox",
+        "developers": [
+            "Kenny Sun"
+        ]
+    },
+    {
+        "id": 1217060,
+        "name": "Gunfire Reborn",
+        "developers": [
+            "Duoyi Games"
+        ]
+    },
+    {
+        "id": 1222140,
+        "name": "Detroit: Become Human",
+        "developers": [
+            "Quantic Dream"
+        ]
+    },
+    {
+        "id": 1222670,
+        "name": "The Sims™ 4",
+        "developers": [
+            "Maxis"
+        ]
+    },
+    {
+        "id": 1222680,
+        "name": "Need for Speed™ Heat",
+        "developers": [
+            "Ghost Games"
+        ]
+    },
+    {
+        "id": 1222700,
+        "name": "A Way Out",
+        "developers": [
+            "Hazelight"
+        ]
+    },
+    {
+        "id": 1225330,
+        "name": "NBA 2K21",
+        "developers": [
+            "Visual Concepts"
+        ]
+    },
+    {
+        "id": 1229490,
+        "name": "ULTRAKILL",
+        "developers": [
+            "Arsi \"Hakita\" Patala"
+        ]
+    },
+    {
+        "id": 1237950,
+        "name": "STAR WARS™ Battlefront™ II",
+        "developers": [
+            "DICE"
+        ]
+    },
+    {
+        "id": 1237970,
+        "name": "Titanfall® 2",
+        "developers": [
+            "Respawn Entertainment"
+        ]
+    },
+    {
+        "id": 1238000,
+        "name": "Mass Effect™: Andromeda Deluxe Edition",
+        "developers": [
+            "BioWare"
+        ]
+    },
+    {
+        "id": 1238810,
+        "name": "Battlefield™ V",
+        "developers": [
+            "DICE"
+        ]
+    },
+    {
+        "id": 1238840,
+        "name": "Battlefield™ 1",
+        "developers": [
+            "DICE"
+        ]
+    },
+    {
+        "id": 1240440,
+        "name": "Halo Infinite",
+        "developers": [
+            "343 Industries"
+        ]
+    },
+    {
+        "id": 1245620,
+        "name": "ELDEN RING",
+        "developers": [
+            "FromSoftware Inc."
+        ]
+    },
+    {
+        "id": 1248130,
+        "name": "Farming Simulator 22",
+        "developers": [
+            "Giants Software"
+        ]
+    },
+    {
+        "id": 1250410,
+        "name": "Microsoft Flight Simulator 40th Anniversary Edition",
+        "developers": [
+            "Asobo Studio"
+        ]
+    },
+    {
+        "id": 1254120,
+        "name": "Bless Unleashed",
+        "developers": [
+            "VALOFE"
+        ]
+    },
+    {
+        "id": 1258080,
+        "name": "Shop Titans",
+        "developers": [
+            "Kabam Games, Inc."
+        ]
+    },
+    {
+        "id": 1259420,
+        "name": "Days Gone",
+        "developers": [
+            "Bend Studio"
+        ]
+    },
+    {
+        "id": 1259970,
+        "name": "eFootball PES 2021 SEASON UPDATE",
+        "developers": [
+            "Konami Digital Entertainment"
+        ]
+    },
+    {
+        "id": 1262580,
+        "name": "Need for Speed™ Payback",
+        "developers": [
+            "Ghost Games"
+        ]
+    },
+    {
+        "id": 1263850,
+        "name": "Football Manager 2021",
+        "developers": [
+            "Sports Interactive"
+        ]
+    },
+    {
+        "id": 1274570,
+        "name": "DEVOUR",
+        "developers": [
+            "Straight Back Games"
+        ]
+    },
+    {
+        "id": 1277400,
+        "name": "Monster Hunter Stories 2: Wings of Ruin",
+        "developers": [
+            "CAPCOM Co., Ltd."
+        ]
+    },
+    {
+        "id": 1282730,
+        "name": "Loop Hero",
+        "developers": [
+            "Four Quarters"
+        ]
+    },
+    {
+        "id": 1284210,
+        "name": "Guild Wars 2",
+        "developers": [
+            "ArenaNet®"
+        ]
+    },
+    {
+        "id": 1284410,
+        "name": "GWENT: The Witcher Card Game",
+        "developers": [
+            "CD PROJEKT RED"
+        ]
+    },
+    {
+        "id": 1286680,
+        "name": "Tiny Tina's Wonderlands",
+        "developers": [
+            "Gearbox Software"
+        ]
+    },
+    {
+        "id": 1286830,
+        "name": "STAR WARS™: The Old Republic™",
+        "developers": [
+            "Broadsword"
+        ]
+    },
+    {
+        "id": 1233570,
+        "name": "Mirror's Edge™ Catalyst",
+        "developers": [
+            "DICE"
+        ]
+    },
+    {
+        "id": 1289310,
+        "name": "Helltaker",
+        "developers": [
+            "vanripper"
+        ]
+    },
+    {
+        "id": 1293830,
+        "name": "Forza Horizon 4",
+        "developers": [
+            "Playground Games"
+        ]
+    },
+    {
+        "id": 1296830,
+        "name": "暖雪 Warm Snow",
+        "developers": [
+            "BadMudStudio"
+        ]
+    },
+    {
+        "id": 1301210,
+        "name": "Knockout City™",
+        "developers": [
+            "Velan Studios"
+        ]
+    },
+    {
+        "id": 1313140,
+        "name": "Cult of the Lamb",
+        "developers": [
+            "Massive Monster"
+        ]
+    },
+    {
+        "id": 1313860,
+        "name": "EA SPORTS™ FIFA 21",
+        "developers": [
+            "EA Canada"
+        ]
+    },
+    {
+        "id": 1326470,
+        "name": "Sons Of The Forest",
+        "developers": [
+            "Endnight Games Ltd"
+        ]
+    },
+    {
+        "id": 1332010,
+        "name": "Stray",
+        "developers": [
+            "BlueTwelve Studio"
+        ]
+    },
+    {
+        "id": 1335200,
+        "name": "Action Taimanin",
+        "developers": [
+            "LiLith"
+        ]
+    },
+    {
+        "id": 1343370,
+        "name": "Old School RuneScape",
+        "developers": [
+            "Jagex Ltd"
+        ]
+    },
+    {
+        "id": 1343400,
+        "name": "RuneScape ®",
+        "developers": [
+            "Jagex Ltd"
+        ]
+    },
+    {
+        "id": 1353950,
+        "name": "Ring of Fire: Prologue",
+        "developers": [
+            "de Fault",
+            "Chard"
+        ]
+    },
+    {
+        "id": 1361210,
+        "name": "Warhammer 40,000: Darktide",
+        "developers": [
+            "Fatshark"
+        ]
+    },
+    {
+        "id": 1364780,
+        "name": "Street Fighter™ 6",
+        "developers": [
+            "CAPCOM Co., Ltd."
+        ]
+    },
+    {
+        "id": 1366540,
+        "name": "Dyson Sphere Program",
+        "developers": [
+            "Youthcat Studio"
+        ]
+    },
+    {
+        "id": 1377580,
+        "name": "Soulworker",
+        "developers": [
+            "Lion Games Co., Ltd."
+        ]
+    },
+    {
+        "id": 1380400,
+        "name": "Saving Grace",
+        "developers": [
+            "Thomas JC Ironmonger"
+        ]
+    },
+    {
+        "id": 1399780,
+        "name": "Spellbreak",
+        "developers": [
+            "Proletariat, Inc."
+        ]
+    },
+    {
+        "id": 1404210,
+        "name": "Red Dead Online",
+        "developers": [
+            "Rockstar Games"
+        ]
+    },
+    {
+        "id": 1407200,
+        "name": "World of Tanks",
+        "developers": [
+            "Wargaming Group Limited"
+        ]
+    },
+    {
+        "id": 1408720,
+        "name": "Krunker",
+        "developers": [
+            "FRVR"
+        ]
+    },
+    {
+        "id": 1418100,
+        "name": "Swords of Legends Online",
+        "developers": [
+            "Wangyuan Shengtang Entertainment Technology CO.",
+            "上海烛龙信息科技有限公司"
+        ]
+    },
+    {
+        "id": 1426210,
+        "name": "It Takes Two",
+        "developers": [
+            "Hazelight"
+        ]
+    },
+    {
+        "id": 1446780,
+        "name": "MONSTER HUNTER RISE",
+        "developers": [
+            "CAPCOM Co., Ltd."
+        ]
+    },
+    {
+        "id": 1454400,
+        "name": "Cookie Clicker",
+        "developers": [
+            "Orteil",
+            "DashNet"
+        ]
+    },
+    {
+        "id": 1466640,
+        "name": "Road 96 🛣️",
+        "developers": [
+            "Digixart"
+        ]
+    },
+    {
+        "id": 1466860,
+        "name": "Age of Empires IV: Anniversary Edition",
+        "developers": [
+            "Relic Entertainment",
+            "World's Edge"
+        ]
+    },
+    {
+        "id": 1468810,
+        "name": "鬼谷八荒 Tale of Immortal",
+        "developers": [
+            "鬼谷工作室"
+        ]
+    },
+    {
+        "id": 1483870,
+        "name": "Draw & Guess",
+        "developers": [
+            "Acureus"
+        ]
+    },
+    {
+        "id": 1506830,
+        "name": "FIFA 22",
+        "developers": [
+            "EA Canada & EA Romania"
+        ]
+    },
+    {
+        "id": 1509960,
+        "name": "PICO PARK",
+        "developers": [
+            "TECOPARK"
+        ]
+    },
+    {
+        "id": 1515950,
+        "name": "Capcom Arcade Stadium",
+        "developers": [
+            "CAPCOM Co., Ltd."
+        ]
+    },
+    {
+        "id": 1517290,
+        "name": "Battlefield™ 2042",
+        "developers": [
+            "DICE"
+        ]
+    },
+    {
+        "id": 1520470,
+        "name": "Soul Dossier",
+        "developers": [
+            "（Hong Kong）GKD"
+        ]
+    },
+    {
+        "id": 1522820,
+        "name": "Orcs Must Die! 3",
+        "developers": [
+            "Robot Entertainment"
+        ]
+    },
+    {
+        "id": 1536610,
+        "name": "OpenTTD",
+        "developers": [
+            "OpenTTD"
+        ]
+    },
+    {
+        "id": 1549970,
+        "name": "Aliens: Fireteam Elite",
+        "developers": [
+            "Cold Iron Studios"
+        ]
+    },
+    {
+        "id": 1551360,
+        "name": "Forza Horizon 5",
+        "developers": [
+            "Playground Games"
+        ]
+    },
+    {
+        "id": 1569040,
+        "name": "Football Manager 2022",
+        "developers": [
+            "Sports Interactive"
+        ]
+    },
+    {
+        "id": 1593500,
+        "name": "God of War",
+        "developers": [
+            "Santa Monica Studio"
+        ]
+    },
+    {
+        "id": 1599340,
+        "name": "Lost Ark",
+        "developers": [
+            "Smilegate RPG"
+        ]
+    },
+    {
+        "id": 1604030,
+        "name": "V Rising",
+        "developers": [
+            "Stunlock Studios"
+        ]
+    },
+    {
+        "id": 1619450,
+        "name": "Heart of a Warrior",
+        "developers": [
+            "Techworld Communication"
+        ]
+    },
+    {
+        "id": 1659040,
+        "name": "HITMAN 3",
+        "developers": [
+            "IO Interactive A/S"
+        ]
+    },
+    {
+        "id": 1677740,
+        "name": "Stumble Guys",
+        "developers": [
+            "Scopely"
+        ]
+    },
+    {
+        "id": 1721470,
+        "name": "Poppy Playtime",
+        "developers": [
+            "Mob Entertainment"
+        ]
+    },
+    {
+        "id": 1755910,
+        "name": "Capcom Arcade 2nd Stadium",
+        "developers": [
+            "CAPCOM Co., Ltd."
+        ]
+    },
+    {
+        "id": 1794680,
+        "name": "Vampire Survivors",
+        "developers": [
+            "poncle"
+        ]
+    },
+    {
+        "id": 1811260,
+        "name": "EA SPORTS™ FIFA 23",
+        "developers": [
+            "EA Canada & EA Romania"
+        ]
+    },
+    {
+        "id": 1817070,
+        "name": "Marvel’s Spider-Man Remastered",
+        "developers": [
+            "Insomniac Games",
+            "Nixxes Software"
+        ]
+    },
+    {
+        "id": 1818750,
+        "name": "MultiVersus",
+        "developers": [
+            "Player First Games"
+        ]
+    },
+    {
+        "id": 1824220,
+        "name": "Chivalry 2",
+        "developers": [
+            "Torn Banner Studios"
+        ]
+    },
+    {
+        "id": 1832640,
+        "name": "Mirror 2: Project X",
+        "developers": [
+            "KAGAMI Ⅱ WORKs"
+        ]
+    },
+    {
+        "id": 1868140,
+        "name": "DAVE THE DIVER",
+        "developers": [
+            "MINTROCKET"
+        ]
+    },
+    {
+        "id": 1887990,
+        "name": "Deep Night Runner",
+        "developers": [
+            "DODRECK"
+        ]
+    },
+    {
+        "id": 1919590,
+        "name": "NBA 2K23",
+        "developers": [
+            "Visual Concepts"
+        ]
+    },
+    {
+        "id": 1938090,
+        "name": "Call of Duty®: Modern Warfare® II",
+        "developers": [
+            "Infinity Ward",
+            "Raven Software",
+            "Beenox",
+            "Treyarch",
+            "High Moon Studios",
+            "Sledgehammer Games",
+            "Activision Shanghai",
+            "Demonware",
+            "Toys for Bob"
+        ]
+    },
+    {
+        "id": 1942280,
+        "name": "Brotato",
+        "developers": [
+            "Blobfish"
+        ]
+    },
+    {
+        "id": 1943950,
+        "name": "Escape the Backrooms",
+        "developers": [
+            "Fancy Games"
+        ]
+    },
+    {
+        "id": 1987080,
+        "name": "Inside the Backrooms",
+        "developers": [
+            "MrFatcat"
+        ]
+    },
+    {
+        "id": 2050650,
+        "name": "Resident Evil 4",
+        "developers": [
+            "CAPCOM Co., Ltd."
+        ]
+    },
+    {
+        "id": 1091500,
+        "name": "Cyberpunk 2077",
+        "developers": [
+            "CD Project RED"
+        ]
+    }
+]
