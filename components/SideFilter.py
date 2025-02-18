@@ -57,4 +57,4 @@ class SideFilter(QtWidgets.QWidget):
 
             developers.update(dev_list)
 
-        return sorted(developers)
+        return sorted(dev.strip() for dev in developers if dev.strip())
