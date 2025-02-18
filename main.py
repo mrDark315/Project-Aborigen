@@ -7,6 +7,7 @@ from components.SearchBar import SearchBar
 from components.ProfileButton import ProfileButton
 from components.CreatedByButton import CreatedByButton
 from components.NavArrows import AnimatedArrowButton
+from components.SideFilter import SideFilter
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -29,12 +30,6 @@ class Ui_MainWindow(object):
         self.search_filter_layout.setAlignment(Qt.AlignCenter)
         self.search_filter_layout.setSpacing(50)
 
-        # Search Bar
-        self.search_bar = SearchBar(self)
-
-        # Profile button
-        self.profile_btn = ProfileButton(self)
-
         # Create Home Button
         # self.home_btn = QtWidgets.QPushButton("Home")
         # self.home_btn.setFixedSize(100, 50)
@@ -48,6 +43,12 @@ class Ui_MainWindow(object):
 
         # Created by button
         self.created_by_btn = CreatedByButton(self)
+
+        # Search Bar
+        self.search_bar = SearchBar(self)
+
+        # Profile button
+        self.profile_btn = ProfileButton(self)
 
         # Add Search Bar to Layout
         self.search_filter_layout.addWidget(self.created_by_btn)
@@ -65,74 +66,7 @@ class Ui_MainWindow(object):
         self.right_arrow = AnimatedArrowButton("img/Arrow_Right.png", self, "right")
 
         # Side Filter Layout
-        self.main_layout = QtWidgets.QHBoxLayout(self.main)
-        self.side_filter_layout = QtWidgets.QVBoxLayout()
-        self.side_filter_widget = QtWidgets.QWidget()
-        self.side_filter_widget.setLayout(self.side_filter_layout)
-        self.side_filter_widget.setMaximumSize(320, 820)
-        self.side_filter_widget.setMinimumSize(320, 700)
-        self.side_filter_widget.setStyleSheet("background-color: transparent; margin-left: 25;")
-
-        # Upload JSON file
-        file_path = "store/data.json"
-        with open(file_path, "r", encoding="utf-8") as file:
-            data = json.load(file)
-
-        # Get developers and publishers
-        publishers = set()
-        developers = set()
-
-        for game in data:
-            pub_list = game.get("publisher", [])
-            dev_list = game.get("developer", [])
-
-            if isinstance(pub_list, str):
-                pub_list = eval(pub_list) if pub_list.startswith("[") else [pub_list]
-            if isinstance(dev_list, str):
-                dev_list = eval(dev_list) if dev_list.startswith("[") else [dev_list]
-
-            publishers.update(pub_list)
-            developers.update(dev_list)
-
-        publishers = sorted(publishers)
-        developers = sorted(developers)
-
-        dropdown_titles = ["Publisher", "Developer", "Rating", "Price", "Release Date" , "Age Rating", "Language","Platform", "Controller"]
-
-        predefined_options = {
-            "Rating": ["From 60 to 69", "From 70 to 79", "From 80 to 89", "From 90 to 94", "From 95 to 100"],
-            "Price": ["Free", "Under $10", "$10-$30", "$30-$60", "Above $60"],
-            "Platform": ["Windows", "Mac", "Linux"],
-            "Age Rating": ["0+", "8+", "12+", "13+", "14+", "15+", "16+", "17+"],
-            "Language": ["English", "French", "German", "Italian", "Spanish - Spain", "Simplified Chinese", "Traditional Chinese", "Korean", "Russian", "Japanese", "Dutch", "Danish", "Finnish", "Norwegian", "Polish", "Portuguese - Portugal", "Swedish", "Thai", "Turkish"],
-            "Release Date": ["2024", "2023", "2022", "2010-2021", "Before 2010"],
-            "Controller": ["Full Support", "No Support"]
-        }
-
-        # Dropdown lists
-        for i, title in enumerate(dropdown_titles):
-            dropdown = QtWidgets.QComboBox()
-            dropdown.addItem(f"All {title}")  # Add "All" option
-
-            if title == "Publisher":
-                publishers = [pub for pub in publishers if pub.strip()]
-                dropdown.addItems(publishers)
-            elif title == "Developer":
-                developers = [dev for dev in developers if dev.strip()]
-                dropdown.addItems(developers)
-            else:
-                dropdown.addItems(predefined_options.get(title, []))
-
-            dropdown.setStyleSheet(""" QComboBox {background-color: #454C55; border: none; height: 50px; border-radius: 25px; padding-left: 30px; font-size: 28px; color: #000;} QComboBox::drop-down {background-color: transparent;}
-            QComboBox QAbstractItemView {font-size: 20px; background-color: #454C55; color: #000; selection-background-color: #454C55; selection-color: #898989; border-radius: 10px; outline: none;}""")
-
-            # Connect each filter to perform_search
-            dropdown.currentIndexChanged.connect(lambda: handle_search(self))
-
-            # Store filters in a list for easy access
-            setattr(self, f"{title.lower().replace(' ', '_')}_filter", dropdown)
-
-            self.side_filter_layout.addWidget(dropdown)
+        self.side_filter = SideFilter(self)
 
         # Grid Layout for Displaying Games
         self.grid_layout = QtWidgets.QGridLayout()
@@ -142,7 +76,7 @@ class Ui_MainWindow(object):
         self.grid_widget.setVisible(False)
 
         # Add to Grid Navigation Layout
-        self.grid_navigation_layout.addWidget(self.side_filter_widget)
+        self.grid_navigation_layout.addWidget(self.side_filter)
         self.grid_navigation_layout.addWidget(self.left_arrow)
         self.grid_navigation_layout.addWidget(self.grid_widget)
         self.grid_navigation_layout.addWidget(self.right_arrow)
