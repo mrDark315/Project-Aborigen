@@ -1,11 +1,11 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import QSize, Qt
-from func.search_func import handle_search, delay_search
+import os, sys, json, requests
 from func.download_data import cached_games_data
-import sys
-import json
-import requests
-import os
+from func.nav_pages import next_page, prev_page
+from func.search_func import handle_search, delay_search
+from components.NavArrows import AnimatedArrowButton
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -44,6 +44,7 @@ class Ui_MainWindow(object):
         self.profile_btn.setCursor(QtGui.QCursor(Qt.PointingHandCursor))
         self.profile_btn.setStyleSheet("""border: none;""")
         self.profile_btn.clicked.connect(self.open_profile)
+
         # Create Home Button
         self.home_btn = QtWidgets.QPushButton("Home")
         self.home_btn.setFixedSize(100, 50)
@@ -72,22 +73,12 @@ class Ui_MainWindow(object):
         self.grid_navigation_layout.setAlignment(Qt.AlignCenter)
 
         # Left Arrow Button
-        self.left_arrow = QtWidgets.QPushButton()
-        self.left_arrow.setFixedSize(50, 50)
         self.left_arrow = AnimatedArrowButton("img/Arrow_Left.png")
-        self.left_arrow.setIconSize(QSize(40, 40))
-        self.left_arrow.setCursor(QtGui.QCursor(Qt.PointingHandCursor))
-        self.left_arrow.setStyleSheet("""QPushButton {background-color: transparent; border: none;}""")
-        self.left_arrow.clicked.connect(self.prev_page)
+        self.left_arrow.clicked.connect(lambda: prev_page(self))
 
         # Right Arrow Button
-        self.right_arrow = QtWidgets.QPushButton()
-        self.right_arrow.setFixedSize(50, 50)
         self.right_arrow = AnimatedArrowButton("img/Arrow_Right.png")
-        self.right_arrow.setIconSize(QSize(40, 40))
-        self.right_arrow.setCursor(QtGui.QCursor(Qt.PointingHandCursor))
-        self.right_arrow.setStyleSheet("""QPushButton {background-color: transparent; border: none;}""")
-        self.right_arrow.clicked.connect(self.next_page)
+        self.right_arrow.clicked.connect(lambda: next_page(self))
 
         # Side Filter Layout
         self.main_layout = QtWidgets.QHBoxLayout(self.main)
@@ -221,25 +212,6 @@ class Ui_MainWindow(object):
         # ✅ Enable/Disable Arrows based on pages
         self.left_arrow.setEnabled(self.current_page > 0)
         self.right_arrow.setEnabled((self.current_page + 1) * 6 < total_games)
-
-    def next_page(self):
-        total_games = len(self.filtered_games)
-        max_pages = (total_games + 5) // 6
-
-        if total_games == 0:
-            print("⚠️ Нет игр для перелистывания!")
-            return
-
-        if self.current_page + 1 < max_pages:
-            self.current_page += 1
-            print(f"➡️ Change page {self.current_page + 1}/{max_pages}")
-            self.display_game_icons()
-
-    def prev_page(self):
-        if self.current_page > 0:
-            self.current_page -= 1
-            print(f"⬅️ Change page {self.current_page + 1}")
-            self.display_game_icons()
 
     def create_game_card(self, game):
         game_card = QtWidgets.QFrame()
@@ -400,52 +372,6 @@ class Ui_MainWindow(object):
             print(f"Failed to load image: {url} - {e}")
             return None
 
-
-class AnimatedArrowButton(QtWidgets.QPushButton):
-    def __init__(self, icon_path, parent=None):
-        super().__init__(parent)
-        self.setFixedSize(50, 50)
-        self.setIcon(QtGui.QIcon(icon_path))
-        self.setIconSize(QtCore.QSize(40, 40))
-
-        # Transparency effect for inactive state
-        self.opacity_effect = QtWidgets.QGraphicsOpacityEffect(self)
-        self.setGraphicsEffect(self.opacity_effect)
-
-        # Resize Animation
-        self.animation = QtCore.QPropertyAnimation(self, b"iconSize")
-        self.animation.setDuration(200)
-        self.animation.setEasingCurve(QtCore.QEasingCurve.OutQuad)
-
-        self.original_size = QtCore.QSize(40, 40)
-        self.hover_size = QtCore.QSize(50, 50)
-        self.disabled_size = QtCore.QSize(30, 30)
-        self.is_hover_enabled = True
-
-    def setEnabled(self, enabled):
-        super().setEnabled(enabled)
-        self.is_hover_enabled = enabled
-
-        if enabled:
-            self.opacity_effect.setOpacity(1.0)
-            self.setIconSize(self.original_size)
-        else:
-            self.opacity_effect.setOpacity(0.4)
-            self.setIconSize(self.disabled_size)
-
-    def enterEvent(self, event):
-        if self.is_hover_enabled:
-            self.animation.stop()
-            self.animation.setStartValue(self.original_size)
-            self.animation.setEndValue(self.hover_size)
-            self.animation.start()
-
-    def leaveEvent(self, event):
-        if self.is_hover_enabled:
-            self.animation.stop()
-            self.animation.setStartValue(self.hover_size)
-            self.animation.setEndValue(self.original_size)
-            self.animation.start()
 
 class AnimatedProfileButton(QtWidgets.QPushButton):
     def __init__(self, icon_path, parent=None):
