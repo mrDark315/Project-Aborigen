@@ -1,5 +1,6 @@
 import json
 from collections import defaultdict
+from func.display_game import display_game_icons
 
 with open("store/GameCardHomeData.json", "r", encoding="utf-8") as file:
     cached_games_data = json.load(file)
@@ -57,7 +58,7 @@ def handle_search(ui):
 
     ui.current_page = 0
     ui.grid_widget.setVisible(len(ui.filtered_games) > 0)
-    ui.display_game_icons()
+    display_game_icons(ui)
 
 def delay_search(ui):
     ui.search_timer.start(2000)

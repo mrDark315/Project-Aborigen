@@ -3,7 +3,7 @@ import requests
 
 class GameCardHome(QtWidgets.QFrame):
     def __init__(self, game, parent_ui):
-        super().__init__(parent_ui.main)
+        super().__init__(parent_ui)
         self.game = game
         self.parent_ui = parent_ui
 

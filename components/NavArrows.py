@@ -4,7 +4,7 @@ from func.nav_pages import next_page, prev_page
 
 class AnimatedArrowButton(QtWidgets.QPushButton):
     def __init__(self, icon_path, parent_ui, direction):
-        super().__init__(parent_ui.main)
+        super().__init__(parent_ui)
         self.parent_ui = parent_ui
 
         self.setFixedSize(50, 50)

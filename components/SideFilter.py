@@ -6,7 +6,7 @@ from func.sorting_side_filter import sort_games
 
 class SideFilter(QtWidgets.QWidget):
     def __init__(self, parent_ui):
-        super().__init__(parent_ui.main)
+        super().__init__(parent_ui)
         self.parent_ui = parent_ui
         self.layout = QtWidgets.QVBoxLayout(self)
         self.setMaximumSize(320, 820)

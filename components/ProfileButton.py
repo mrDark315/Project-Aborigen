@@ -30,18 +30,10 @@ class AnimatedProfileButton(QtWidgets.QPushButton):
 
 class ProfileButton(AnimatedProfileButton):
     def __init__(self, parent_ui, icon_path="img/Profile.png"):
-        super().__init__(icon_path, parent_ui.main)
+        super().__init__(icon_path, parent_ui)
         self.parent_ui = parent_ui
 
         self.setFixedSize(100, 100)
         self.setIconSize(QtCore.QSize(75, 75))
         self.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.setStyleSheet("border: none;")
-
-    #     # Подключаем обработчик клика
-    #     self.clicked.connect(self.open_profile)
-
-    # def open_profile(self):
-    #     """Вызывает метод открытия профиля в главном UI"""
-    #     if hasattr(self.parent_ui, "open_profile"):
-    #         self.parent_ui.open_profile()
