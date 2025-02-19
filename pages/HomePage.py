@@ -1,5 +1,5 @@
 from PyQt5 import QtWidgets, QtCore
-from PyQt5.QtCore import QSize, Qt
+from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QSizePolicy
 from components.SearchBar import SearchBar
 from components.ProfileButton import ProfileButton
@@ -14,27 +14,23 @@ class HomePage(QtWidgets.QWidget):
         super().__init__()
         self.parent = parent
 
-        # Responsive Window Size
-        screen = QtWidgets.QApplication.primaryScreen().geometry()
-        parent.resize(int(screen.width() * 0.8), int(screen.height() * 0.8))
-        parent.setMinimumSize(QSize(1600, 970))
-        parent.setMaximumSize(QSize(1920, 1080))
-
         # Main Widget
-        self.parent = QtWidgets.QWidget(parent)
+        # self.parent = QtWidgets.QWidget(parent)
         parent.setStyleSheet("background-color: #0E1621;")
 
         # Main Layout
         self.layout = QtWidgets.QVBoxLayout(self)
+        self.layout.setContentsMargins(0, 0, 0, 0)
 
         # Top Layout
         self.search_filter_layout = QtWidgets.QHBoxLayout()
+        self.layout.setContentsMargins(0, 0, 0, 0)
         self.search_filter_layout.setAlignment(QtCore.Qt.AlignCenter)
             # Margin from the left border of the window
         self.left_spacer = QtWidgets.QSpacerItem(40, 0, QSizePolicy.Fixed, QSizePolicy.Minimum)
         self.search_filter_layout.addItem(self.left_spacer)
             # Created By Button
-        self.created_by_btn = CreatedByButton(self)
+        self.created_by_btn = CreatedByButton(parent)
         self.search_filter_layout.addWidget(self.created_by_btn)
             # Adaptive distance between Created By Button and Search Bar
         self.expand_spacer1 = QtWidgets.QSpacerItem(1, 0, QSizePolicy.Expanding, QSizePolicy.Minimum)
@@ -46,7 +42,7 @@ class HomePage(QtWidgets.QWidget):
         self.expand_spacer2 = QtWidgets.QSpacerItem(1, 0, QSizePolicy.Expanding, QSizePolicy.Minimum)
         self.search_filter_layout.addItem(self.expand_spacer2)
             # Profile Button
-        self.profile_btn = ProfileButton(self)
+        self.profile_btn = ProfileButton(parent)
         self.search_filter_layout.addWidget(self.profile_btn)
             # Margin from the right border of the window
         self.right_spacer = QtWidgets.QSpacerItem(60, 0, QSizePolicy.Fixed, QSizePolicy.Minimum)

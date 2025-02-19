@@ -6,7 +6,7 @@ class SearchBar(QtWidgets.QLineEdit):
         super().__init__()
         self.parent_ui = parent_ui
 
-        self.setFixedSize(660, 75)
+        self.setFixedSize(700, 75)
         font = QtGui.QFont()
         self.setFont(font)
         self.setStyleSheet("""QLineEdit{background-color: #454C55; color: #898989; border-radius: 35px; padding-left: 15px; font-size: 32px; border: 2px solid #626262;}
