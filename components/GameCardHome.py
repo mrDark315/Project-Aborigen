@@ -1,4 +1,5 @@
 from PyQt5 import QtWidgets, QtGui, QtCore
+from func.display_profile_games import display_profile_games
 import requests, json
 
 class GameCardHome(QtWidgets.QFrame):
@@ -91,7 +92,6 @@ class GameCardHome(QtWidgets.QFrame):
 
     def toggle_favorite(self):
         saved_games = self.load_saved_games()
-
         game_info = {
             "id": str(self.game.get("id", "Unknown")),
             "name": self.game.get("name", "Unknown Game"),
@@ -102,19 +102,35 @@ class GameCardHome(QtWidgets.QFrame):
 
         if existing_game:
             saved_games.remove(existing_game)
-            print(f"❌ Удаление из избранного: {game_info['name']}")
+            print(f"❌ Удалено из избранного: {game_info['name']}")
         else:
             saved_games.append(game_info)
-            print(f"✅ Добавление в избранное: {game_info['name']}")
+            print(f"✅ Добавлено в избранное: {game_info['name']}")
 
         self.save_saved_games(saved_games)
         self.update_bookmark_icon()
+
+        # Получаем родительский MainWindow
+        main_window = self.find_main_window()
+
+        # Если отображается страница профиля, обновляем её
+        if main_window and "profile" in main_window.pages:
+            display_profile_games(main_window.pages["profile"])
+
+    def find_main_window(self):
+        parent = self.parent_ui
+        while parent is not None:
+            if isinstance(parent, QtWidgets.QMainWindow):
+                return parent
+            parent = parent.parent
+        return None  # Если не найден MainWindow
+
 
     def update_bookmark_icon(self):
         saved_games = self.load_saved_games()
         icon = "img/Bookmark_Fill.png" if any(g["id"] == self.game_id for g in saved_games) else "img/Bookmark_No_Fill.png"
         self.bookmark_button.setIcon(QtGui.QIcon(icon))
-        print(f"🔄 Обновление иконки для {self.game.get('name', 'Unknown')}: {icon}")
+        print(f"🔄 Обновление иконки для {self.game.get('name', 'Unknown')}")
 
     @staticmethod
     def load_saved_games():

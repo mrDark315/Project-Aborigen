@@ -3,5 +3,35 @@
         "id": "10",
         "name": "Counter-Strike",
         "img": "https://cdn.akamai.steamstatic.com/steam/apps/10/header.jpg?t=1666823513"
+    },
+    {
+        "id": "40",
+        "name": "Deathmatch Classic",
+        "img": "https://cdn.akamai.steamstatic.com/steam/apps/40/header.jpg?t=1568752159"
+    },
+    {
+        "id": "50",
+        "name": "Half-Life: Opposing Force",
+        "img": "https://cdn.akamai.steamstatic.com/steam/apps/50/header.jpg?t=1579628243"
+    },
+    {
+        "id": "60",
+        "name": "Ricochet",
+        "img": "https://cdn.akamai.steamstatic.com/steam/apps/60/header.jpg?t=1599518374"
+    },
+    {
+        "id": "20",
+        "name": "Team Fortress Classic",
+        "img": "https://cdn.akamai.steamstatic.com/steam/apps/20/header.jpg?t=1579634708"
+    },
+    {
+        "id": "30",
+        "name": "Day of Defeat",
+        "img": "https://cdn.akamai.steamstatic.com/steam/apps/30/header.jpg?t=1512413490"
+    },
+    {
+        "id": "70",
+        "name": "Half-Life",
+        "img": "https://cdn.akamai.steamstatic.com/steam/apps/70/header.jpg?t=1683302000"
     }
 ]
