@@ -7,14 +7,12 @@ def display_profile_games(ui: QWidget):
     try:
         with open("store/saved_games.json", "r", encoding="utf-8") as file:
             ui.saved_games = json.load(file)
-        print(f"📂 Загруженные сохраненные игры перед обработкой: {ui.saved_games}")
+        print(f"📂 List of saved games: {[game['name'] for game in ui.saved_games]}")
     except (FileNotFoundError, json.JSONDecodeError):
-        print("⚠️ Файл saved_games.json отсутствует или поврежден, загружаем пустой список.")
+        print("⚠️ saved_games.json was damaged or missing.")
         ui.saved_games = []
 
     ui.saved_games = [game for game in ui.saved_games if isinstance(game, dict)]
-
-    print(f"📂 Итоговый список игр после проверки: {ui.saved_games}")
 
     # Clearing the grid before displaying new games
     for i in reversed(range(ui.grid_layout.count())):
@@ -27,9 +25,7 @@ def display_profile_games(ui: QWidget):
     total_games = len(ui.saved_games)
     if total_games == 0:
         no_games_label = QLabel("No games found")
-        no_games_label.setStyleSheet("color: #454C55; font-size: 24px; font-weight: bold;")
-        # no_games_label.setContentsMargins(400, 0, 200, 0)
-        no_games_label.setAlignment(QtCore.Qt.AlignCenter)
+        no_games_label.setStyleSheet("color: #454C55; font-size: 40px; font-weight: bold; margin-bottom: 350px;")
         ui.grid_layout.addWidget(no_games_label, 0, 0, 1, 3)
     else:
         start_index = ui.current_page * 6
@@ -47,8 +43,6 @@ def display_profile_games(ui: QWidget):
             if col >= max_cols:
                 col = 0
                 row += 1
-
-        print(f"🎮 Отображаемые игры в профиле: {[game['name'] for game in games_to_display]}")
 
     # Turn navigation buttons on/off
     ui.left_arrow.setEnabled(ui.current_page > 0)
