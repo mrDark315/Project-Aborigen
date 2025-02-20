@@ -119,7 +119,7 @@ class GameCardHome(QtWidgets.QFrame):
     @staticmethod
     def load_saved_games():
         try:
-            with open("saved_games.json", "r", encoding="utf-8") as file:
+            with open("store/saved_games.json", "r", encoding="utf-8") as file:
                 data = json.load(file)
                 return [g for g in data if isinstance(g, dict)]
         except (FileNotFoundError, json.JSONDecodeError):
@@ -127,5 +127,5 @@ class GameCardHome(QtWidgets.QFrame):
 
     @staticmethod
     def save_saved_games(saved_games):
-        with open("saved_games.json", "w", encoding="utf-8") as file:
+        with open("store/saved_games.json", "w", encoding="utf-8") as file:
             json.dump(saved_games, file, indent=4, ensure_ascii=False)

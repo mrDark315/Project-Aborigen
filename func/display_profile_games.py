@@ -11,7 +11,7 @@ def display_profile_games(ui: QWidget):
         print("⚠️ Файл saved_games.json отсутствует или поврежден, загружаем пустой список.")
         saved_games = []
 
-    saved_games = [game for game in saved_games if isinstance(game, dict)]  # Фильтруем только объекты
+    saved_games = [game for game in saved_games if isinstance(game, dict)]
 
     print(f"📂 Итоговый список игр после проверки: {saved_games}")
 
@@ -22,7 +22,7 @@ def display_profile_games(ui: QWidget):
             widget.deleteLater()
 
     row, col = 0, 0
-    max_cols = 3  # Сетка из 3 колонок
+    max_cols = 3
     for game in saved_games:
         game_widget = GameCardProfile(game, ui)
         ui.grid_layout.addWidget(game_widget, row, col)
