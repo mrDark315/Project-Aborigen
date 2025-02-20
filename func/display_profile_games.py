@@ -15,14 +15,14 @@ def display_profile_games(ui: QWidget):
 
     print(f"📂 Итоговый список игр после проверки: {ui.saved_games}")
 
-    # Очистка сетки перед отображением новых игр
+    # Clearing the grid before displaying new games
     for i in reversed(range(ui.grid_layout.count())):
         widget = ui.grid_layout.itemAt(i).widget()
         if widget:
             widget.setParent(None)
             widget.deleteLater()
 
-    # Получаем нужные игры для текущей страницы
+    # Get the required games for the current page
     start_index = ui.current_page * 6
     end_index = start_index + 6
     games_to_display = ui.saved_games[start_index:end_index]
@@ -39,7 +39,7 @@ def display_profile_games(ui: QWidget):
             col = 0
             row += 1
 
-    # Включаем/выключаем кнопки навигации
+    # Turn navigation buttons on/off
     ui.left_arrow.setEnabled(ui.current_page > 0)
     ui.right_arrow.setEnabled((ui.current_page + 1) * 6 < len(ui.saved_games))
 
