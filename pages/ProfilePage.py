@@ -9,6 +9,7 @@ from components.SideFilter import SideFilter
 from components.SortingButtons import SortingButtons
 from func.search_func import handle_search, delay_search
 from func.display_profile_games import display_profile_games
+from func.nav_pages import next_page, prev_page
 
 class ProfilePage(QtWidgets.QWidget):
     def __init__(self, parent):
@@ -104,12 +105,15 @@ class ProfilePage(QtWidgets.QWidget):
         self.layout.addLayout(self.sorting_buttons_layout)
         self.layout.addLayout(self.grid_navigation_layout)
 
+        # Game List and Current Page
+        self.saved_games = []
+        self.current_page = 0
+
         # Load Games
-        # self.filtered_games = list(cached_games_dict.values())
-        # self.current_page = 0
-        # display_game_icons(self)
-        self.layout.addLayout(self.grid_layout)
         display_profile_games(self)
+        # self.layout.addLayout(self.grid_layout)
+        self.left_arrow.clicked.connect(lambda: prev_page(self))
+        self.right_arrow.clicked.connect(lambda: next_page(self))
 
         # Connect Search Bar and Timer
         self.search_timer = QtCore.QTimer()

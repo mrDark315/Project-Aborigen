@@ -109,11 +109,9 @@ class GameCardHome(QtWidgets.QFrame):
 
         self.save_saved_games(saved_games)
         self.update_bookmark_icon()
-
-        # Получаем родительский MainWindow
         main_window = self.find_main_window()
 
-        # Если отображается страница профиля, обновляем её
+        # If the profile page is displayed, refresh it
         if main_window and "profile" in main_window.pages:
             display_profile_games(main_window.pages["profile"])
 
@@ -123,8 +121,7 @@ class GameCardHome(QtWidgets.QFrame):
             if isinstance(parent, QtWidgets.QMainWindow):
                 return parent
             parent = parent.parent
-        return None  # Если не найден MainWindow
-
+        return None
 
     def update_bookmark_icon(self):
         saved_games = self.load_saved_games()

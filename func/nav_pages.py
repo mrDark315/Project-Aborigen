@@ -1,16 +1,35 @@
 from func.display_game import display_game_icons
+from func.display_profile_games import display_profile_games  # Подключаем отображение профиля
 
-def next_page(self):
-        total_games = len(self.filtered_games)
-        max_pages = (total_games + 5) // 6
+def next_page(ui):
+    """Переключение на следующую страницу."""
+    # Определяем, какие данные использовать (HomePage или ProfilePage)
+    if hasattr(ui, "filtered_games"):  # Это HomePage
+        total_games = len(ui.filtered_games)
+        display_function = display_game_icons
+    elif hasattr(ui, "saved_games"):  # Это ProfilePage
+        total_games = len(ui.saved_games)
+        display_function = display_profile_games
+    else:
+        return
 
-        if self.current_page + 1 < max_pages:
-            self.current_page += 1
-            print(f"➡️ Change page {self.current_page + 1}/{max_pages}")
-            display_game_icons(self)
+    max_pages = (total_games + 5) // 6
 
-def prev_page(self):
-    if self.current_page > 0:
-        self.current_page -= 1
-        print(f"⬅️ Change page {self.current_page + 1}")
-        display_game_icons(self)
+    if ui.current_page + 1 < max_pages:
+        ui.current_page += 1
+        print(f"➡️ Переход на страницу {ui.current_page + 1}/{max_pages}")
+        display_function(ui)  # Обновляем соответствующий интерфейс
+
+def prev_page(ui):
+    """Переключение на предыдущую страницу."""
+    if hasattr(ui, "filtered_games"):
+        display_function = display_game_icons
+    elif hasattr(ui, "saved_games"):
+        display_function = display_profile_games
+    else:
+        return
+
+    if ui.current_page > 0:
+        ui.current_page -= 1
+        print(f"⬅️ Возвращение на страницу {ui.current_page + 1}")
+        display_function(ui)
