@@ -7,8 +7,8 @@ from components.CloseButton import CloseButton
 from components.NavArrows import AnimatedArrowButton
 from components.SideFilter import SideFilter
 from components.SortingButtons import SortingButtons
-from func.search_func import handle_search, delay_search, cached_games_dict
-from func.display_game import display_game_icons
+from func.search_func import handle_search, delay_search
+from func.display_profile_games import display_profile_games
 
 class ProfilePage(QtWidgets.QWidget):
     def __init__(self, parent):
@@ -16,7 +16,6 @@ class ProfilePage(QtWidgets.QWidget):
         self.parent = parent
 
         # Main Widget
-        self.parent = QtWidgets.QWidget(parent)
         parent.setStyleSheet("background-color: #0E1621;")
 
         # Main Layout
@@ -106,9 +105,11 @@ class ProfilePage(QtWidgets.QWidget):
         self.layout.addLayout(self.grid_navigation_layout)
 
         # Load Games
-        self.filtered_games = list(cached_games_dict.values())
-        self.current_page = 0
-        display_game_icons(self)
+        # self.filtered_games = list(cached_games_dict.values())
+        # self.current_page = 0
+        # display_game_icons(self)
+        self.layout.addLayout(self.grid_layout)
+        display_profile_games(self)
 
         # Connect Search Bar and Timer
         self.search_timer = QtCore.QTimer()

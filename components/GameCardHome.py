@@ -1,11 +1,12 @@
 from PyQt5 import QtWidgets, QtGui, QtCore
-import requests
+import requests, json
 
 class GameCardHome(QtWidgets.QFrame):
     def __init__(self, game, parent_ui):
         super().__init__(parent_ui)
         self.game = game
         self.parent_ui = parent_ui
+        self.game_id = str(game.get("id", "Unknown"))
 
         self.setMaximumSize(460, 400)
         self.setMinimumSize(360, 300)
@@ -43,7 +44,7 @@ class GameCardHome(QtWidgets.QFrame):
         rating_layout.setContentsMargins(20, 5, 20, 15)
 
         # Metacritic rating
-        rating = game.get("rating", "N/A")
+        rating = game.get("metacritic_score", "N/A")
         metacritic_icon = QtWidgets.QLabel()
         metacritic_pixmap = QtGui.QPixmap("img/Metacritic_Logo.png").scaled(40, 40, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation)
         metacritic_icon.setPixmap(metacritic_pixmap)
@@ -64,13 +65,14 @@ class GameCardHome(QtWidgets.QFrame):
         rating_layout.addSpacing(10)
 
         # ⭐ Bookmark Button
-        bookmark_button = QtWidgets.QPushButton()
-        bookmark_button.setIconSize(QtCore.QSize(40, 40))
-        bookmark_button.setFixedSize(30, 40)
-        bookmark_button.setStyleSheet("background: transparent; border: none;")
-        bookmark_button.setIcon(QtGui.QIcon("img/Bookmark_No_Fill.png"))
+        self.bookmark_button = QtWidgets.QPushButton()
+        self.bookmark_button.setIconSize(QtCore.QSize(40, 40))
+        self.bookmark_button.setFixedSize(30, 40)
+        self.bookmark_button.setStyleSheet("background: transparent; border: none;")
+        self.bookmark_button.clicked.connect(self.toggle_favorite)
+        self.update_bookmark_icon()
 
-        rating_layout.addWidget(bookmark_button)
+        rating_layout.addWidget(self.bookmark_button)
         main_layout.addLayout(rating_layout)
 
     def download_image(self, url):
@@ -86,3 +88,44 @@ class GameCardHome(QtWidgets.QFrame):
 
     def truncate_text(self, text, max_length):
         return text if len(text) <= max_length else text[:max_length] + "..."
+
+    def toggle_favorite(self):
+        saved_games = self.load_saved_games()
+
+        game_info = {
+            "id": str(self.game.get("id", "Unknown")),
+            "name": self.game.get("name", "Unknown Game"),
+            "img": self.game.get("img", "")
+        }
+
+        existing_game = next((g for g in saved_games if isinstance(g, dict) and g.get("id") == game_info["id"]), None)
+
+        if existing_game:
+            saved_games.remove(existing_game)
+            print(f"❌ Удаление из избранного: {game_info['name']}")
+        else:
+            saved_games.append(game_info)
+            print(f"✅ Добавление в избранное: {game_info['name']}")
+
+        self.save_saved_games(saved_games)
+        self.update_bookmark_icon()
+
+    def update_bookmark_icon(self):
+        saved_games = self.load_saved_games()
+        icon = "img/Bookmark_Fill.png" if any(g["id"] == self.game_id for g in saved_games) else "img/Bookmark_No_Fill.png"
+        self.bookmark_button.setIcon(QtGui.QIcon(icon))
+        print(f"🔄 Обновление иконки для {self.game.get('name', 'Unknown')}: {icon}")
+
+    @staticmethod
+    def load_saved_games():
+        try:
+            with open("saved_games.json", "r", encoding="utf-8") as file:
+                data = json.load(file)
+                return [g for g in data if isinstance(g, dict)]
+        except (FileNotFoundError, json.JSONDecodeError):
+            return []
+
+    @staticmethod
+    def save_saved_games(saved_games):
+        with open("saved_games.json", "w", encoding="utf-8") as file:
+            json.dump(saved_games, file, indent=4, ensure_ascii=False)
