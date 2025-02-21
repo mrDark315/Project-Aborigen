@@ -12,7 +12,7 @@ def next_page(ui):
     else:
         return
 
-    max_pages = (total_games + 5) // 6
+    max_pages = (total_games + 6 - 1) // 6
 
     if ui.current_page + 1 < max_pages:
         ui.current_page += 1
@@ -20,7 +20,6 @@ def next_page(ui):
         display_function(ui)
 
 def prev_page(ui):
-    """Переключение на предыдущую страницу."""
     if hasattr(ui, "filtered_games"):
         display_function = display_game_icons
     elif hasattr(ui, "saved_games"):

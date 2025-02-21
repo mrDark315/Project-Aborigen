@@ -24,16 +24,15 @@ def display_profile_games(ui: QWidget):
     total_games = len(ui.saved_games)
     if total_games == 0:
         no_games_label = QLabel("No games found")
-        no_games_label.setStyleSheet("color: #454C55; font-size: 40px; font-weight: bold; margin-bottom: 350px;")
+        no_games_label.setStyleSheet("color: #454C55; font-size: 40px; font-weight: bold;")
         ui.grid_layout.addWidget(no_games_label, 0, 0, 1, 3)
     else:
         start_index = ui.current_page * 6
-        end_index = start_index + 6
+        end_index = min(start_index + 6, len(ui.saved_games))
         games_to_display = ui.saved_games[start_index:end_index]
 
         row, col = 0, 0
         max_cols = 3
-
         for game in games_to_display:
             game_widget = GameCardProfile(game, ui)
             ui.grid_layout.addWidget(game_widget, row, col)
