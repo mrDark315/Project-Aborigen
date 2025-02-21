@@ -19,20 +19,7 @@ class SortingButtons(QtWidgets.QWidget):
             button = QtWidgets.QPushButton(text)
             button.setFixedSize(400, 70)
             button.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
-
-            button.setStyleSheet("""
-                QPushButton {
-                    background-color: #454C55;
-                    color: #000;
-                    font-size: 28px;
-                    border: none;
-                    border-radius: 35px;
-                    padding: 10px;
-                }
-                QPushButton:hover {
-                    background-color: #898989;
-                }
-            """)
+            button.setStyleSheet("""QPushButton {background-color: #454C55; color: #000; font-size: 28px; border: none; border-radius: 35px; padding: 10px;} QPushButton:hover {background-color: #898989;}""")
             self.layout.addWidget(button)
             self.buttons.append(button)
 

@@ -1,8 +1,6 @@
 from PyQt5 import QtWidgets
 import json
 from func.search_func import handle_search
-from func.sorting_side_filter import sort_games
-
 
 class SideFilter(QtWidgets.QWidget):
     def __init__(self, parent_ui):
@@ -43,11 +41,7 @@ class SideFilter(QtWidgets.QWidget):
             else:
                 dropdown.addItems(predefined_options.get(title, []))
 
-            dropdown.setStyleSheet("""
-                QComboBox {background-color: #454C55; border: none; height: 50px; border-radius: 25px; padding-left: 30px; font-size: 28px; color: #000;}
-                QComboBox::drop-down {background-color: transparent;}
-                QComboBox QAbstractItemView {font-size: 20px; background-color: #454C55; color: #000; selection-background-color: #454C55; selection-color: #898989; border-radius: 10px; outline: none;}
-            """)
+            dropdown.setStyleSheet("""QComboBox {background-color: #454C55; border: none; height: 50px; border-radius: 25px; padding-left: 30px; font-size: 28px; color: #000;} QComboBox::drop-down {background-color: transparent;} QComboBox QAbstractItemView {font-size: 20px; background-color: #454C55; color: #000; selection-background-color: #454C55; selection-color: #898989; border-radius: 10px; outline: none;}""")
 
             dropdown.currentIndexChanged.connect(lambda: handle_search(self.parent_ui))
             self.layout.addWidget(dropdown)

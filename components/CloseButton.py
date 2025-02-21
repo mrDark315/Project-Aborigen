@@ -8,7 +8,7 @@ class AnimatedCloseButton(QtWidgets.QPushButton):
         if isinstance(icon_path, str) and os.path.exists(icon_path):
             self.setIcon(QtGui.QIcon(icon_path))
         else:
-            print(f"⚠️ Ошибка: Файл иконки {icon_path} не найден!")
+            print(f"⚠️ Error: icon file {icon_path} not found!")
 
         # Hover resize animation
         self.animation = QtCore.QPropertyAnimation(self, b"iconSize")
@@ -56,7 +56,7 @@ class CloseButton(AnimatedCloseButton):
 
     def go_to_home(self):
         if self.main_window:
-            print("🔄 Закрытие ProfilePage и переход на HomePage")
+            print("🔄 Close ProfilePage")
             self.main_window.set_page("home")
         else:
-            print("⚠️ Ошибка: MainWindow не найден!")
+            print("⚠️ Error: MainWindow not found!")

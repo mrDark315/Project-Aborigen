@@ -1,6 +1,5 @@
 import json
 from PyQt5.QtWidgets import QWidget, QLabel
-from PyQt5 import QtCore
 from components.GameCardProfile import GameCardProfile
 
 def display_profile_games(ui: QWidget):

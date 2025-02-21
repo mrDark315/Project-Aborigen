@@ -65,7 +65,7 @@ class GameCardHome(QtWidgets.QFrame):
         rating_layout.addWidget(controller_icon)
         rating_layout.addSpacing(10)
 
-        # ⭐ Bookmark Button
+        # Bookmark Button
         self.bookmark_button = QtWidgets.QPushButton()
         self.bookmark_button.setIconSize(QtCore.QSize(40, 40))
         self.bookmark_button.setFixedSize(30, 40)
@@ -102,10 +102,10 @@ class GameCardHome(QtWidgets.QFrame):
 
         if existing_game:
             saved_games.remove(existing_game)
-            print(f"❌ Удалено из избранного: {game_info['name']}")
+            print(f"❌ Removed from favorites: {game_info['name']}")
         else:
             saved_games.append(game_info)
-            print(f"✅ Добавлено в избранное: {game_info['name']}")
+            print(f"✅ Added to favorites: {game_info['name']}")
 
         self.save_saved_games(saved_games)
         self.update_bookmark_icon()
@@ -127,7 +127,6 @@ class GameCardHome(QtWidgets.QFrame):
         saved_games = self.load_saved_games()
         icon = "img/Bookmark_Fill.png" if any(g["id"] == self.game_id for g in saved_games) else "img/Bookmark_No_Fill.png"
         self.bookmark_button.setIcon(QtGui.QIcon(icon))
-        print(f"🔄 Обновление иконки для {self.game.get('name', 'Unknown')}")
 
     @staticmethod
     def load_saved_games():
