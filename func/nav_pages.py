@@ -13,11 +13,14 @@ def next_page(ui):
         return
 
     max_pages = (total_games + 6 - 1) // 6
+    max_pages = max(1, max_pages)
 
     if ui.current_page + 1 < max_pages:
         ui.current_page += 1
         print(f"➡️ Переход на страницу {ui.current_page + 1}/{max_pages}")
         display_function(ui)
+    else:
+        print("❌ Вы на последней странице")
 
 def prev_page(ui):
     if hasattr(ui, "filtered_games"):

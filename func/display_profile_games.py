@@ -13,12 +13,17 @@ def display_profile_games(ui: QWidget):
 
     ui.saved_games = [game for game in ui.saved_games if isinstance(game, dict)]
 
+    print(f"Количество элементов в grid_layout до очистки: {ui.grid_layout.count()}")
+
     # Clearing the grid before displaying new games
     for i in reversed(range(ui.grid_layout.count())):
         widget = ui.grid_layout.itemAt(i).widget()
         if widget:
+            print(f"Удаляем виджет: {widget}")
             widget.setParent(None)
             widget.deleteLater()
+
+    print(f"Количество элементов в grid_layout после очистки: {ui.grid_layout.count()}")
 
     # Get the required games for the current page
     total_games = len(ui.saved_games)
@@ -33,14 +38,20 @@ def display_profile_games(ui: QWidget):
 
         row, col = 0, 0
         max_cols = 3
+
+        print(f"Показываем игры с {start_index + 1} по {end_index}: {[game['name'] for game in games_to_display]}")
         for game in games_to_display:
             game_widget = GameCardProfile(game, ui)
             ui.grid_layout.addWidget(game_widget, row, col)
+            print(f"Добавлена карточка игры: {game['name']}")
 
             col += 1
             if col >= max_cols:
                 col = 0
                 row += 1
+
+        ui.grid_layout.update()  # Обновление layout
+        ui.repaint()  # Перерисовка всего окна
 
     # Turn navigation buttons on/off
     ui.left_arrow.setEnabled(ui.current_page > 0)
