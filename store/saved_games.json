@@ -5,11 +5,6 @@
         "img": "https://cdn.akamai.steamstatic.com/steam/apps/400/header.jpg?t=1682715069"
     },
     {
-        "id": "10",
-        "name": "Counter-Strike",
-        "img": "https://cdn.akamai.steamstatic.com/steam/apps/10/header.jpg?t=1666823513"
-    },
-    {
         "id": "40",
         "name": "Deathmatch Classic",
         "img": "https://cdn.akamai.steamstatic.com/steam/apps/40/header.jpg?t=1568752159"
@@ -35,11 +30,6 @@
         "img": "https://cdn.akamai.steamstatic.com/steam/apps/70/header.jpg?t=1683302000"
     },
     {
-        "id": "80",
-        "name": "Counter-Strike: Condition Zero",
-        "img": "https://cdn.akamai.steamstatic.com/steam/apps/80/header.jpg?t=1602535977"
-    },
-    {
         "id": "130",
         "name": "Half-Life: Blue Shift",
         "img": "https://cdn.akamai.steamstatic.com/steam/apps/130/header.jpg?t=1579629868"
@@ -58,5 +48,20 @@
         "id": "280",
         "name": "Half-Life: Source",
         "img": "https://cdn.akamai.steamstatic.com/steam/apps/280/header.jpg?t=1579630049"
+    },
+    {
+        "id": "20",
+        "name": "Team Fortress Classic",
+        "img": "https://cdn.akamai.steamstatic.com/steam/apps/20/header.jpg?t=1579634708"
+    },
+    {
+        "id": "10",
+        "name": "Counter-Strike",
+        "img": "https://cdn.akamai.steamstatic.com/steam/apps/10/header.jpg?t=1666823513"
+    },
+    {
+        "id": "80",
+        "name": "Counter-Strike: Condition Zero",
+        "img": "https://cdn.akamai.steamstatic.com/steam/apps/80/header.jpg?t=1602535977"
     }
 ]
